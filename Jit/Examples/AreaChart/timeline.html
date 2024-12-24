@@ -1,0 +1,1943 @@
+
+<!DOCTYPE html>
+<!--[if lte IE 9]>
+<html class="ie" lang="en">
+<![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8">
+<title>Timeline</title>
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@CodePen">
+<meta name="twitter:title" content="Timeline">
+<meta name="twitter:description" content="...">
+<meta name="twitter:image" content="https://assets.codepen.io/1170787/internal/screenshots/pens/ELLmyX.default.png?fit=cover&amp;format=auto&amp;ha=true&amp;height=720&amp;quality=75&amp;v=2&amp;version=1530630449&amp;width=1279">
+<meta property="og:image" content="https://assets.codepen.io/1170787/internal/screenshots/pens/ELLmyX.default.png?fit=cover&amp;format=auto&amp;ha=true&amp;height=720&amp;quality=75&amp;v=2&amp;version=1530630449&amp;width=1279" itemprop="thumbnailUrl">
+<meta property="og:title" content="Timeline">
+<meta property="og:url" content="https://codepen.io/carrrter/details/ELLmyX">
+<meta property="og:site_name" content="CodePen">
+<meta property="og:description" content="...">
+<link rel="alternate" type="application/json+oembed" href="https://codepen.io/api/oembed?url=https%3A%2F%2Fcodepen.io%2Fcarrrter%2Fpen%2FELLmyX&format=json" title="Timeline" />
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400italic,700,700italic,900,900italic" rel="stylesheet" />
+<link rel="stylesheet" media="all" href="https://static.codepen.io/assets/global/global-3dd50100d0cae8b2b354145319e40cdc279019e34563ee3d47ad4ac8f3790243.css" />
+<link rel="stylesheet" media="screen" href="https://static.codepen.io/assets/packs/css/2-394423b4.chunk.css" />
+<link rel="stylesheet" media="screen" href="https://static.codepen.io/assets/packs/css/everypage-05a172bd.css" />
+<link rel="stylesheet" media="all" href="https://static.codepen.io/assets/editor/editor-6da7fcd3dec26bff3031643b9ad9c34119f037f15ea0fa6147cb552a88f1dead.css" />
+<meta name="description" content="...">
+<link rel="stylesheet" media="screen" href="https://static.codepen.io/assets/editor/themes/twilight-bbb3d58f8024c27567f788f3990f2dce8754c2b67246bf12ad766768fe51955b.css" id="cm-theme" />
+<style id="cm-font-family" class="cm-font-family">
+  
+      
+  .CodeMirror,
+  .console-logs .console-line,
+  .console-command-line-input,
+  .console-message,
+  .CodeMirror-hint {
+    font-family: Monaco, MonoSpace;
+  }
+</style>
+<style id="cm-font-size">
+  .CodeMirror,
+  .console-logs .console-line,
+  .console-command-line-input,
+  .console-message,
+  .CodeMirror-hint {
+    font-size: 14px;
+  }
+</style>
+<link rel="apple-touch-icon" type="image/png" href="https://static.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+<meta name="apple-mobile-web-app-title" content="CodePen">
+<link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+<link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="iewJAsnBpmmMs3mwMWDDcZbvpd6Ikrqv8r8HnLjPnUor8b+7+qZzNQIT/6QoFYHINrfB5bUJMUeVn21EmxFikQ==" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="monetization" content="$ilp.uphold.com/biyqg2MkQKbe">
+<script>/* Firefox needs this to prevent FOUC. */</script>
+</head>
+<body class="room-editor editor state-htmlOn-cssOn-jsOn sidebar-false preload prelayout
+  layout-top
+ logged-out ">
+<header class="main-header" id="main-header">
+</header>
+<div class="item-settings-modal tab-layout tab-layout-modal pen  item-settings-modal-half" id="item-settings-modal">
+<header class="item-settings-modal-header tab-layout-header">
+<h2 class="item-settings-modal-header-title tab-layout-header-title">Pen Settings</h2>
+<div class="save-and-close-wrap">
+<button type="button" class="button mini-button button-no-right-margin close" id="top-close-settings">
+<svg class="icon-x">
+<use xlink:href="/svgs/compiled/svgs.20ea15c6.svg#x"></use>
+</svg>
+</button>
+</div>
+</header>
+<div class="tabs tab-layout-wrapper settings-tabs-wrapper">
+<nav id="settings-tabs" class="no-mobile-nav tab-layout-tabs item-settings-tabs">
+<div class="tab-layout-tab-group">
+<a id="settings-html-tab" href="#settings-html" class="settings-tab-html" data-type="html">
+HTML
+</a>
+<a id="settings-css-tab" href="#settings-css" class="settings-tab-css" data-type="css">
+CSS
+</a>
+<a id="settings-js-tab" href="#settings-js" class="settings-tab-js" data-type="js">
+JS
+</a>
+</div>
+<div class="tab-layout-tab-group">
+<a id="settings-behavior-tab" href="#settings-behavior" class="settings-tab-behavior" data-type="behavior">
+Behavior
+</a>
+<a id="settings-editor-tab" href="#settings-editor" class="settings-tab-editor" data-type="editor">
+Editor
+</a>
+</div>
+</nav>
+<div class="settings tab-page" id="settings-html">
+<h3 aria-label="HTML">HTML</h3>
+<form class="settings-row top-label-form normal-labels preprocessor-choice group">
+<h4>
+<label for="html-preprocessor">HTML Preprocessor</label>
+</h4>
+<div class="help-flyout-link">
+<svg class="icon-help">
+<use xlink:href="/svgs/compiled/svgs.20ea15c6.svg#help"></use>
+</svg>
+<div class="help-flyout help-flyout-reverse">
+<h5>About HTML Preprocessors</h5>
+<svg class="icon-x">
+<use xlink:href="/svgs/compiled/svgs.20ea15c6.svg#x"></use>
+</svg>
+<p>HTML preprocessors can make writing HTML more powerful or convenient. For instance, Markdown is designed to be easier to write and read for text documents and you could write a loop in Pug.</p>
+<p><a href="https://blog.codepen.io/documentation/editor/using-html-preprocessors/" target="_blank" rel="noopener">Learn more</a> &middot; <a href="/versions/" target="_blank" rel="noopener">Versions</a></p>
+</div>
+</div>
+<div class="custom-select-wrap">
+<select name="html-preprocessor" id="html-preprocessor" class="fullwidth">
+ <option value="none">None</option>
+<option value="haml">Haml</option>
+<option value="markdown">Markdown</option>
+<option value="slim">Slim</option>
+<option value="pug">Pug</option>
+</select>
+<div class="select-icon">
+<svg class="icon-arrow-down-mini">
+<use xlink:href="/svgs/compiled/svgs.20ea15c6.svg#arrow-down-mini"></use>
+</svg>
+<svg class="icon-arrow-down-mini">
+<use xlink:href="/svgs/compiled/svgs.20ea15c6.svg#arrow-down-mini"></use>
+</svg>
+</div>
+</div>
+</form>
+<form class="settings-row top-label-form normal-labels prevent-form-submit" onsubmit="return false;">
+<h4>
+<label for="html-classes">Add Class(es) to &lt;html></label>
+</h4>
+<div class="help-flyout-link">
+<svg class="icon-help">
+<use xlink:href="/svgs/compiled/svgs.20ea15c6.svg#help"></use>
+</svg>
+<div class="help-flyout help-flyout-reverse">
+<h5>Adding Classes</h5>
+<svg class="icon-x">
+<use xlink:href="/svgs/compiled/svgs.20ea15c6.svg#x"></use>
+</svg>
+<p>In CodePen, whatever you write in the HTML editor is what goes within the <code>&lt;body></code> tags in <a target="_blank" rel="noopener" href="https://blog.codepen.io/documentation/features/preview-template/">a basic HTML5 template</a>. So you don't have access to higher-up elements like the <code>&lt;html></code> tag. If you want to add classes there that can affect the whole document, this is the place to do it.</p>
+</div>
+</div>
+<input type="text" id="html-classes" name="html-classes" class="fullwidth" placeholder="e.g. single post post-1234" maxlength="250">
+</form>
+<form class="settings-row top-label-form normal-labels prevent-form-submit" onsubmit="return false;">
+<h4>
+<label for="head-content">Stuff for &lt;head></label>
+</h4>
+<div class="help-flyout-link">
+<svg class="icon-help">
+<use xlink:href="/svgs/compiled/svgs.20ea15c6.svg#help"></use>
+</svg>
+<div class="help-flyout help-flyout-reverse">
+<h5>About the &lt;head></h5>
+<svg class="icon-x">
+<use xlink:href="/svgs/compiled/svgs.20ea15c6.svg#x"></use>
+</svg>
+<p>In CodePen, whatever you write in the HTML editor is what goes within the <code>&lt;body></code> tags in <a target="_blank" rel="noopener" href="https://blog.codepen.io/documentation/features/preview-template/">a basic HTML5 template</a>. If you need things in the <code>&lt;head></code> of the document, put that code here.</p>
+</div>
+</div>
+<div class="head-content-wrapper">
+<textarea id="head-content" name="head-content" class="fullwidth is-code head-content" placeholder="e.g. &lt;meta>, &lt;link>, &lt;script>"></textarea>
+<span class="insecure-resource-tooltip">
+<div class="help-flyout-link">
+<span class="icon-help">!</span>
+<div class="help-flyout help-flyout-reverse">
+<svg class="icon-x">
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/svgs/compiled/svgs.20ea15c6.svg#x"></use>
+</svg>
+<h5>Insecure Resource</h5>
+<p>The resource you are linking to is using the 'http' protocol, which may not work when the browser is using https.</p>
+</div>
+</div>
+</span>
+</div>
+<button class="button mini-button button-medium" id="meta-tag-insert">↑ Insert the most common viewport meta tag</button>
+</form>
+</div>
+<div class="settings tab-page" id="settings-css">
+<h3 aria-label="CSS">CSS</h3>
+<form class="settings-row settings-row-1 top-label-form normal-labels preprocessor-choice group">
+<h4>
+<label for="css-preprocessor">CSS Preprocessor</label>
+</h4>
+<div class="help-flyout-link">
+<svg class="icon-help">
+<use xlink:href="/svgs/compiled/svgs.20ea15c6.svg#help"></use>
+</svg>
+<div class="help-flyout help-flyout-reverse">
+<h5>About CSS Preprocessors</h5>
+<svg class="icon-x">
+<use xlink:href="/svgs/compiled/svgs.20ea15c6.svg#x"></use>
+</svg>
+<p>CSS preprocessors help make authoring CSS easier. All of them offer things like variables and mixins to provide convenient abstractions.</p>
+<p><a href="https://blog.codepen.io/documentation/editor/using-css-preprocessors/" target="_blank">Learn more</a> &middot; <a href="/versions/" target="_blank">Versions</a></p>
+</div>
+</div>
+<div class="custom-select-wrap">
+<select name="css-preprocessor" id="css-preprocessor" class="fullwidth css-preprocessor">
+<option value="none">None</option>
+<option value="less">Less</option>
+<option value="scss">SCSS</option>
+<option value="sass">Sass</option>
+<option value="stylus">Stylus</option>
+<option value="postcss">PostCSS</option>
+</select>
+<div class="select-icon">
+<svg class="icon-arrow-down-mini">
+<use xlink:href="/svgs/compiled/svgs.20ea15c6.svg#arrow-down-mini"></use>
+</svg>
+<svg class="icon-arrow-down-mini">
+<use xlink:href="/svgs/compiled/svgs.20ea15c6.svg#arrow-down-mini"></use>
+</svg>
+</div>
+</div>
+<div id="need-an-addon" class="align-right hide">
+<a id="css-need-an-addon-button" href="#0" class="button button-medium mini-button need-an-addon-button">
+Need an add-on?
+</a>
+</div>
+<div class="add-ons add-ons-scss hide" id="add-ons"></div>
+</form>
+<form id="startercss-options-form" class="settings-row settings-row-2 top-label-form prevent-form-submit" onsubmit="return false;">
+<h4>
+CSS Base
+</h4>
+<div class="help-flyout-link">
+<svg class="icon-help">
+<use xlink:href="/svgs/compiled/svgs.20ea15c6.svg#help"></use>
+</svg>
+<div class="help-flyout help-flyout-reverse">
+<h5>About CSS Base</h5>
+<svg class="icon-x">
+<use xlink:href="/svgs/compiled/svgs.20ea15c6.svg#x"></use>
+</svg>
+<p>It's a common practice to apply CSS to a page that styles elements such that they are consistent across all browsers. We offer two of the most popular choices: <a href="https://necolas.github.io/normalize.css/" target="_blank" rel="noopener">normalize.css</a> and a <a href="http://meyerweb.com/eric/tools/css/reset/" target="_blank" rel="noopener">reset</a>. Or, choose <b>Neither</b> and nothing will be applied.</p>
+</div>
+</div>
+<ul class="radio-list">
+<li>
+<input type="radio" id="startercss-normalize" name="startercss" checked value="normalize">
+<label for="startercss-normalize" class="small-inline">Normalize</label>
+</li>
+<li>
+<input type="radio" id="startercss-reset" name="startercss" checked value="reset">
+<label for="startercss-reset" class="small-inline">Reset</label>
+</li>
+<li>
+<input type="radio" id="startercss-neither" name="startercss" checked value="neither">
+<label for="startercss-neither" class="small-inline">Neither</label>
+</li>
+</ul>
+</form>
+<form id="prefix-options-form" class="settings-row settings-row-3 top-label-form">
+<h4>
+Vendor Prefixing
+</h4>
+<div class="help-flyout-link">
+<svg class="icon-help">
+<use xlink:href="/svgs/compiled/svgs.20ea15c6.svg#help"></use>
+</svg>
+<div class="help-flyout help-flyout-reverse">
+<h5>About Vendor Prefixing</h5>
+<svg class="icon-x">
+<use xlink:href="/svgs/compiled/svgs.20ea15c6.svg#x"></use>
+</svg>
+<p>To get the best cross-browser support, it is a common practice to apply vendor prefixes to CSS properties and values that require them to work. For instance <code>-webkit-</code> or <code>-moz-</code>.</p>
+<p>We offer two popular choices: <a href="https://github.com/postcss/autoprefixer" target="blank" rel="noopener">Autoprefixer</a> (which processes your CSS server-side) and <a href="https://leaverou.github.io/prefixfree/" target="_blank" rel="noopener">-prefix-free</a> (which applies prefixes via a script, client-side).</p>
+</div>
+</div>
+<ul class="radio-list">
+<li>
+<input type="radio" id="prefix-autoprefixer" name="prefix" value="autoprefixer">
+<label for="prefix-autoprefixer" class="small-inline">Autoprefixer</label>
+</li>
+<li>
+<input type="radio" id="prefix-prefixfree" name="prefix" value="prefixfree">
+<label for="prefix-prefixfree" class="small-inline">Prefixfree</label>
+</li>
+<li>
+<input type="radio" id="prefix-neither" name="prefix" value="neither">
+<label for="prefix-neither" class="small-inline">Neither</label>
+</li>
+</ul>
+</form>
+<form id="external-css-resources" class="settings-row settings-row-4 top-label-form prevent-form-submit" onsubmit="return false;">
+<h4>
+Add External Stylesheets/Pens
+</h4>
+<p>Any URL's added here will be added as <code>&lt;link></code>s in order, and before the CSS in the editor. If you link to another Pen, it will include the CSS from that Pen. If the preprocessor matches, it will attempt to combine them before processing.</p>
+<div class="resource-search-bar">
+<svg class="icon icon-mag">
+<use xlink:href="/svgs/compiled/svgs.20ea15c6.svg#mag"></use>
+</svg>
+<input id="external-css-search" type="text" value="" placeholder="Search for resources (Bootstrap, Foundation, Animate.css...)">
+</div>
+<div class="algolia-shoutout">
+<a href="https://www.algolia.com/?utm_source=react-instantsearch&utm_medium=website&utm_content=codepen.io&utm_campaign=poweredby" target="_blank">
+Powered by <img alt="Algolia" src="https://static.codepen.io/assets/settings/algolia-9e1c0c887f4db420704b2a79926864019ef156bcecc9d5774a7e4eaa731fc5b5.svg" />
+</a>
+</div>
+<div class="help-flyout-link">
+<svg class="icon-help">
+<use xlink:href="/svgs/compiled/svgs.20ea15c6.svg#help"></use>
+</svg>
+<div class="help-flyout help-flyout-reverse">
+<h5>About External Resources</h5>
+<svg class="icon-x">
+<use xlink:href="/svgs/compiled/svgs.20ea15c6.svg#x"></use>
+</svg>
+<p>You can apply CSS to your Pen from any stylesheet on the web. Just put a URL to it here and we'll apply it, in the order you have them, before the CSS in the Pen itself.</p>
+<p>If the stylesheet you link to has the file extension of a preprocessor, we'll attempt to process it before applying.</p>
+<p>You can also link to another Pen here, and we'll pull the CSS from that Pen and include it. If it's using a matching preprocessor, we'll combine the code before preprocessing, so you can use the linked Pen as a true dependency.</p>
+<p><a href="https://blog.codepen.io/documentation/editor/adding-external-resources/" target="_blank" rel="noopener">Learn more</a></p>
+</div>
+</div>
+<div id="css-external-resources" class="external-resource-wrapper">
+</div>
+<script id="css-external-resources-template" type="text/template">
+  <div data-view-id="<%= view_id %>" class="external-resource-url-row <%= insecure_resource %>">
+
+    <span class="move-external-url">
+      <svg class="icon-drag-handle" width="20" height="17">
+        <use xlink:href="/svgs/compiled/svgs.20ea15c6.svg#drag-handle" />
+      </svg>
+    </span>
+
+    <input
+      id="external-resource-input-<%= view_id %>"
+      class="fullwidth css-resource external-resource"
+      type="text"
+      pattern="^((ftp|http|https):)?\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?$"
+      name="external-css"
+      placeholder="<%= placeholder %>"
+      value="<%= url %>"
+      data-view-id="<%= view_id %>">
+
+    <span class="insecure-resource-tooltip">
+      <div class="help-flyout-link">
+        <span class="icon-help">!</span>
+        <div class="help-flyout help-flyout-reverse">
+          <svg class="icon-x">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/svgs/compiled/svgs.20ea15c6.svg#x"></use>
+          </svg>
+          <h5>Insecure Resource</h5>
+          <p>You are linking to a resource using the non-secure http:// protocol, which may not work when the browser is using https:// like CodePen enforces.</p>
+        </div>
+      </div>
+    </span>
+
+    <div class="resource-actions">
+      <span class="remove-external-url external-url-option" data-view-id="<%= view_id %>">
+        <svg class="icon-x" width="12" height="12">
+          <use xlink:href="/svgs/compiled/svgs.20ea15c6.svg#x" />
+        </svg>
+      </span>
+
+      <a id="external-resource-input-view-link-<%= view_id %>" class="open-external-url external-url-option" target="_blank" rel="noopener" data-view-id="<%= view_id %>" href="<%= url %>">
+        <svg class="icon-eye" width="14" height="14">
+          <use xlink:href="/svgs/compiled/svgs.20ea15c6.svg#eye" />
+        </svg>
+      </a>
+    </div>
+
+  </div>
+</script>
+<div class="external-resource-actions group">
+<span id="add-css-resource" class="button mini-button button-medium add-resource" data-type="css">
+<span data-type="css">+ add another resource</span>
+</span>
+</div>
+</form>
+</div>
+<div class="settings tab-page" id="settings-js">
+<div class="item-settings-javascript normal-labels">
+<h3 aria-label="JavaScript">JavaScript</h3>
+<div class="item-settings-javascript-preprocessor settings-row">
+<h4>
+<label for="js-preprocessor">JavaScript Preprocessor</label>
+</h4>
+<div class="help-flyout-link">
+<svg class="icon-help" width="14" height="14">
+<use xlink:href="/svgs/compiled/svgs.20ea15c6.svg#help"></use>
+</svg>
+<div class="help-flyout help-flyout-reverse">
+<h5>About JavaScript Preprocessors</h5>
+<svg class="icon-x" width="12" height="12">
+<use xlink:href="/svgs/compiled/svgs.20ea15c6.svg#x"></use>
+</svg>
+<p>JavaScript preprocessors can help make authoring JavaScript easier and more convenient. For instance, CoffeeScript can help prevent easy-to-make mistakes and offer a cleaner syntax and Babel can bring ECMAScript 6 features to browsers that only support ECMAScript 5.</p>
+<p><a href="https://blog.codepen.io/documentation/editor/using-js-preprocessors/" target="_blank" rel="noopener">Learn more</a> &middot; <a href="/versions/" target="_blank">Versions</a></p>
+</div>
+</div>
+<div class="custom-select-wrap">
+<select name="js-preprocessor" id="js-preprocessor" class="fullwidth">
+<option value="none">None</option>
+<option value="babel">Babel</option>
+<option value="typescript">TypeScript</option>
+<option value="coffeescript">CoffeeScript</option>
+<option value="livescript">LiveScript</option>
+</select>
+<div class="select-icon">
+<svg class="icon-arrow-down-mini">
+<use xlink:href="/svgs/compiled/svgs.20ea15c6.svg#arrow-down-mini"></use>
+</svg>
+<svg class="icon-arrow-down-mini">
+<use xlink:href="/svgs/compiled/svgs.20ea15c6.svg#arrow-down-mini"></use>
+</svg>
+</div>
+</div>
+<div class="processing-packages-message callout hide" id="processing-packages-message">
+Babel is required to process package imports. If you need a different preprocessor remove all packages first.
+</div>
+</div>
+<div id="external-js-resources" class="item-settings-javascript-external settings-row external-js-resources top-label-form prevent-form-submit" onsubmit="return false;">
+<h4>
+Add External Scripts/Pens
+</h4>
+<p>Any URL's added here will be added as <code>&lt;script></code>s in order, and run <em>before</em> the JavaScript in the editor. You can use the URL of any other Pen and it will include the JavaScript from that Pen.</p>
+<div class="resource-search-bar">
+<svg class="icon icon-mag" width="18" height="18">
+<use xlink:href="/svgs/compiled/svgs.20ea15c6.svg#mag"></use>
+</svg>
+<input id="external-js-search" type="text" value="" placeholder="Search CDNjs (jQuery, Lodash, React, Angular, Vue.js, Ember...)">
+</div>
+<div class="algolia-shoutout">
+<a href="https://www.algolia.com/?utm_source=react-instantsearch&utm_medium=website&utm_content=codepen.io&utm_campaign=poweredby" target="_blank">
+Powered by <img alt="Algolia" src="https://static.codepen.io/assets/settings/algolia-9e1c0c887f4db420704b2a79926864019ef156bcecc9d5774a7e4eaa731fc5b5.svg" />
+</a>
+</div>
+<div class="help-flyout-link">
+<svg class="icon-help" width="14" height="14">
+<use xlink:href="/svgs/compiled/svgs.20ea15c6.svg#help"></use>
+</svg>
+<div class="help-flyout help-flyout-reverse">
+<h5>About External Resources</h5>
+<svg class="icon-x" width="12" height="12">
+<use xlink:href="/svgs/compiled/svgs.20ea15c6.svg#x"></use>
+</svg>
+<p>You can apply a script from anywhere on the web to your Pen. Just put a URL to it here and we'll add it, in the order you have them, before the JavaScript in the Pen itself.</p>
+<p>If the script you link to has the file extension of a preprocessor, we'll attempt to process it before applying.</p>
+<p>You can also link to another Pen here, and we'll pull the JavaScript from that Pen and include it. If it's using a matching preprocessor, we'll combine the code before preprocessing, so you can use the linked Pen as a true dependency.</p>
+<p><a href="https://blog.codepen.io/documentation/adding-external-resources/" rel="noopener" target="_blank">Learn more</a></p>
+</div>
+</div>
+<div id="js-external-resources" class="external-resource-wrapper">
+</div>
+<script id="js-external-resources-template" type="text/template">
+  <div data-view-id="<%= view_id %>" class="external-resource-url-row <%= insecure_resource %>">
+
+    <span class="move-external-url">
+      <svg class="icon-drag-handle" width="20" height="17">
+        <use xlink:href="/svgs/compiled/svgs.20ea15c6.svg#drag-handle" />
+      </svg>
+    </span>
+
+    <input
+      id="external-resource-input-<%= view_id %>"
+      class="fullwidth js-resource external-resource"
+      type="text"
+      pattern="^((ftp|http|https):)?\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?$"
+      name="external-js"
+      placeholder="<%= placeholder %>"
+      value="<%= url %>"
+      data-view-id="<%= view_id %>">
+
+    <span class="insecure-resource-tooltip">
+      <div class="help-flyout-link">
+        <span class="icon-help">!</span>
+        <div class="help-flyout help-flyout-reverse">
+          <svg class="icon-x">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/svgs/compiled/svgs.20ea15c6.svg#x"></use>
+          </svg>
+          <h5>Insecure Resource</h5>
+          <p>You are linking to a resource using the non-secure http:// protocol, which may not work when the browser is using https:// like CodePen enforces.</p>
+        </div>
+      </div>
+    </span>
+
+    <div class="resource-actions">
+      <span class="remove-external-url external-url-option" data-view-id="<%= view_id %>">
+        <svg class="icon-x" width="12" height="12">
+          <use xlink:href="/svgs/compiled/svgs.20ea15c6.svg#x" />
+        </svg>
+      </span>
+
+      <a id="external-resource-input-view-link-<%= view_id %>" class="open-external-url external-url-option" target="_blank" rel="noopener" data-view-id="<%= view_id %>" href="<%= url %>">
+        <svg class="icon-eye" width="14" height="14">
+          <use xlink:href="/svgs/compiled/svgs.20ea15c6.svg#eye" />
+        </svg>
+      </a>
+    </div>
+
+  </div>
+</script>
+<div class="external-resource-actions group">
+<span id="add-js-resource" class="button button-medium mini-button add-resource" data-type="js">
+<span data-type="js">+ add another resource</span>
+</span>
+</div>
+</div>
+</div>
+</div>
+<div class="settings tab-page" id="settings-behavior">
+<h3 aria-label="Pen Behavior">Behavior</h3>
+<div class="settings-row">
+<h4>Save Automatically?</h4>
+<div>
+<p class="hint">If active, Pens will autosave every 30 seconds after being saved once.</p>
+<div class="ios-toggle-mega-label-wrap">
+<span class="ios-toggle ios-toggle-reverse">
+<input type="checkbox" id="auto-save" name="auto-save" checked>
+<label for="auto-save"></label>
+<label for="auto-save" class="ios-toggle-mega-label"></label>
+</span>
+</div>
+</div>
+</div>
+<div class="settings-row">
+<h4>Auto-Updating Preview</h4>
+<p class="hint">If enabled, the preview panel updates automatically as you code. If disabled, use the "Run" button to update.</p>
+<div class="ios-toggle-mega-label-wrap">
+<span class="ios-toggle ios-toggle-reverse">
+<input type="checkbox" id="auto-run" name="auto-run" checked>
+<label for="auto-run"></label>
+<label for="auto-run" class="ios-toggle-mega-label"></label>
+</span>
+</div>
+</div>
+<div class="settings-row">
+<h4>Format on Save</h4>
+<p class="hint">If enabled, your code will be formatted when you actively save your Pen. <span style="color: #ffdc40; font-weight: bold;">Note:</span> your code becomes un-folded during formatting.</p>
+<div class="ios-toggle-mega-label-wrap">
+<span class="ios-toggle ios-toggle-reverse">
+<input type="checkbox" id="format_on_save" name="format_on_save">
+<label for="format_on_save"></label>
+<label for="format_on_save" class="ios-toggle-mega-label"></label>
+</span>
+</div>
+</div>
+</div>
+
+<div class="settings-row top-label-form normal-labels">
+<h4><label for="tab-size">Indent width</label></h4>
+<div class="custom-select-wrap">
+<select id="tab-size" class="fullwidth" name="tab-size">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+</select>
+<div class="select-icon">
+<svg class="icon-arrow-down-mini">
+<use xlink:href="/svgs/compiled/svgs.20ea15c6.svg#arrow-down-mini"></use>
+</svg>
+<svg class="icon-arrow-down-mini">
+<use xlink:href="/svgs/compiled/svgs.20ea15c6.svg#arrow-down-mini"></use>
+</svg>
+</div>
+</div>
+</div>
+</form>
+<div class="settings-row">
+<h4>Want to change your Syntax Highlighting theme, Fonts and more?</h4>
+<p>Visit <a href="/settings/editor" target="_blank">your global Editor Settings</a>.</p>
+</div>
+</div>
+</div>
+<footer>
+<div class="save-and-close-wrap">
+<input type="button" class="button button-small green button-no-right-margin close" value="Close" id="close-settings">
+</div>
+</footer>
+</div>
+<div class="page-wrap twilight">
+<div class="boxes">
+<div class="mobile-editor-nav">
+<button id="html-toggle" class="selected"><span>HTML</span></button>
+<button id="css-toggle"><span>CSS</span></button>
+<button id="js-toggle"><span>JS</span></button>
+<button id="result-toggle" class="selected"><span>Result</span></button>
+</div>
+<div class="top-boxes editor-parent" data-number-of-editors="3" elementtiming="pen-editors">
+<div class="editor-resizer html-editor-resizer" title="Double-click to expand."></div>
+<div id="box-html" class="box box-html" data-type="html">
+<div class="powers">
+<div class="powers-drag-handle" title="Double-click to expand."></div>
+<div class="editor-actions-left">
+<button id="settings-pane-html" class="button button-medium mini-button settings-nub" data-type="html" title="Open HTML Settings">
+<svg class="icon-gear" width="10" height="10">
+ <use xlink:href="/svgs/compiled/svgs.20ea15c6.svg#gear"></use>
+</svg>
+</button>
+<h2 class="box-title html-editor-title" id="html-editor-title">
+<span class="box-title-name">
+HTML
+</span>
+<span class="box-title-preprocessor-name "></span>
+</h2>
+</div>
+<div class="editor-actions-right">
+<div class="collaborators-indicators"></div>
+<button class="button mini-button button-medium editor-dropdown-button editor-dropdown-button-html" data-dropdown="#editor-dropdown-html" aria-haspopup="true" aria-expanded="false">
+<span class="visually-hidden">
+HTML Options
+</span>
+<svg class="icon-arrow-down-mini" width="10" height="10">
+<use xlink:href="/svgs/compiled/svgs.20ea15c6.svg#arrow-down-mini"></use>
+</svg>
+</button>
+<ul id="editor-dropdown-html" class="link-list is-dropdown editor-dropdown editor-dropdown-html" data-dropdown-position="css" data-dropdown-type="html">
+<li class="editor-dropdown-list-item">
+<button id="tidy-html" class="invisible-button tidy-code-button" data-editor-type="html">
+Format HTML
+</button>
+</li>
+<li class="editor-dropdown-list-item">
+<button id="view-compiled-html" class="invisible-button view-compiled-button" data-editor-type="html">
+View Compiled HTML
+</button>
+</li>
+<li class="editor-dropdown-list-item">
+<button id="analyze-html" class="invisible-button analyze-button" data-editor-type="html">
+Analyze HTML
+</button>
+</li>
+<li class="editor-dropdown-list-item">
+<button id="maximize-html-editor" class="invisible-button maximize-button" data-editor-type="html">
+Maximize HTML Editor
+</button>
+</li>
+<li class="editor-dropdown-list-item">
+<button id="minimize-html-editor" class="invisible-button minimize-button" data-editor-type="html">
+Minimize HTML Editor
+</button>
+</li>
+<li class="editor-dropdown-list-item">
+<button id="fold-all-html" class="invisible-button fold-all-button" data-editor-type="html">
+Fold All
+</button>
+</li>
+<li class="editor-dropdown-list-item">
+<button id="unfold-all-html" class="invisible-button unfold-all-button" data-editor-type="html">
+Unfold All
+</button>
+</li>
+</ul>
+</div>
+</div>
+<div class="code-wrap">
+<pre id="html" class="code-box" aria-labeledby="html-editor-title">
+              <code>
+                &lt;section class=&quot;cd-horizontal-timeline&quot;&gt;
+	&lt;div class=&quot;timeline&quot;&gt;
+		&lt;div class=&quot;events-wrapper&quot;&gt;
+			&lt;div class=&quot;events&quot;&gt;
+				&lt;ol&gt;
+					&lt;li&gt;&lt;a href=&quot;#0&quot; data-date=&quot;01/01/2017&quot; class=&quot;selected&quot;&gt;Jan 2017&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href=&quot;#0&quot; data-date=&quot;01/09/2017&quot;&gt;Sep 2017&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href=&quot;#0&quot; data-date=&quot;01/12/2017&quot;&gt;Dec 2017&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href=&quot;#0&quot; data-date=&quot;01/03/2018&quot;&gt;Mar 2018&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href=&quot;#0&quot; data-date=&quot;09/05/2018&quot;&gt;June 2018&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#0&quot; data-date=&quot;01/01/2019&quot;&gt;Jan 2019&lt;/a&gt;&lt;/li&gt;
+				&lt;/ol&gt;
+
+				&lt;span class=&quot;filling-line&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+			&lt;/div&gt; &lt;!-- .events --&gt;
+		&lt;/div&gt; &lt;!-- .events-wrapper --&gt;
+			
+		&lt;ul class=&quot;cd-timeline-navigation&quot;&gt;
+			&lt;li&gt;&lt;a href=&quot;#0&quot; class=&quot;prev inactive&quot;&gt;Prev&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href=&quot;#0&quot; class=&quot;next&quot;&gt;Next&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt; &lt;!-- .cd-timeline-navigation --&gt;
+	&lt;/div&gt; &lt;!-- .timeline --&gt;
+
+	&lt;div class=&quot;events-content&quot;&gt;
+		&lt;ol&gt;
+			&lt;li class=&quot;selected&quot; data-date=&quot;16/01/2014&quot;&gt;
+				&lt;h2&gt;An Introduction to Infosec&lt;/h2&gt;
+        &lt;em&gt;January, 2017&lt;/em&gt;
+				&lt;p&gt;	
+					Back in January, 2017 I began my journey of studies into different areas of infosec to see if it was a challenge I would enjoy and a future prospect for further learning through college.
+				&lt;/p&gt;
+			&lt;/li&gt;
+
+			&lt;li data-date=&quot;01/09/2017&quot;&gt;
+				&lt;h2&gt;Fanshawe College Cyber Security&lt;/h2&gt;
+				&lt;em&gt;September, 2017&lt;/em&gt;
+				&lt;p&gt;	
+					In September, 2018 I enrolled into the Cyber Security course at Fanshawe College.
+				&lt;/p&gt;&lt;br&gt;
+        &lt;p&gt;Key courses include: &lt;/p&gt;
+			&lt;/li&gt;
+
+			&lt;li data-date=&quot;01/12/2017&quot;&gt;
+				&lt;h2&gt;CTF&lt;/h2&gt;
+				&lt;em&gt;December, 2017&lt;/em&gt;
+				&lt;p&gt;	
+					Participated in CTF.
+				&lt;/p&gt;
+			&lt;/li&gt;
+
+			&lt;li data-date=&quot;01/03/2018&quot;&gt;
+				&lt;h2&gt;Event title here&lt;/h2&gt;
+				&lt;em&gt;May 20th, 2014&lt;/em&gt;
+				&lt;p&gt;	
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				&lt;/p&gt;
+			&lt;/li&gt;
+
+			&lt;li data-date=&quot;09/07/2014&quot;&gt;
+				&lt;h2&gt;Event title here&lt;/h2&gt;
+				&lt;em&gt;July 9th, 2014&lt;/em&gt;
+				&lt;p&gt;	
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				&lt;/p&gt;
+			&lt;/li&gt;
+
+			&lt;li data-date=&quot;30/08/2014&quot;&gt;
+				&lt;h2&gt;Event title here&lt;/h2&gt;
+				&lt;em&gt;August 30th, 2014&lt;/em&gt;
+				&lt;p&gt;	
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				&lt;/p&gt;
+			&lt;/li&gt;
+
+			&lt;li data-date=&quot;15/09/2014&quot;&gt;
+				&lt;h2&gt;Event title here&lt;/h2&gt;
+				&lt;em&gt;September 15th, 2014&lt;/em&gt;
+				&lt;p&gt;	
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				&lt;/p&gt;
+			&lt;/li&gt;
+
+			&lt;li data-date=&quot;01/11/2014&quot;&gt;
+				&lt;h2&gt;Event title here&lt;/h2&gt;
+				&lt;em&gt;November 1st, 2014&lt;/em&gt;
+				&lt;p&gt;	
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				&lt;/p&gt;
+			&lt;/li&gt;
+
+			&lt;li data-date=&quot;10/12/2014&quot;&gt;
+				&lt;h2&gt;Event title here&lt;/h2&gt;
+				&lt;em&gt;December 10th, 2014&lt;/em&gt;
+				&lt;p&gt;	
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				&lt;/p&gt;
+			&lt;/li&gt;
+
+			&lt;li data-date=&quot;19/01/2015&quot;&gt;
+				&lt;h2&gt;Event title here&lt;/h2&gt;
+				&lt;em&gt;January 19th, 2015&lt;/em&gt;
+				&lt;p&gt;	
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				&lt;/p&gt;
+			&lt;/li&gt;
+
+			&lt;li data-date=&quot;03/03/2015&quot;&gt;
+				&lt;h2&gt;Event title here&lt;/h2&gt;
+				&lt;em&gt;March 3rd, 2015&lt;/em&gt;
+				&lt;p&gt;	
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+				&lt;/p&gt;
+			&lt;/li&gt;
+		&lt;/ol&gt;
+	&lt;/div&gt; &lt;!-- .events-content --&gt;
+&lt;/section&gt;
+	
+              </code>
+            </pre>
+<div class="error-bar" id="error-bar-html">
+<span class="error-icon" data-type="html">
+!
+</span>
+</div>
+</div>
+</div>
+<div class="editor-resizer css-editor-resizer" title="Double-click to expand."></div>
+<div id="box-css" class="box box-css" data-type="css">
+<div class="powers">
+<div class="powers-drag-handle" title="Double-click to expand."></div>
+<div class="editor-actions-left">
+<button id="settings-pane-css" class="button button-medium mini-button settings-nub" data-type="css" title="Open CSS Settings">
+<svg class="icon-gear" width="10" height="10">
+<use xlink:href="/svgs/compiled/svgs.20ea15c6.svg#gear"></use>
+</svg>
+</button>
+<h2 class="box-title css-editor-title" id="css-editor-title">
+<span class="box-title-name">
+CSS
+</span>
+<span class="box-title-preprocessor-name "></span>
+</h2>
+</div>
+<div class="editor-actions-right">
+<div class="collaborators-indicators"></div>
+<button class="button mini-button button-medium editor-dropdown-button editor-dropdown-button-css" data-dropdown="#editor-dropdown-css" aria-haspopup="true" aria-expanded="false">
+<span class="visually-hidden">
+CSS Options
+</span>
+<svg class="icon-arrow-down-mini" width="10" height="10">
+<use xlink:href="/svgs/compiled/svgs.20ea15c6.svg#arrow-down-mini"></use>
+</svg>
+</button>
+<ul id="editor-dropdown-css" class="link-list is-dropdown editor-dropdown editor-dropdown-css" data-dropdown-position="css" data-dropdown-type="css">
+<li class="editor-dropdown-list-item">
+<button id="tidy-css" class="invisible-button tidy-code-button" data-editor-type="css">
+Format CSS
+</button>
+</li>
+<li class="editor-dropdown-list-item">
+<button id="view-compiled-css" class="invisible-button view-compiled-button" data-editor-type="css">
+View Compiled CSS
+</button>
+</li>
+<li class="editor-dropdown-list-item">
+<button id="analyze-css" class="invisible-button analyze-button" data-editor-type="css">
+Analyze CSS
+</button>
+</li>
+<li class="editor-dropdown-list-item">
+<button id="maximize-css-editor" class="invisible-button maximize-button" data-editor-type="css">
+Maximize CSS Editor
+</button>
+</li>
+<li class="editor-dropdown-list-item">
+<button id="minimize-css-editor" class="invisible-button minimize-button" data-editor-type="css">
+Minimize CSS Editor
+</button>
+</li>
+<li class="editor-dropdown-list-item">
+<button id="fold-all-css" class="invisible-button fold-all-button" data-editor-type="css">
+Fold All
+</button>
+</li>
+<li class="editor-dropdown-list-item">
+<button id="unfold-all-css" class="invisible-button unfold-all-button" data-editor-type="css">
+Unfold All
+</button>
+</li>
+</ul>
+</div>
+</div>
+<div class="code-wrap">
+<pre id="css" class="code-box" aria-labeledby="css-editor-title">
+              <code>
+                @import url(&#39;https://fonts.googleapis.com/css?family=Ubuntu&#39;);
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1em;
+  font-family: &quot;Ubuntu&quot;, sans-serif;
+  color: #fff;
+  background-color: #261C21;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* -------------------------------- 
+
+Main Components 
+
+-------------------------------- */
+.cd-horizontal-timeline {
+  opacity: 0;
+  margin: 2em auto;
+  -webkit-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+.cd-horizontal-timeline::before {
+  /* never visible - this is used in jQuery to check the current MQ */
+  content: &#39;mobile&#39;;
+  display: none;
+}
+.cd-horizontal-timeline.loaded {
+  /* show the timeline after events position has been set (using JavaScript) */
+  opacity: 1;
+}
+.cd-horizontal-timeline .timeline {
+  position: relative;
+  height: 100px;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.cd-horizontal-timeline .events-wrapper {
+  position: relative;
+  height: 100%;
+  margin: 0 40px;
+  overflow: hidden;
+}
+.cd-horizontal-timeline .events-wrapper::after, .cd-horizontal-timeline .events-wrapper::before {
+  /* these are used to create a shadow effect at the sides of the timeline */
+  content: &#39;&#39;;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  height: 100%;
+  width: 20px;
+}
+.cd-horizontal-timeline .events-wrapper::before {
+  left: 0;
+}
+.cd-horizontal-timeline .events-wrapper::after {
+  right: 0;
+}
+.cd-horizontal-timeline .events {
+  /* this is the grey line/timeline */
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 49px;
+  height: 2px;
+  /* width will be set using JavaScript */
+  background: #fff;
+  -webkit-transition: -webkit-transform 0.4s;
+  -moz-transition: -moz-transform 0.4s;
+  transition: transform 0.4s;
+}
+.cd-horizontal-timeline .filling-line {
+  /* this is used to create the green line filling the timeline */
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #FF3D7F;
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  -o-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -ms-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+  -webkit-transition: -webkit-transform 0.3s;
+  -moz-transition: -moz-transform 0.3s;
+  transition: transform 0.3s;
+}
+.cd-horizontal-timeline .events a {
+  position: absolute;
+  width:100px;
+  bottom: 0;
+  z-index: 2;
+  text-align: center;
+  font-size: 1.3rem;
+  padding-bottom: 15px;
+  color: #383838;
+  /* fix bug on Safari - text flickering while timeline translates */
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  color:white;
+  padding:5px;
+  margin-bottom:20px;
+}
+/* custom*/
+.cd-horizontal-timeline .events a::before {
+  content: &#39;&#39;;
+  position: absolute;
+  width:1px;
+  height:20px;
+  background: #fff;
+  bottom:-20px;
+  left:50%;
+}
+
+.cd-horizontal-timeline .events a::after {
+  /* this is used to create the event spot */
+  content: &#39;&#39;;
+  position: absolute;
+  left: 50%;
+  right: auto;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  bottom: -25px;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background-color: #fff;
+  -webkit-transition: background-color 0.3s, border-color 0.3s;
+  -moz-transition: background-color 0.3s, border-color 0.3s;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+.no-touch .cd-horizontal-timeline .events a:hover::after {
+  background-color: #FF3D7F;
+  border-color: #fff;
+}
+.cd-horizontal-timeline .events a.selected {
+  pointer-events: none;
+}
+.cd-horizontal-timeline .events a.selected::after {
+  background-color: #FF3D7F;
+  border-color: #FF3D7F;
+}
+.cd-horizontal-timeline .events a.older-event::after {
+  border-color: #FF3D7F;
+}
+@media only screen and (min-width: 1100px) {
+  .cd-horizontal-timeline {
+    margin: 6em auto;
+  }
+  .cd-horizontal-timeline::before {
+    /* never visible - this is used in jQuery to check the current MQ */
+    content: &#39;desktop&#39;;
+  }
+}
+
+.cd-timeline-navigation a {
+  /* these are the left/right arrows to navigate the timeline */
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  /* replace text with an icon */
+  overflow: hidden;
+  color: transparent;
+  text-indent: 100%;
+  white-space: nowrap;
+  -webkit-transition: border-color 0.3s;
+  -moz-transition: border-color 0.3s;
+  transition: border-color 0.3s;
+}
+.cd-timeline-navigation a::after {
+  /* arrow icon */
+  content: &#39;&#39;;
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRw%0D%0AOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjE2cHgiIGhl%0D%0AaWdodD0iMzJweCIgdmlld0JveD0iMCAwIDE2IDMyIj48ZyAgdHJhbnNmb3JtPSJ0cmFuc2xhdGUo%0D%0AMCwgMCkiPjxwb2x5Z29uIGZpbGw9IiM3YjlkNmYiIHBvaW50cz0iNiwxMy40IDQuNiwxMiA4LjYs%0D%0AOCA0LjYsNCA2LDIuNiAxMS40LDggIi8+PC9nPjxnICB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLCAx%0D%0ANikiPjxwb2x5Z29uIGZpbGw9IiNkZmRmZGYiIHBvaW50cz0iNiwxMy40IDQuNiwxMiA4LjYsOCA0%0D%0ALjYsNCA2LDIuNiAxMS40LDggIi8+PC9nPjwvc3ZnPg==) no-repeat 0 0;
+}
+.cd-timeline-navigation a.prev {
+  left: 0;
+  -webkit-transform: translateY(-50%) rotate(180deg);
+  -moz-transform: translateY(-50%) rotate(180deg);
+  -ms-transform: translateY(-50%) rotate(180deg);
+  -o-transform: translateY(-50%) rotate(180deg);
+  transform: translateY(-50%) rotate(180deg);
+}
+.cd-timeline-navigation a.next {
+  right: 0;
+  color: #fff;
+}
+.no-touch .cd-timeline-navigation a:hover {
+  border-color: #FF3D7F;
+}
+.cd-timeline-navigation a.inactive {
+  cursor: not-allowed;
+}
+.cd-timeline-navigation a.inactive::after {
+  background-position: 0 -16px;
+}
+.no-touch .cd-timeline-navigation a.inactive:hover {
+  border-color: #FF3D7F;
+}
+
+.cd-horizontal-timeline .events-content {
+  position: relative;
+  width: 100%;
+  margin: 2em 0;
+  overflow: hidden;
+  -webkit-transition: height 0.4s;
+  -moz-transition: height 0.4s;
+  transition: height 0.4s;
+}
+.cd-horizontal-timeline .events-content li {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  left: 0;
+  top: 0;
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  transform: translateX(-100%);
+  padding: 0 5%;
+  opacity: 0;
+  -webkit-animation-duration: 0.4s;
+  -moz-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+}
+.cd-horizontal-timeline .events-content li.selected {
+  /* visible event content */
+  position: relative;
+  z-index: 2;
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+.cd-horizontal-timeline .events-content li.enter-right, .cd-horizontal-timeline .events-content li.leave-right {
+  -webkit-animation-name: cd-enter-right;
+  -moz-animation-name: cd-enter-right;
+  animation-name: cd-enter-right;
+}
+.cd-horizontal-timeline .events-content li.enter-left, .cd-horizontal-timeline .events-content li.leave-left {
+  -webkit-animation-name: cd-enter-left;
+  -moz-animation-name: cd-enter-left;
+  animation-name: cd-enter-left;
+}
+.cd-horizontal-timeline .events-content li.leave-right, .cd-horizontal-timeline .events-content li.leave-left {
+  -webkit-animation-direction: reverse;
+  -moz-animation-direction: reverse;
+  animation-direction: reverse;
+}
+.cd-horizontal-timeline .events-content li &gt; * {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.cd-horizontal-timeline .events-content h2 {
+  font-weight: bold;
+  font-size: 3em !important;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.cd-horizontal-timeline .events-content em {
+  display: block;
+  font-style: italic;
+  margin: 10px auto;
+}
+.cd-horizontal-timeline .events-content em::before {
+  content: &#39;- &#39;;
+}
+.cd-horizontal-timeline .events-content p {
+  font-size: 1.5em !important;
+  color: #fff;
+}
+.cd-horizontal-timeline .events-content em, .cd-horizontal-timeline .events-content p {
+  line-height: 1.6;
+}
+@media only screen and (min-width: 768px) {
+  .cd-horizontal-timeline .events-content h2 {
+    font-size: 7rem;
+  }
+  .cd-horizontal-timeline .events-content em {
+    font-size: 1.5em !important;
+  }
+  .cd-horizontal-timeline .events-content p {
+    font-size: 1.8rem;
+  }
+}
+
+@-webkit-keyframes cd-enter-right {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+  }
+}
+@-moz-keyframes cd-enter-right {
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: translateX(0%);
+  }
+}
+@keyframes cd-enter-right {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+}
+@-webkit-keyframes cd-enter-left {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+  }
+}
+@-moz-keyframes cd-enter-left {
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    -moz-transform: translateX(0%);
+  }
+}
+@keyframes cd-enter-left {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+}
+              </code>
+            </pre>
+<div class="error-bar" id="error-bar-css">
+<span class="error-icon" data-type="css">
+ !
+</span>
+</div>
+</div>
+</div>
+<div class="editor-resizer js-editor-resizer" title="Double-click to expand."></div>
+<div id="box-js" class="box box-js" data-type="js">
+<div class="powers">
+<div class="powers-drag-handle" title="Double-click to expand."></div>
+<div class="editor-actions-left">
+<button id="settings-pane-js" class="button button-medium mini-button settings-nub" data-type="js" title="Open JS Settings">
+<svg class="icon-gear" width="10" height="10">
+<use xlink:href="/svgs/compiled/svgs.20ea15c6.svg#gear"></use>
+</svg>
+</button>
+<h2 class="box-title js-editor-title" id="js-editor-title">
+<span class="box-title-name">
+JS
+</span>
+<span class="box-title-preprocessor-name "></span>
+</h2>
+</div>
+<div class="editor-actions-right">
+<div class="collaborators-indicators"></div>
+<button class="button mini-button button-medium editor-dropdown-button editor-dropdown-button-js" data-dropdown="#editor-dropdown-js" aria-haspopup="true" aria-expanded="false">
+<span class="visually-hidden">
+JS Options
+</span>
+<svg class="icon-arrow-down-mini" width="10" height="10">
+<use xlink:href="/svgs/compiled/svgs.20ea15c6.svg#arrow-down-mini"></use>
+</svg>
+</button>
+<ul id="editor-dropdown-js" class="link-list is-dropdown editor-dropdown editor-dropdown-js" data-dropdown-position="css" data-dropdown-type="js">
+<li class="editor-dropdown-list-item">
+<button id="tidy-js" class="invisible-button tidy-code-button" data-editor-type="js">
+Format JavaScript
+</button>
+</li>
+<li class="editor-dropdown-list-item">
+<button id="view-compiled-js" class="invisible-button view-compiled-button" data-editor-type="js">
+View Compiled JavaScript
+</button>
+</li>
+<li class="editor-dropdown-list-item">
+<button id="analyze-js" class="invisible-button analyze-button" data-editor-type="js">
+Analyze JavaScript
+</button>
+</li>
+<li class="editor-dropdown-list-item">
+<button id="maximize-js-editor" class="invisible-button maximize-button" data-editor-type="js">
+Maximize JavaScript Editor
+</button>
+</li>
+<li class="editor-dropdown-list-item">
+<button id="minimize-js-editor" class="invisible-button minimize-button" data-editor-type="js">
+Minimize JavaScript Editor
+</button>
+</li>
+<li class="editor-dropdown-list-item">
+<button id="fold-all-js" class="invisible-button fold-all-button" data-editor-type="js">
+Fold All
+</button>
+</li>
+<li class="editor-dropdown-list-item">
+<button id="unfold-all-js" class="invisible-button unfold-all-button" data-editor-type="js">
+Unfold All
+</button>
+</li>
+</ul>
+</div>
+</div>
+<div class="code-wrap">
+<pre id="js" class="code-box" aria-labeledby="js-editor-title">
+              <code>
+                jQuery(document).ready(function($){
+	var timelines = $(&#39;.cd-horizontal-timeline&#39;),
+		eventsMinDistance = 70;
+
+	(timelines.length &gt; 0) &amp;&amp; initTimeline(timelines);
+
+	function initTimeline(timelines) {
+		timelines.each(function(){
+			var timeline = $(this),
+				timelineComponents = {};
+			//cache timeline components 
+			timelineComponents[&#39;timelineWrapper&#39;] = timeline.find(&#39;.events-wrapper&#39;);
+			timelineComponents[&#39;eventsWrapper&#39;] = timelineComponents[&#39;timelineWrapper&#39;].children(&#39;.events&#39;);
+			timelineComponents[&#39;fillingLine&#39;] = timelineComponents[&#39;eventsWrapper&#39;].children(&#39;.filling-line&#39;);
+			timelineComponents[&#39;timelineEvents&#39;] = timelineComponents[&#39;eventsWrapper&#39;].find(&#39;a&#39;);
+			timelineComponents[&#39;timelineDates&#39;] = parseDate(timelineComponents[&#39;timelineEvents&#39;]);
+			timelineComponents[&#39;eventsMinLapse&#39;] = minLapse(timelineComponents[&#39;timelineDates&#39;]);
+			timelineComponents[&#39;timelineNavigation&#39;] = timeline.find(&#39;.cd-timeline-navigation&#39;);
+			timelineComponents[&#39;eventsContent&#39;] = timeline.children(&#39;.events-content&#39;);
+
+			//assign a left postion to the single events along the timeline
+			setDatePosition(timelineComponents, eventsMinDistance);
+			//assign a width to the timeline
+			var timelineTotWidth = setTimelineWidth(timelineComponents, eventsMinDistance);
+			//the timeline has been initialize - show it
+			timeline.addClass(&#39;loaded&#39;);
+
+			//detect click on the next arrow
+			timelineComponents[&#39;timelineNavigation&#39;].on(&#39;click&#39;, &#39;.next&#39;, function(event){
+				event.preventDefault();
+				updateSlide(timelineComponents, timelineTotWidth, &#39;next&#39;);
+			});
+			//detect click on the prev arrow
+			timelineComponents[&#39;timelineNavigation&#39;].on(&#39;click&#39;, &#39;.prev&#39;, function(event){
+				event.preventDefault();
+				updateSlide(timelineComponents, timelineTotWidth, &#39;prev&#39;);
+			});
+			//detect click on the a single event - show new event content
+			timelineComponents[&#39;eventsWrapper&#39;].on(&#39;click&#39;, &#39;a&#39;, function(event){
+				event.preventDefault();
+				timelineComponents[&#39;timelineEvents&#39;].removeClass(&#39;selected&#39;);
+				$(this).addClass(&#39;selected&#39;);
+				updateOlderEvents($(this));
+				updateFilling($(this), timelineComponents[&#39;fillingLine&#39;], timelineTotWidth);
+				updateVisibleContent($(this), timelineComponents[&#39;eventsContent&#39;]);
+			});
+
+			//on swipe, show next/prev event content
+			timelineComponents[&#39;eventsContent&#39;].on(&#39;swipeleft&#39;, function(){
+				var mq = checkMQ();
+				( mq == &#39;mobile&#39; ) &amp;&amp; showNewContent(timelineComponents, timelineTotWidth, &#39;next&#39;);
+			});
+			timelineComponents[&#39;eventsContent&#39;].on(&#39;swiperight&#39;, function(){
+				var mq = checkMQ();
+				( mq == &#39;mobile&#39; ) &amp;&amp; showNewContent(timelineComponents, timelineTotWidth, &#39;prev&#39;);
+			});
+
+			//keyboard navigation
+			$(document).keyup(function(event){
+				if(event.which==&#39;37&#39; &amp;&amp; elementInViewport(timeline.get(0)) ) {
+					showNewContent(timelineComponents, timelineTotWidth, &#39;prev&#39;);
+				} else if( event.which==&#39;39&#39; &amp;&amp; elementInViewport(timeline.get(0))) {
+					showNewContent(timelineComponents, timelineTotWidth, &#39;next&#39;);
+				}
+			});
+		});
+	}
+
+	function updateSlide(timelineComponents, timelineTotWidth, string) {
+		//retrieve translateX value of timelineComponents[&#39;eventsWrapper&#39;]
+		var translateValue = getTranslateValue(timelineComponents[&#39;eventsWrapper&#39;]),
+			wrapperWidth = Number(timelineComponents[&#39;timelineWrapper&#39;].css(&#39;width&#39;).replace(&#39;px&#39;, &#39;&#39;));
+		//translate the timeline to the left(&#39;next&#39;)/right(&#39;prev&#39;) 
+		(string == &#39;next&#39;) 
+			? translateTimeline(timelineComponents, translateValue - wrapperWidth + eventsMinDistance, wrapperWidth - timelineTotWidth)
+			: translateTimeline(timelineComponents, translateValue + wrapperWidth - eventsMinDistance);
+	}
+
+	function showNewContent(timelineComponents, timelineTotWidth, string) {
+		//go from one event to the next/previous one
+		var visibleContent =  timelineComponents[&#39;eventsContent&#39;].find(&#39;.selected&#39;),
+			newContent = ( string == &#39;next&#39; ) ? visibleContent.next() : visibleContent.prev();
+
+		if ( newContent.length &gt; 0 ) { //if there&#39;s a next/prev event - show it
+			var selectedDate = timelineComponents[&#39;eventsWrapper&#39;].find(&#39;.selected&#39;),
+				newEvent = ( string == &#39;next&#39; ) ? selectedDate.parent(&#39;li&#39;).next(&#39;li&#39;).children(&#39;a&#39;) : selectedDate.parent(&#39;li&#39;).prev(&#39;li&#39;).children(&#39;a&#39;);
+			
+			updateFilling(newEvent, timelineComponents[&#39;fillingLine&#39;], timelineTotWidth);
+			updateVisibleContent(newEvent, timelineComponents[&#39;eventsContent&#39;]);
+			newEvent.addClass(&#39;selected&#39;);
+			selectedDate.removeClass(&#39;selected&#39;);
+			updateOlderEvents(newEvent);
+			updateTimelinePosition(string, newEvent, timelineComponents, timelineTotWidth);
+		}
+	}
+
+	function updateTimelinePosition(string, event, timelineComponents, timelineTotWidth) {
+		//translate timeline to the left/right according to the position of the selected event
+		var eventStyle = window.getComputedStyle(event.get(0), null),
+			eventLeft = Number(eventStyle.getPropertyValue(&quot;left&quot;).replace(&#39;px&#39;, &#39;&#39;)),
+			timelineWidth = Number(timelineComponents[&#39;timelineWrapper&#39;].css(&#39;width&#39;).replace(&#39;px&#39;, &#39;&#39;)),
+			timelineTotWidth = Number(timelineComponents[&#39;eventsWrapper&#39;].css(&#39;width&#39;).replace(&#39;px&#39;, &#39;&#39;));
+		var timelineTranslate = getTranslateValue(timelineComponents[&#39;eventsWrapper&#39;]);
+
+        if( (string == &#39;next&#39; &amp;&amp; eventLeft &gt; timelineWidth - timelineTranslate) || (string == &#39;prev&#39; &amp;&amp; eventLeft &lt; - timelineTranslate) ) {
+        	translateTimeline(timelineComponents, - eventLeft + timelineWidth/2, timelineWidth - timelineTotWidth);
+        }
+	}
+
+	function translateTimeline(timelineComponents, value, totWidth) {
+		var eventsWrapper = timelineComponents[&#39;eventsWrapper&#39;].get(0);
+		value = (value &gt; 0) ? 0 : value; //only negative translate value
+		value = ( !(typeof totWidth === &#39;undefined&#39;) &amp;&amp;  value &lt; totWidth ) ? totWidth : value; //do not translate more than timeline width
+		setTransformValue(eventsWrapper, &#39;translateX&#39;, value+&#39;px&#39;);
+		//update navigation arrows visibility
+		(value == 0 ) ? timelineComponents[&#39;timelineNavigation&#39;].find(&#39;.prev&#39;).addClass(&#39;inactive&#39;) : timelineComponents[&#39;timelineNavigation&#39;].find(&#39;.prev&#39;).removeClass(&#39;inactive&#39;);
+		(value == totWidth ) ? timelineComponents[&#39;timelineNavigation&#39;].find(&#39;.next&#39;).addClass(&#39;inactive&#39;) : timelineComponents[&#39;timelineNavigation&#39;].find(&#39;.next&#39;).removeClass(&#39;inactive&#39;);
+	}
+
+	function updateFilling(selectedEvent, filling, totWidth) {
+		//change .filling-line length according to the selected event
+		var eventStyle = window.getComputedStyle(selectedEvent.get(0), null),
+			eventLeft = eventStyle.getPropertyValue(&quot;left&quot;),
+			eventWidth = eventStyle.getPropertyValue(&quot;width&quot;);
+		eventLeft = Number(eventLeft.replace(&#39;px&#39;, &#39;&#39;)) + Number(eventWidth.replace(&#39;px&#39;, &#39;&#39;))/2;
+		var scaleValue = eventLeft/totWidth;
+		setTransformValue(filling.get(0), &#39;scaleX&#39;, scaleValue);
+	}
+
+	function setDatePosition(timelineComponents, min) {
+		for (i = 0; i &lt; timelineComponents[&#39;timelineDates&#39;].length; i++) { 
+		    var distance = daydiff(timelineComponents[&#39;timelineDates&#39;][0], timelineComponents[&#39;timelineDates&#39;][i]),
+		    	distanceNorm = Math.round(distance/timelineComponents[&#39;eventsMinLapse&#39;]) + 2;
+		    timelineComponents[&#39;timelineEvents&#39;].eq(i).css(&#39;left&#39;, distanceNorm*min+&#39;px&#39;);
+		}
+	}
+
+	function setTimelineWidth(timelineComponents, width) {
+		var timeSpan = daydiff(timelineComponents[&#39;timelineDates&#39;][0], timelineComponents[&#39;timelineDates&#39;][timelineComponents[&#39;timelineDates&#39;].length-1]),
+			timeSpanNorm = timeSpan/timelineComponents[&#39;eventsMinLapse&#39;],
+			timeSpanNorm = Math.round(timeSpanNorm) + 4,
+			totalWidth = timeSpanNorm*width;
+		timelineComponents[&#39;eventsWrapper&#39;].css(&#39;width&#39;, totalWidth+&#39;px&#39;);
+		updateFilling(timelineComponents[&#39;timelineEvents&#39;].eq(0), timelineComponents[&#39;fillingLine&#39;], totalWidth);
+	
+		return totalWidth;
+	}
+
+	function updateVisibleContent(event, eventsContent) {
+		var eventDate = event.data(&#39;date&#39;),
+			visibleContent = eventsContent.find(&#39;.selected&#39;),
+			selectedContent = eventsContent.find(&#39;[data-date=&quot;&#39;+ eventDate +&#39;&quot;]&#39;),
+			selectedContentHeight = selectedContent.height();
+
+		if (selectedContent.index() &gt; visibleContent.index()) {
+			var classEnetering = &#39;selected enter-right&#39;,
+				classLeaving = &#39;leave-left&#39;;
+		} else {
+			var classEnetering = &#39;selected enter-left&#39;,
+				classLeaving = &#39;leave-right&#39;;
+		}
+
+		selectedContent.attr(&#39;class&#39;, classEnetering);
+		visibleContent.attr(&#39;class&#39;, classLeaving).one(&#39;webkitAnimationEnd oanimationend msAnimationEnd animationend&#39;, function(){
+			visibleContent.removeClass(&#39;leave-right leave-left&#39;);
+			selectedContent.removeClass(&#39;enter-left enter-right&#39;);
+		});
+		eventsContent.css(&#39;height&#39;, selectedContentHeight+&#39;px&#39;);
+	}
+
+	function updateOlderEvents(event) {
+		event.parent(&#39;li&#39;).prevAll(&#39;li&#39;).children(&#39;a&#39;).addClass(&#39;older-event&#39;).end().end().nextAll(&#39;li&#39;).children(&#39;a&#39;).removeClass(&#39;older-event&#39;);
+	}
+
+	function getTranslateValue(timeline) {
+		var timelineStyle = window.getComputedStyle(timeline.get(0), null),
+			timelineTranslate = timelineStyle.getPropertyValue(&quot;-webkit-transform&quot;) ||
+         		timelineStyle.getPropertyValue(&quot;-moz-transform&quot;) ||
+         		timelineStyle.getPropertyValue(&quot;-ms-transform&quot;) ||
+         		timelineStyle.getPropertyValue(&quot;-o-transform&quot;) ||
+         		timelineStyle.getPropertyValue(&quot;transform&quot;);
+
+        if( timelineTranslate.indexOf(&#39;(&#39;) &gt;=0 ) {
+        	var timelineTranslate = timelineTranslate.split(&#39;(&#39;)[1];
+    		timelineTranslate = timelineTranslate.split(&#39;)&#39;)[0];
+    		timelineTranslate = timelineTranslate.split(&#39;,&#39;);
+    		var translateValue = timelineTranslate[4];
+        } else {
+        	var translateValue = 0;
+        }
+
+        return Number(translateValue);
+	}
+
+	function setTransformValue(element, property, value) {
+		element.style[&quot;-webkit-transform&quot;] = property+&quot;(&quot;+value+&quot;)&quot;;
+		element.style[&quot;-moz-transform&quot;] = property+&quot;(&quot;+value+&quot;)&quot;;
+		element.style[&quot;-ms-transform&quot;] = property+&quot;(&quot;+value+&quot;)&quot;;
+		element.style[&quot;-o-transform&quot;] = property+&quot;(&quot;+value+&quot;)&quot;;
+		element.style[&quot;transform&quot;] = property+&quot;(&quot;+value+&quot;)&quot;;
+	}
+
+	//based on http://stackoverflow.com/questions/542938/how-do-i-get-the-number-of-days-between-two-dates-in-javascript
+	function parseDate(events) {
+		var dateArrays = [];
+		events.each(function(){
+			var dateComp = $(this).data(&#39;date&#39;).split(&#39;/&#39;),
+				newDate = new Date(dateComp[2], dateComp[1]-1, dateComp[0]);
+			dateArrays.push(newDate);
+		});
+	    return dateArrays;
+	}
+
+	function parseDate2(events) {
+		var dateArrays = [];
+		events.each(function(){
+			var singleDate = $(this),
+				dateComp = singleDate.data(&#39;date&#39;).split(&#39;T&#39;);
+			if( dateComp.length &gt; 1 ) { //both DD/MM/YEAR and time are provided
+				var dayComp = dateComp[0].split(&#39;/&#39;),
+					timeComp = dateComp[1].split(&#39;:&#39;);
+			} else if( dateComp[0].indexOf(&#39;:&#39;) &gt;=0 ) { //only time is provide
+				var dayComp = [&quot;2000&quot;, &quot;0&quot;, &quot;0&quot;],
+					timeComp = dateComp[0].split(&#39;:&#39;);
+			} else { //only DD/MM/YEAR
+				var dayComp = dateComp[0].split(&#39;/&#39;),
+					timeComp = [&quot;0&quot;, &quot;0&quot;];
+			}
+			var	newDate = new Date(dayComp[2], dayComp[1]-1, dayComp[0], timeComp[0], timeComp[1]);
+			dateArrays.push(newDate);
+		});
+	    return dateArrays;
+	}
+
+	function daydiff(first, second) {
+	    return Math.round((second-first));
+	}
+
+	function minLapse(dates) {
+		//determine the minimum distance among events
+		var dateDistances = [];
+		for (i = 1; i &lt; dates.length; i++) { 
+		    var distance = daydiff(dates[i-1], dates[i]);
+		    dateDistances.push(distance);
+		}
+		return Math.min.apply(null, dateDistances);
+	}
+
+	/*
+		How to tell if a DOM element is visible in the current viewport?
+		http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
+	*/
+	function elementInViewport(el) {
+		var top = el.offsetTop;
+		var left = el.offsetLeft;
+		var width = el.offsetWidth;
+		var height = el.offsetHeight;
+
+		while(el.offsetParent) {
+		    el = el.offsetParent;
+		    top += el.offsetTop;
+		    left += el.offsetLeft;
+		}
+
+		return (
+		    top &lt; (window.pageYOffset + window.innerHeight) &amp;&amp;
+		    left &lt; (window.pageXOffset + window.innerWidth) &amp;&amp;
+		    (top + height) &gt; window.pageYOffset &amp;&amp;
+		    (left + width) &gt; window.pageXOffset
+		);
+	}
+
+	function checkMQ() {
+		//check if mobile or desktop device
+		return window.getComputedStyle(document.querySelector(&#39;.cd-horizontal-timeline&#39;), &#39;::before&#39;).getPropertyValue(&#39;content&#39;).replace(/&#39;/g, &quot;&quot;).replace(/&quot;/g, &quot;&quot;);
+	}
+});
+              </code>
+            </pre>
+<div class="error-bar" id="error-bar-js">
+<span class="error-icon" data-type="js">
+!
+</span>
+</div>
+</div>
+</div>
+</div>
+<div id="resizer" class="resizer"><span></span><div id="width-readout" class="width-readout">999px</div></div>
+<section id="drawer" class="drawer comments">
+</section>
+<div class="output-container">
+<div class="output-sizer">
+<div id="result_div" class="result">
+<iframe id="result" name="CodePen" src="https://cdpn.io/carrrter/fullpage/ELLmyX" sandbox="allow-downloads allow-forms allow-modals allow-pointer-lock allow-popups allow-presentation allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; microphone; midi; payment; vr" scrolling="auto" allowTransparency="true" allowpaymentrequest="true" allowfullscreen="true" class="result-iframe ">
+          </iframe>
+<div id="editor-drag-cover" class="drag-cover"></div>
+</div>
+<div id="box-console" class="box box-console">
+<div class="editor-resizer editor-resizer-console" title="Drag to resize. Double-click to expand."></div>
+<div class="powers">
+<div class="powers-drag-handle" title="Drag to resize. Double-click to expand."></div>
+<div class="editor-actions-left">
+<h2 class="box-title"><span class="box-title-name">Console</span></h2>
+</div>
+<div class="editor-actions-right">
+<button class="button button-medium mini-button console-clear-button" title="Clear">
+Clear
+</button>
+<button class="button button-medium mini-button close-editor-button" data-type="console" title="Close">
+<svg class="icon-x">
+<use xlink:href="/svgs/compiled/svgs.20ea15c6.svg#x"></use>
+</svg>
+</button>
+</div>
+</div>
+<div class="console-wrap">
+<div class="console-entries short-no-scroll"></div>
+<div class="console-command-line">
+<span class="console-arrow forwards"></span>
+<textarea class="console-command-line-input auto-expand" rows="1" data-min-rows="1"></textarea>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="asset-bin-goes-here"></div>
+<footer id="react-pen-footer" class="site-footer editor-footer"></footer>
+<div id="keycommands" class="modal modal-neutral">
+<div class="keycommands-container">
+<section class="editor-commands" style="padding-right: 10px;">
+<h2>Editor Commands</h2>
+<div class="key-group">
+<kbd class="keycommand">
+<span class="key pc_only">Ctrl</span>
+<span class="key mac_only">Ctrl</span>
+<span class="key">Space</span>
+</kbd>
+Autocomplete
+</div>
+<div class="key-group">
+<kbd class="keycommand">
+<span class="key -command"></span>
+<span class="key">F</span>
+</kbd>
+Find
+</div>
+<div class="key-group">
+<kbd class="keycommand">
+<span class="key -command"></span>
+<span class="key">G</span>
+</kbd>
+Find Next
+</div>
+<div class="key-group">
+<kbd class="keycommand">
+<span class="key -command"></span>
+<span class="key" title="Shift">⇧</span>
+<span class="key">G</span>
+</kbd>
+Find Previous
+</div>
+<div class="key-group">
+<kbd class="keycommand">
+<span class="key -command"></span>
+<span class="key pc_only" title="Shift">⇧</span>
+<span class="key mac_only">Opt</span>
+<span class="key">F</span>
+</kbd>
+Find & Replace
+</div>
+<div class="key-group">
+<kbd class="keycommand">
+<span class="key -command"></span>
+<span class="key" title="Shift">⇧</span>
+<span class="key">F</span>
+</kbd>
+Format Code
+</div>
+<div class="key-group">
+<kbd class="keycommand">
+<span class="key -command"></span>
+<span class="key">[</span>
+</kbd>
+Indent Code Right
+</div>
+<div class="key-group">
+<kbd class="keycommand">
+<span class="key -command"></span>
+<span class="key">]</span>
+</kbd>
+Indent Code Left
+</div>
+<div class="key-group">
+<kbd class="keycommand">
+<span class="key" title="Shift">⇧</span>
+<span class="key">Tab</span>
+</kbd>
+Auto Indent Code
+</div>
+<div class="key-group">
+<kbd class="keycommand">
+<span class="key -command"></span>
+<span class="key">/</span>
+</kbd>
+Line Comment
+</div>
+<div class="key-group">
+<kbd class="keycommand">
+<span class="key -command"></span>
+<span class="key pc_only" title="Shift">⇧</span>
+<span class="key mac_only">Opt</span>
+<span class="key">/</span>
+</kbd>
+Block Comment
+</div>
+<p style="margin: 20px 0 0 0;">Also see: <a href="https://blog.codepen.io/documentation/features/tab-triggers/" target="_blank" rel="noopener">Tab Triggers</a></p>
+</section>
+<section class="editor-commands">
+<h2>Editor Focus</h2>
+<div class="key-group">
+<kbd class="keycommand">
+<span class="key -command"></span>
+<span class="key pc_only">Alt</span>
+<span class="key mac_only">Opt</span>
+<span class="key">1</span>
+</kbd>
+HTML Editor
+</div>
+<div class="key-group">
+<kbd class="keycommand">
+<span class="key -command"></span>
+<span class="key pc_only">Alt</span>
+<span class="key mac_only">Opt</span>
+<span class="key">2</span>
+</kbd>
+CSS Editor
+</div>
+<div class="key-group">
+<kbd class="keycommand">
+<span class="key -command"></span>
+<span class="key pc_only">Alt</span>
+<span class="key mac_only">Opt</span>
+<span class="key">3</span>
+</kbd>
+JS Editor
+</div>
+<div class="key-group">
+<kbd class="keycommand">
+<span class="key -command"></span>
+<span class="key pc_only">Alt</span>
+<span class="key mac_only">Opt</span>
+<span class="key">4</span>
+</kbd>
+Toggle Console
+</div>
+<div class="key-group">
+<kbd class="keycommand">
+<span class="key -command"></span>
+<span class="key pc_only">Alt</span>
+<span class="key mac_only">Opt</span>
+<span class="key">0</span>
+</kbd>
+Preview
+</div>
+<div class="key-group">
+<kbd class="keycommand">
+<span class="key">Esc</span>
+</kbd>
+Exit currently focused editor
+</div>
+</section>
+<section class="editor-commands">
+<h2>Misc</h2>
+<div class="key-group">
+<kbd class="keycommand">
+<span class="key -command"></span>
+<span class="key" title="Shift">⇧</span>
+<span class="key">7</span>
+</kbd>
+Re-run Preview
+</div>
+<div class="key-group">
+<kbd class="keycommand">
+<span class="key -command"></span>
+<span class="key" title="Shift">⇧</span>
+<span class="key">8</span>
+</kbd>
+Clear All Analyze Errors
+</div>
+<div class="key-group">
+<kbd class="keycommand">
+<span class="key -command"></span>
+<span class="key" title="Shift">⇧</span>
+<span class="key">9</span>
+</kbd>
+Open This Dialog
+</div>
+<div class="key-group">
+<kbd class="keycommand">
+<span class="key -command"></span>
+<span class="key" title="Shift">⇧</span>
+<span class="key">0</span>
+</kbd>
+Open Debug View
+</div>
+<h2>HTML Specific</h2>
+<div class="key-group">
+<kbd class="keycommand">
+<span class="key -command"></span>
+<span class="key" title="Shift">⇧</span>
+<span class="key">A</span>
+</kbd>
+Wrap With...
+</div>
+<h2>Pen Actions</h2>
+<div class="key-group">
+<kbd class="keycommand">
+<span class="key -command"></span>
+<span class="key">P</span>
+</kbd>
+Create New Pen
+</div>
+<div class="key-group">
+<kbd class="keycommand">
+<span class="key -command"></span>
+<span class="key">S</span>
+</kbd>
+Save
+</div>
+<div class="key-group">
+<kbd class="keycommand">
+<span class="key -command"></span>
+<span class="key" title="Shift">⇧</span>
+<span class="key">S</span>
+</kbd>
+Save As Private <span class="badge badge-pro text">PRO</span>
+</div>
+<div class="key-group">
+<kbd class="keycommand">
+<span class="key -command"></span>
+<span class="key">I</span>
+</kbd>
+Info Panel (if owned)
+</div>
+</section>
+</div>
+</div>
+<div id="popup-overlay" class="overlay popup-overlay"></div>
+<div id="modal-overlay" class="overlay modal-overlay"></div>
+<noscript>
+
+  <input type="checkbox" class="modal-closing-trick" id="modal-closing-trick">
+
+  <div class="overlay noscript-overlay" style="display: block;"></div>
+
+  <div class="modal modal-message group modal-warning">
+
+    <div class="modal-title">CodePen requires JavaScript to render the code and preview areas in this view.</div>
+
+    <p>Trying <a href="https://codepen.io/carrrter/debug/ELLmyX">viewing this Pen in Debug Mode</a>, which is the preview area without any iframe and does not require JavaScript. Although what the preview is of might!</p>
+
+    <p>Need to know how to enable JavaScript? <a href="http://enable-javascript.com/" target="_blank" rel="noopener">Go here.</a></p>
+
+    <label class="button button-medium" for="modal-closing-trick">Close this, use anyway.</label>
+
+  </div>
+
+</noscript>
+<input type="hidden" id="init-data" value="{&quot;__browser&quot;:{&quot;device&quot;:&quot;unknown&quot;,&quot;mobile&quot;:null,&quot;name&quot;:&quot;chrome&quot;,&quot;platform&quot;:&quot;pc&quot;,&quot;version&quot;:&quot;85&quot;},&quot;__constants&quot;:{&quot;gridIframeSandboxAttributes&quot;:&quot;allow-scripts allow-pointer-lock allow-same-origin&quot;},&quot;__CPDATA&quot;:{&quot;domain_iframe&quot;:&quot;https://cdpn.io&quot;,&quot;host&quot;:&quot;codepen.io&quot;,&quot;iframe_allow&quot;:&quot;accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; microphone; midi; payment; vr&quot;,&quot;iframe_sandbox&quot;:&quot;allow-downloads allow-forms allow-modals allow-pointer-lock allow-popups allow-presentation allow-same-origin allow-scripts allow-top-navigation-by-user-activation&quot;},&quot;__svg_sprite&quot;:&quot;/svgs/compiled/svgs.20ea15c6.svg&quot;,&quot;__stream_analytics&quot;:{&quot;api_key&quot;:&quot;64puhuch8n2j&quot;,&quot;token&quot;:&quot;eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyZXNvdXJjZSI6ImFuYWx5dGljcyIsImFjdGlvbiI6IioiLCJ1c2VyX2lkIjoiKiJ9.K-TP9-k-_ZnktGVf_CxDVZyUXKzGMFVJ--dNJ-20_t4&quot;},&quot;__user&quot;:{&quot;anon&quot;:true,&quot;base_url&quot;:&quot;/anon/&quot;,&quot;current_team_id&quot;:0,&quot;current_team_hashid&quot;:&quot;YdEzGn&quot;,&quot;hashid&quot;:&quot;VoDkNZ&quot;,&quot;id&quot;:1,&quot;itemType&quot;:&quot;user&quot;,&quot;name&quot;:&quot;Captain Anonymous&quot;,&quot;owner_id&quot;:&quot;VoDkNZYdEzGn&quot;,&quot;paid&quot;:false,&quot;tier&quot;:0,&quot;username&quot;:&quot;anon&quot;,&quot;created_at&quot;:null,&quot;email_verified&quot;:null,&quot;collections_count&quot;:0,&quot;collections_private_count&quot;:0,&quot;followers_count&quot;:0,&quot;followings_count&quot;:0,&quot;pens_count&quot;:0,&quot;pens_private_count&quot;:0,&quot;projects_count&quot;:0,&quot;projects_private_count&quot;:0},&quot;__firebase&quot;:{&quot;config&quot;:{&quot;apiKey&quot;:&quot;AIzaSyBgLAe7N_MdFpuVofMkcQLGwwhUu5tuxls&quot;,&quot;authDomain&quot;:&quot;codepen-store-production.firebaseapp.com&quot;,&quot;databaseURL&quot;:&quot;https://codepen-store-production.firebaseio.com&quot;,&quot;disabled&quot;:false,&quot;projectId&quot;:&quot;codepen-store-production&quot;},&quot;token&quot;:&quot;eyJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJodHRwczovL2lkZW50aXR5dG9vbGtpdC5nb29nbGVhcGlzLmNvbS9nb29nbGUuaWRlbnRpdHkuaWRlbnRpdHl0b29sa2l0LnYxLklkZW50aXR5VG9vbGtpdCIsImNsYWltcyI6eyJvd25lcklkIjoiVm9Ea05aWWRFekduIiwiYWRtaW4iOmZhbHNlfSwiZXhwIjoxNjAyNDk4MzA3LCJpYXQiOjE2MDI0OTQ3MDcsImlzcyI6ImZpcmViYXNlLWFkbWluc2RrLThva3lsQGNvZGVwZW4tc3RvcmUtcHJvZHVjdGlvbi5pYW0uZ3NlcnZpY2VhY2NvdW50LmNvbSIsInN1YiI6ImZpcmViYXNlLWFkbWluc2RrLThva3lsQGNvZGVwZW4tc3RvcmUtcHJvZHVjdGlvbi5pYW0uZ3NlcnZpY2VhY2NvdW50LmNvbSIsInVpZCI6IlZvRGtOWiJ9.ShXd5FEig-2NU5Co_z5QP46O81WrJTBOTv1dRObF1wGPoZGntQrChu1OxliDKYLTtaIfai2nkC-J2OCaQSUg_KYhi51MHl-iezRdPoRg1oyuVZBkBhGWiwtG8RLSq7zWtugAg5EUPS6vJ9pzMmOzQb6yHRIBvyskXqQrIwIkK6c_VYZ89HUCcDL_F0zeYELazee3MMGKCOYxK8UOZp94wQu9Gu964b2s_TvsHI-6EFWaBf0Yj-1yZ8ssTV0Jqthd0TPDhmWJmI4JfGtKB4lrxVKlf9Ag8X0AbtJxwME7mw4jLhDxExbIg-da7Vz0iXakgLBs7zkLHbW5Kx_5npEkAg&quot;},&quot;__graphql&quot;:{&quot;data&quot;:{&quot;sessionUser&quot;:{&quot;id&quot;:&quot;VoDkNZ&quot;,&quot;name&quot;:&quot;Captain Anonymous&quot;,&quot;avatar80&quot;:&quot;https://gravatar.com/avatar/b15e0cf27861794b6faa31065e8f9950?d=https%3A%2F%2Fassets.codepen.io%2Finternal%2Favatars%2Fusers%2Fdefault.png&amp;format=auto&amp;height=80&amp;version=0&amp;width=80&quot;,&quot;avatar512&quot;:&quot;https://gravatar.com/avatar/b15e0cf27861794b6faa31065e8f9950?d=https%3A%2F%2Fassets.codepen.io%2Finternal%2Favatars%2Fusers%2Fdefault.png&amp;format=auto&amp;height=512&amp;version=0&amp;width=512&quot;,&quot;canCreatePosts&quot;:false,&quot;currentContext&quot;:{&quot;id&quot;:&quot;VoDkNZ&quot;,&quot;baseUrl&quot;:&quot;/anon&quot;,&quot;title&quot;:&quot;Captain Anonymous&quot;,&quot;name&quot;:&quot;Captain Anonymous&quot;,&quot;avatar80&quot;:&quot;https://gravatar.com/avatar/b15e0cf27861794b6faa31065e8f9950?d=https%3A%2F%2Fassets.codepen.io%2Finternal%2Favatars%2Fusers%2Fdefault.png&amp;format=auto&amp;height=80&amp;version=0&amp;width=80&quot;,&quot;avatar512&quot;:&quot;https://gravatar.com/avatar/b15e0cf27861794b6faa31065e8f9950?d=https%3A%2F%2Fassets.codepen.io%2Finternal%2Favatars%2Fusers%2Fdefault.png&amp;format=auto&amp;height=512&amp;version=0&amp;width=512&quot;,&quot;username&quot;:&quot;anon&quot;,&quot;contextType&quot;:&quot;USER&quot;,&quot;projectLimitations&quot;:{&quot;projects&quot;:0,&quot;usedProjects&quot;:0,&quot;__typename&quot;:&quot;ProjectLimitations&quot;},&quot;privateByDefault&quot;:false,&quot;__typename&quot;:&quot;User&quot;},&quot;currentTeamId&quot;:null,&quot;baseUrl&quot;:&quot;/anon&quot;,&quot;username&quot;:&quot;anon&quot;,&quot;admin&quot;:false,&quot;anon&quot;:true,&quot;pro&quot;:false,&quot;verified&quot;:null,&quot;teams&quot;:[],&quot;permissions&quot;:{&quot;canCreatePrivate&quot;:false,&quot;canUploadAssets&quot;:false,&quot;__typename&quot;:&quot;UserPermissions&quot;},&quot;__typename&quot;:&quot;User&quot;}}},&quot;__boomboom&quot;:{&quot;serve_url&quot;:&quot;https://cdpn.io/boomboom/v2/index.html&quot;,&quot;store_url&quot;:&quot;https://cdpn.io/boomboom/v2/store&quot;},&quot;__editor_config&quot;:{&quot;id&quot;:&quot;classic&quot;,&quot;editors&quot;:[{&quot;id&quot;:&quot;html&quot;,&quot;type&quot;:&quot;html&quot;,&quot;name&quot;:&quot;HTML&quot;,&quot;showEditor&quot;:true,&quot;showSettings&quot;:true,&quot;showProcessors&quot;:true,&quot;embeds&quot;:{&quot;showViewCompiled&quot;:true},&quot;settings&quot;:[{&quot;id&quot;:&quot;processor&quot;,&quot;name&quot;:&quot;HTML Preprocessor&quot;,&quot;type&quot;:&quot;select&quot;,&quot;visible&quot;:true,&quot;values&quot;:[{&quot;id&quot;:&quot;none&quot;,&quot;name&quot;:&quot;None&quot;,&quot;value&quot;:&quot;none&quot;,&quot;default&quot;:true},{&quot;id&quot;:&quot;haml&quot;,&quot;name&quot;:&quot;Haml&quot;,&quot;value&quot;:&quot;haml&quot;},{&quot;id&quot;:&quot;markdown&quot;,&quot;name&quot;:&quot;Markdown&quot;,&quot;value&quot;:&quot;markdown&quot;},{&quot;id&quot;:&quot;slim&quot;,&quot;name&quot;:&quot;Slim&quot;,&quot;value&quot;:&quot;slim&quot;},{&quot;id&quot;:&quot;pug&quot;,&quot;name&quot;:&quot;Pug&quot;,&quot;value&quot;:&quot;pug&quot;}]},{&quot;id&quot;:&quot;html_classes&quot;,&quot;name&quot;:&quot;Add Class(es) to &lt;html&gt;&quot;,&quot;type&quot;:&quot;input&quot;,&quot;placeholder&quot;:&quot;e.g. single post post-1234&quot;,&quot;visible&quot;:true},{&quot;id&quot;:&quot;head&quot;,&quot;name&quot;:&quot;Stuff for &lt;head&gt;&quot;,&quot;type&quot;:&quot;textarea&quot;,&quot;placeholder&quot;:&quot;e.g. &lt;meta&gt;, &lt;link&gt;, &lt;script&gt;&quot;,&quot;visible&quot;:true}],&quot;actions&quot;:[{&quot;id&quot;:&quot;tidy_html&quot;,&quot;type&quot;:&quot;tidy_code&quot;,&quot;name&quot;:&quot;Format HTML&quot;,&quot;disabled_processors&quot;:[&quot;haml&quot;,&quot;slim&quot;]},{&quot;id&quot;:&quot;view_compiled_html&quot;,&quot;type&quot;:&quot;view_compiled&quot;,&quot;name&quot;:&quot;View Compiled HTML&quot;,&quot;disabled_processors&quot;:[&quot;none&quot;],&quot;showInEmbeds&quot;:true},{&quot;id&quot;:&quot;analyze_html&quot;,&quot;type&quot;:&quot;analyze&quot;,&quot;name&quot;:&quot;Analyze HTML&quot;},{&quot;id&quot;:&quot;maximize_html_editor&quot;,&quot;type&quot;:&quot;maximize&quot;,&quot;name&quot;:&quot;Maximize HTML Editor&quot;},{&quot;id&quot;:&quot;minimize_html_editor&quot;,&quot;type&quot;:&quot;minimize&quot;,&quot;name&quot;:&quot;Minimize HTML Editor&quot;},{&quot;id&quot;:&quot;fold_all_html&quot;,&quot;type&quot;:&quot;fold_all&quot;,&quot;name&quot;:&quot;Fold All&quot;},{&quot;id&quot;:&quot;unfold_all_html&quot;,&quot;type&quot;:&quot;unfold_all&quot;,&quot;name&quot;:&quot;Unfold All&quot;}],&quot;processors&quot;:[{&quot;id&quot;:&quot;none&quot;,&quot;name&quot;:&quot;None&quot;},{&quot;id&quot;:&quot;haml&quot;,&quot;name&quot;:&quot;Haml&quot;},{&quot;id&quot;:&quot;markdown&quot;,&quot;name&quot;:&quot;Markdown&quot;},{&quot;id&quot;:&quot;slim&quot;,&quot;name&quot;:&quot;Slim&quot;},{&quot;id&quot;:&quot;pug&quot;,&quot;name&quot;:&quot;Pug&quot;}]},{&quot;id&quot;:&quot;css&quot;,&quot;type&quot;:&quot;css&quot;,&quot;name&quot;:&quot;CSS&quot;,&quot;showEditor&quot;:true,&quot;showSettings&quot;:true,&quot;showProcessors&quot;:true,&quot;showVendorPrefixing&quot;:true,&quot;embeds&quot;:{&quot;showViewCompiled&quot;:true},&quot;actions&quot;:[{&quot;id&quot;:&quot;tidy_css&quot;,&quot;type&quot;:&quot;tidy_code&quot;,&quot;name&quot;:&quot;Format CSS&quot;,&quot;disabled_processors&quot;:[&quot;sass&quot;,&quot;stylus&quot;]},{&quot;id&quot;:&quot;view_compiled_css&quot;,&quot;type&quot;:&quot;view_compiled&quot;,&quot;name&quot;:&quot;View Compiled CSS&quot;,&quot;disabled_processors&quot;:[&quot;none&quot;],&quot;disabled_prefixes&quot;:[&quot;neither&quot;,&quot;prefixfree&quot;]},{&quot;id&quot;:&quot;analyze_css&quot;,&quot;type&quot;:&quot;analyze&quot;,&quot;name&quot;:&quot;Analyze CSS&quot;},{&quot;id&quot;:&quot;maximize_css_editor&quot;,&quot;type&quot;:&quot;maximize&quot;,&quot;name&quot;:&quot;Maximize CSS Editor&quot;},{&quot;id&quot;:&quot;minimize_css_editor&quot;,&quot;type&quot;:&quot;minimize&quot;,&quot;name&quot;:&quot;Minimize CSS Editor&quot;},{&quot;id&quot;:&quot;fold_all_css&quot;,&quot;type&quot;:&quot;fold_all&quot;,&quot;name&quot;:&quot;Fold All&quot;,&quot;disabled_processors&quot;:[&quot;sass&quot;]},{&quot;id&quot;:&quot;unfold_all_css&quot;,&quot;type&quot;:&quot;unfold_all&quot;,&quot;name&quot;:&quot;Unfold All&quot;,&quot;disabled_processors&quot;:[&quot;sass&quot;]}],&quot;processors&quot;:[{&quot;id&quot;:&quot;none&quot;,&quot;name&quot;:&quot;None&quot;},{&quot;id&quot;:&quot;less&quot;,&quot;name&quot;:&quot;Less&quot;},{&quot;id&quot;:&quot;scss&quot;,&quot;name&quot;:&quot;SCSS&quot;},{&quot;id&quot;:&quot;sass&quot;,&quot;name&quot;:&quot;Sass&quot;},{&quot;id&quot;:&quot;stylus&quot;,&quot;name&quot;:&quot;Stylus&quot;},{&quot;id&quot;:&quot;postcss&quot;,&quot;name&quot;:&quot;PostCSS&quot;}],&quot;parSuffixes&quot;:[&quot;less&quot;,&quot;scss&quot;,&quot;sass&quot;,&quot;styl&quot;]},{&quot;id&quot;:&quot;js&quot;,&quot;type&quot;:&quot;js&quot;,&quot;name&quot;:&quot;JS&quot;,&quot;showEditor&quot;:true,&quot;showSettings&quot;:true,&quot;showProcessors&quot;:true,&quot;externalResourcesHidden&quot;:false,&quot;embeds&quot;:{&quot;showViewCompiled&quot;:true},&quot;actions&quot;:[{&quot;id&quot;:&quot;tidy_js&quot;,&quot;type&quot;:&quot;tidy_code&quot;,&quot;name&quot;:&quot;Format JavaScript&quot;,&quot;disabled_processors&quot;:[&quot;coffeescript, livescript&quot;]},{&quot;id&quot;:&quot;view_compiled_js&quot;,&quot;type&quot;:&quot;view_compiled&quot;,&quot;name&quot;:&quot;View Compiled JavaScript&quot;,&quot;disabled_processors&quot;:[&quot;none&quot;]},{&quot;id&quot;:&quot;analyze_js&quot;,&quot;type&quot;:&quot;analyze&quot;,&quot;name&quot;:&quot;Analyze JavaScript&quot;},{&quot;id&quot;:&quot;maximize_js_editor&quot;,&quot;type&quot;:&quot;maximize&quot;,&quot;name&quot;:&quot;Maximize JavaScript Editor&quot;},{&quot;id&quot;:&quot;minimize_js_editor&quot;,&quot;type&quot;:&quot;minimize&quot;,&quot;name&quot;:&quot;Minimize JavaScript Editor&quot;},{&quot;id&quot;:&quot;fold_all_js&quot;,&quot;type&quot;:&quot;fold_all&quot;,&quot;name&quot;:&quot;Fold All&quot;},{&quot;id&quot;:&quot;unfold_all_js&quot;,&quot;type&quot;:&quot;unfold_all&quot;,&quot;name&quot;:&quot;Unfold All&quot;}],&quot;processors&quot;:[{&quot;id&quot;:&quot;none&quot;,&quot;name&quot;:&quot;None&quot;},{&quot;id&quot;:&quot;babel&quot;,&quot;name&quot;:&quot;Babel&quot;},{&quot;id&quot;:&quot;typescript&quot;,&quot;name&quot;:&quot;TypeScript&quot;},{&quot;id&quot;:&quot;coffeescript&quot;,&quot;name&quot;:&quot;CoffeeScript&quot;},{&quot;id&quot;:&quot;livescript&quot;,&quot;name&quot;:&quot;LiveScript&quot;}]}],&quot;formatters&quot;:[{&quot;id&quot;:&quot;classic&quot;,&quot;name&quot;:&quot;Classic&quot;,&quot;runOn&quot;:[{&quot;eventType&quot;:&quot;demand&quot;}],&quot;url&quot;:&quot;https://fi593g2v2a.execute-api.us-west-2.amazonaws.com/production/format&quot;}],&quot;layout&quot;:{&quot;default&quot;:&quot;top&quot;},&quot;linters&quot;:[{&quot;id&quot;:&quot;classic&quot;,&quot;name&quot;:&quot;Classic&quot;,&quot;runOn&quot;:[{&quot;eventType&quot;:&quot;demand&quot;}],&quot;url&quot;:&quot;https://fi593g2v2a.execute-api.us-west-2.amazonaws.com/production/lint&quot;}],&quot;preview&quot;:{&quot;intervalMaxWaitMS&quot;:3500,&quot;intervalMS&quot;:1200},&quot;settings&quot;:[{&quot;id&quot;:&quot;behavior&quot;,&quot;name&quot;:&quot;Behavior&quot;,&quot;type&quot;:&quot;setting&quot;},{&quot;id&quot;:&quot;editor&quot;,&quot;name&quot;:&quot;Editor&quot;,&quot;type&quot;:&quot;setting&quot;}]},&quot;__export_service_url&quot;:&quot;https://codepen.io/api/export&quot;,&quot;__item&quot;:&quot;{\&quot;dependencies\&quot;:{},\&quot;editor_settings\&quot;:{\&quot;auto_run\&quot;:true,\&quot;autocomplete\&quot;:false,\&quot;code_folding\&quot;:true,\&quot;css_pre_processor\&quot;:\&quot;none\&quot;,\&quot;css_prefix\&quot;:\&quot;neither\&quot;,\&quot;css_starter\&quot;:\&quot;neither\&quot;,\&quot;emmet_active\&quot;:true,\&quot;font_size\&quot;:\&quot;14\&quot;,\&quot;font_type\&quot;:\&quot;monaco\&quot;,\&quot;format_on_save\&quot;:false,\&quot;html_pre_processor\&quot;:\&quot;none\&quot;,\&quot;indent_with\&quot;:\&quot;spaces\&quot;,\&quot;js_pre_processor\&quot;:\&quot;none\&quot;,\&quot;key_bindings\&quot;:\&quot;normal\&quot;,\&quot;line_numbers\&quot;:true,\&quot;line_wrapping\&quot;:true,\&quot;match_brackets\&quot;:true,\&quot;snippets\&quot;:{\&quot;markupSnippets\&quot;:{},\&quot;stylesheetSnippets\&quot;:{}},\&quot;tab_size\&quot;:\&quot;2\&quot;,\&quot;theme\&quot;:\&quot;twilight\&quot;,\&quot;id\&quot;:\&quot;ELLmyX\&quot;,\&quot;auto_save\&quot;:true},\&quot;hashid\&quot;:\&quot;ELLmyX\&quot;,\&quot;itemType\&quot;:\&quot;pen\&quot;,\&quot;owner_id\&quot;:\&quot;ZPzRwjYdEzGn\&quot;,\&quot;resources\&quot;:[{\&quot;url\&quot;:\&quot;https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js\&quot;,\&quot;order\&quot;:0,\&quot;resource_type\&quot;:\&quot;js\&quot;,\&quot;par_content\&quot;:\&quot;\&quot;},{\&quot;url\&quot;:\&quot;https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js\&quot;,\&quot;order\&quot;:1,\&quot;resource_type\&quot;:\&quot;js\&quot;,\&quot;par_content\&quot;:\&quot;\&quot;}],\&quot;tags\&quot;:[],\&quot;id\&quot;:24450472,\&quot;user_id\&quot;:1170787,\&quot;html\&quot;:\&quot;&lt;section class=\\\&quot;cd-horizontal-timeline\\\&quot;&gt;\\n\\t&lt;div class=\\\&quot;timeline\\\&quot;&gt;\\n\\t\\t&lt;div class=\\\&quot;events-wrapper\\\&quot;&gt;\\n\\t\\t\\t&lt;div class=\\\&quot;events\\\&quot;&gt;\\n\\t\\t\\t\\t&lt;ol&gt;\\n\\t\\t\\t\\t\\t&lt;li&gt;&lt;a href=\\\&quot;#0\\\&quot; data-date=\\\&quot;01/01/2017\\\&quot; class=\\\&quot;selected\\\&quot;&gt;Jan 2017&lt;/a&gt;&lt;/li&gt;\\n\\t\\t\\t\\t\\t&lt;li&gt;&lt;a href=\\\&quot;#0\\\&quot; data-date=\\\&quot;01/09/2017\\\&quot;&gt;Sep 2017&lt;/a&gt;&lt;/li&gt;\\n\\t\\t\\t\\t\\t&lt;li&gt;&lt;a href=\\\&quot;#0\\\&quot; data-date=\\\&quot;01/12/2017\\\&quot;&gt;Dec 2017&lt;/a&gt;&lt;/li&gt;\\n\\t\\t\\t\\t\\t&lt;li&gt;&lt;a href=\\\&quot;#0\\\&quot; data-date=\\\&quot;01/03/2018\\\&quot;&gt;Mar 2018&lt;/a&gt;&lt;/li&gt;\\n\\t\\t\\t\\t\\t&lt;li&gt;&lt;a href=\\\&quot;#0\\\&quot; data-date=\\\&quot;09/05/2018\\\&quot;&gt;June 2018&lt;/a&gt;&lt;/li&gt;\\n          &lt;li&gt;&lt;a href=\\\&quot;#0\\\&quot; data-date=\\\&quot;01/01/2019\\\&quot;&gt;Jan 2019&lt;/a&gt;&lt;/li&gt;\\n\\t\\t\\t\\t&lt;/ol&gt;\\n\\n\\t\\t\\t\\t&lt;span class=\\\&quot;filling-line\\\&quot; aria-hidden=\\\&quot;true\\\&quot;&gt;&lt;/span&gt;\\n\\t\\t\\t&lt;/div&gt; &lt;!-- .events --&gt;\\n\\t\\t&lt;/div&gt; &lt;!-- .events-wrapper --&gt;\\n\\t\\t\\t\\n\\t\\t&lt;ul class=\\\&quot;cd-timeline-navigation\\\&quot;&gt;\\n\\t\\t\\t&lt;li&gt;&lt;a href=\\\&quot;#0\\\&quot; class=\\\&quot;prev inactive\\\&quot;&gt;Prev&lt;/a&gt;&lt;/li&gt;\\n\\t\\t\\t&lt;li&gt;&lt;a href=\\\&quot;#0\\\&quot; class=\\\&quot;next\\\&quot;&gt;Next&lt;/a&gt;&lt;/li&gt;\\n\\t\\t&lt;/ul&gt; &lt;!-- .cd-timeline-navigation --&gt;\\n\\t&lt;/div&gt; &lt;!-- .timeline --&gt;\\n\\n\\t&lt;div class=\\\&quot;events-content\\\&quot;&gt;\\n\\t\\t&lt;ol&gt;\\n\\t\\t\\t&lt;li class=\\\&quot;selected\\\&quot; data-date=\\\&quot;16/01/2014\\\&quot;&gt;\\n\\t\\t\\t\\t&lt;h2&gt;An Introduction to Infosec&lt;/h2&gt;\\n        &lt;em&gt;January, 2017&lt;/em&gt;\\n\\t\\t\\t\\t&lt;p&gt;\\t\\n\\t\\t\\t\\t\\tBack in January, 2017 I began my journey of studies into different areas of infosec to see if it was a challenge I would enjoy and a future prospect for further learning through college.\\n\\t\\t\\t\\t&lt;/p&gt;\\n\\t\\t\\t&lt;/li&gt;\\n\\n\\t\\t\\t&lt;li data-date=\\\&quot;01/09/2017\\\&quot;&gt;\\n\\t\\t\\t\\t&lt;h2&gt;Fanshawe College Cyber Security&lt;/h2&gt;\\n\\t\\t\\t\\t&lt;em&gt;September, 2017&lt;/em&gt;\\n\\t\\t\\t\\t&lt;p&gt;\\t\\n\\t\\t\\t\\t\\tIn September, 2018 I enrolled into the Cyber Security course at Fanshawe College.\\n\\t\\t\\t\\t&lt;/p&gt;&lt;br&gt;\\n        &lt;p&gt;Key courses include: &lt;/p&gt;\\n\\t\\t\\t&lt;/li&gt;\\n\\n\\t\\t\\t&lt;li data-date=\\\&quot;01/12/2017\\\&quot;&gt;\\n\\t\\t\\t\\t&lt;h2&gt;CTF&lt;/h2&gt;\\n\\t\\t\\t\\t&lt;em&gt;December, 2017&lt;/em&gt;\\n\\t\\t\\t\\t&lt;p&gt;\\t\\n\\t\\t\\t\\t\\tParticipated in CTF.\\n\\t\\t\\t\\t&lt;/p&gt;\\n\\t\\t\\t&lt;/li&gt;\\n\\n\\t\\t\\t&lt;li data-date=\\\&quot;01/03/2018\\\&quot;&gt;\\n\\t\\t\\t\\t&lt;h2&gt;Event title here&lt;/h2&gt;\\n\\t\\t\\t\\t&lt;em&gt;May 20th, 2014&lt;/em&gt;\\n\\t\\t\\t\\t&lt;p&gt;\\t\\n\\t\\t\\t\\t\\tLorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.\\n\\t\\t\\t\\t&lt;/p&gt;\\n\\t\\t\\t&lt;/li&gt;\\n\\n\\t\\t\\t&lt;li data-date=\\\&quot;09/07/2014\\\&quot;&gt;\\n\\t\\t\\t\\t&lt;h2&gt;Event title here&lt;/h2&gt;\\n\\t\\t\\t\\t&lt;em&gt;July 9th, 2014&lt;/em&gt;\\n\\t\\t\\t\\t&lt;p&gt;\\t\\n\\t\\t\\t\\t\\tLorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.\\n\\t\\t\\t\\t&lt;/p&gt;\\n\\t\\t\\t&lt;/li&gt;\\n\\n\\t\\t\\t&lt;li data-date=\\\&quot;30/08/2014\\\&quot;&gt;\\n\\t\\t\\t\\t&lt;h2&gt;Event title here&lt;/h2&gt;\\n\\t\\t\\t\\t&lt;em&gt;August 30th, 2014&lt;/em&gt;\\n\\t\\t\\t\\t&lt;p&gt;\\t\\n\\t\\t\\t\\t\\tLorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.\\n\\t\\t\\t\\t&lt;/p&gt;\\n\\t\\t\\t&lt;/li&gt;\\n\\n\\t\\t\\t&lt;li data-date=\\\&quot;15/09/2014\\\&quot;&gt;\\n\\t\\t\\t\\t&lt;h2&gt;Event title here&lt;/h2&gt;\\n\\t\\t\\t\\t&lt;em&gt;September 15th, 2014&lt;/em&gt;\\n\\t\\t\\t\\t&lt;p&gt;\\t\\n\\t\\t\\t\\t\\tLorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.\\n\\t\\t\\t\\t&lt;/p&gt;\\n\\t\\t\\t&lt;/li&gt;\\n\\n\\t\\t\\t&lt;li data-date=\\\&quot;01/11/2014\\\&quot;&gt;\\n\\t\\t\\t\\t&lt;h2&gt;Event title here&lt;/h2&gt;\\n\\t\\t\\t\\t&lt;em&gt;November 1st, 2014&lt;/em&gt;\\n\\t\\t\\t\\t&lt;p&gt;\\t\\n\\t\\t\\t\\t\\tLorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.\\n\\t\\t\\t\\t&lt;/p&gt;\\n\\t\\t\\t&lt;/li&gt;\\n\\n\\t\\t\\t&lt;li data-date=\\\&quot;10/12/2014\\\&quot;&gt;\\n\\t\\t\\t\\t&lt;h2&gt;Event title here&lt;/h2&gt;\\n\\t\\t\\t\\t&lt;em&gt;December 10th, 2014&lt;/em&gt;\\n\\t\\t\\t\\t&lt;p&gt;\\t\\n\\t\\t\\t\\t\\tLorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.\\n\\t\\t\\t\\t&lt;/p&gt;\\n\\t\\t\\t&lt;/li&gt;\\n\\n\\t\\t\\t&lt;li data-date=\\\&quot;19/01/2015\\\&quot;&gt;\\n\\t\\t\\t\\t&lt;h2&gt;Event title here&lt;/h2&gt;\\n\\t\\t\\t\\t&lt;em&gt;January 19th, 2015&lt;/em&gt;\\n\\t\\t\\t\\t&lt;p&gt;\\t\\n\\t\\t\\t\\t\\tLorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.\\n\\t\\t\\t\\t&lt;/p&gt;\\n\\t\\t\\t&lt;/li&gt;\\n\\n\\t\\t\\t&lt;li data-date=\\\&quot;03/03/2015\\\&quot;&gt;\\n\\t\\t\\t\\t&lt;h2&gt;Event title here&lt;/h2&gt;\\n\\t\\t\\t\\t&lt;em&gt;March 3rd, 2015&lt;/em&gt;\\n\\t\\t\\t\\t&lt;p&gt;\\t\\n\\t\\t\\t\\t\\tLorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.\\n\\t\\t\\t\\t&lt;/p&gt;\\n\\t\\t\\t&lt;/li&gt;\\n\\t\\t&lt;/ol&gt;\\n\\t&lt;/div&gt; &lt;!-- .events-content --&gt;\\n&lt;/section&gt;\\n\\t\&quot;,\&quot;css\&quot;:\&quot;@import url(&#39;https://fonts.googleapis.com/css?family=Ubuntu&#39;);\\n\\n*, *::after, *::before {\\n  box-sizing: border-box;\\n}\\n\\nhtml {\\n  font-size: 62.5%;\\n}\\n\\nbody {\\n  font-size: 1em;\\n  font-family: \\\&quot;Ubuntu\\\&quot;, sans-serif;\\n  color: #fff;\\n  background-color: #261C21;\\n}\\n\\na {\\n  color: #fff;\\n  text-decoration: none;\\n}\\n\\n/* -------------------------------- \\n\\nMain Components \\n\\n-------------------------------- */\\n.cd-horizontal-timeline {\\n  opacity: 0;\\n  margin: 2em auto;\\n  -webkit-transition: opacity 0.2s;\\n  -moz-transition: opacity 0.2s;\\n  transition: opacity 0.2s;\\n}\\n.cd-horizontal-timeline::before {\\n  /* never visible - this is used in jQuery to check the current MQ */\\n  content: &#39;mobile&#39;;\\n  display: none;\\n}\\n.cd-horizontal-timeline.loaded {\\n  /* show the timeline after events position has been set (using JavaScript) */\\n  opacity: 1;\\n}\\n.cd-horizontal-timeline .timeline {\\n  position: relative;\\n  height: 100px;\\n  width: 100%;\\n  max-width: 900px;\\n  margin: 0 auto;\\n}\\n.cd-horizontal-timeline .events-wrapper {\\n  position: relative;\\n  height: 100%;\\n  margin: 0 40px;\\n  overflow: hidden;\\n}\\n.cd-horizontal-timeline .events-wrapper::after, .cd-horizontal-timeline .events-wrapper::before {\\n  /* these are used to create a shadow effect at the sides of the timeline */\\n  content: &#39;&#39;;\\n  position: absolute;\\n  z-index: 2;\\n  top: 0;\\n  height: 100%;\\n  width: 20px;\\n}\\n.cd-horizontal-timeline .events-wrapper::before {\\n  left: 0;\\n}\\n.cd-horizontal-timeline .events-wrapper::after {\\n  right: 0;\\n}\\n.cd-horizontal-timeline .events {\\n  /* this is the grey line/timeline */\\n  position: absolute;\\n  z-index: 1;\\n  left: 0;\\n  top: 49px;\\n  height: 2px;\\n  /* width will be set using JavaScript */\\n  background: #fff;\\n  -webkit-transition: -webkit-transform 0.4s;\\n  -moz-transition: -moz-transform 0.4s;\\n  transition: transform 0.4s;\\n}\\n.cd-horizontal-timeline .filling-line {\\n  /* this is used to create the green line filling the timeline */\\n  position: absolute;\\n  z-index: 1;\\n  left: 0;\\n  top: 0;\\n  height: 100%;\\n  width: 100%;\\n  background-color: #FF3D7F;\\n  -webkit-transform: scaleX(0);\\n  -moz-transform: scaleX(0);\\n  -ms-transform: scaleX(0);\\n  -o-transform: scaleX(0);\\n  transform: scaleX(0);\\n  -webkit-transform-origin: left center;\\n  -moz-transform-origin: left center;\\n  -ms-transform-origin: left center;\\n  -o-transform-origin: left center;\\n  transform-origin: left center;\\n  -webkit-transition: -webkit-transform 0.3s;\\n  -moz-transition: -moz-transform 0.3s;\\n  transition: transform 0.3s;\\n}\\n.cd-horizontal-timeline .events a {\\n  position: absolute;\\n  width:100px;\\n  bottom: 0;\\n  z-index: 2;\\n  text-align: center;\\n  font-size: 1.3rem;\\n  padding-bottom: 15px;\\n  color: #383838;\\n  /* fix bug on Safari - text flickering while timeline translates */\\n  -webkit-transform: translateZ(0);\\n  -moz-transform: translateZ(0);\\n  -ms-transform: translateZ(0);\\n  -o-transform: translateZ(0);\\n  transform: translateZ(0);\\n  color:white;\\n  padding:5px;\\n  margin-bottom:20px;\\n}\\n/* custom*/\\n.cd-horizontal-timeline .events a::before {\\n  content: &#39;&#39;;\\n  position: absolute;\\n  width:1px;\\n  height:20px;\\n  background: #fff;\\n  bottom:-20px;\\n  left:50%;\\n}\\n\\n.cd-horizontal-timeline .events a::after {\\n  /* this is used to create the event spot */\\n  content: &#39;&#39;;\\n  position: absolute;\\n  left: 50%;\\n  right: auto;\\n  -webkit-transform: translateX(-50%);\\n  -moz-transform: translateX(-50%);\\n  -ms-transform: translateX(-50%);\\n  -o-transform: translateX(-50%);\\n  transform: translateX(-50%);\\n  bottom: -25px;\\n  height: 12px;\\n  width: 12px;\\n  border-radius: 50%;\\n  border: 2px solid #fff;\\n  background-color: #fff;\\n  -webkit-transition: background-color 0.3s, border-color 0.3s;\\n  -moz-transition: background-color 0.3s, border-color 0.3s;\\n  transition: background-color 0.3s, border-color 0.3s;\\n}\\n.no-touch .cd-horizontal-timeline .events a:hover::after {\\n  background-color: #FF3D7F;\\n  border-color: #fff;\\n}\\n.cd-horizontal-timeline .events a.selected {\\n  pointer-events: none;\\n}\\n.cd-horizontal-timeline .events a.selected::after {\\n  background-color: #FF3D7F;\\n  border-color: #FF3D7F;\\n}\\n.cd-horizontal-timeline .events a.older-event::after {\\n  border-color: #FF3D7F;\\n}\\n@media only screen and (min-width: 1100px) {\\n  .cd-horizontal-timeline {\\n    margin: 6em auto;\\n  }\\n  .cd-horizontal-timeline::before {\\n    /* never visible - this is used in jQuery to check the current MQ */\\n    content: &#39;desktop&#39;;\\n  }\\n}\\n\\n.cd-timeline-navigation a {\\n  /* these are the left/right arrows to navigate the timeline */\\n  position: absolute;\\n  z-index: 1;\\n  top: 50%;\\n  bottom: auto;\\n  -webkit-transform: translateY(-50%);\\n  -moz-transform: translateY(-50%);\\n  -ms-transform: translateY(-50%);\\n  -o-transform: translateY(-50%);\\n  transform: translateY(-50%);\\n  height: 30px;\\n  width: 30px;\\n  border-radius: 50%;\\n  border: 2px solid #fff;\\n  /* replace text with an icon */\\n  overflow: hidden;\\n  color: transparent;\\n  text-indent: 100%;\\n  white-space: nowrap;\\n  -webkit-transition: border-color 0.3s;\\n  -moz-transition: border-color 0.3s;\\n  transition: border-color 0.3s;\\n}\\n.cd-timeline-navigation a::after {\\n  /* arrow icon */\\n  content: &#39;&#39;;\\n  position: absolute;\\n  height: 16px;\\n  width: 16px;\\n  left: 50%;\\n  top: 50%;\\n  bottom: auto;\\n  right: auto;\\n  -webkit-transform: translateX(-50%) translateY(-50%);\\n  -moz-transform: translateX(-50%) translateY(-50%);\\n  -ms-transform: translateX(-50%) translateY(-50%);\\n  -o-transform: translateX(-50%) translateY(-50%);\\n  transform: translateX(-50%) translateY(-50%);\\n  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRw%0D%0AOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjE2cHgiIGhl%0D%0AaWdodD0iMzJweCIgdmlld0JveD0iMCAwIDE2IDMyIj48ZyAgdHJhbnNmb3JtPSJ0cmFuc2xhdGUo%0D%0AMCwgMCkiPjxwb2x5Z29uIGZpbGw9IiM3YjlkNmYiIHBvaW50cz0iNiwxMy40IDQuNiwxMiA4LjYs%0D%0AOCA0LjYsNCA2LDIuNiAxMS40LDggIi8+PC9nPjxnICB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLCAx%0D%0ANikiPjxwb2x5Z29uIGZpbGw9IiNkZmRmZGYiIHBvaW50cz0iNiwxMy40IDQuNiwxMiA4LjYsOCA0%0D%0ALjYsNCA2LDIuNiAxMS40LDggIi8+PC9nPjwvc3ZnPg==) no-repeat 0 0;\\n}\\n.cd-timeline-navigation a.prev {\\n  left: 0;\\n  -webkit-transform: translateY(-50%) rotate(180deg);\\n  -moz-transform: translateY(-50%) rotate(180deg);\\n  -ms-transform: translateY(-50%) rotate(180deg);\\n  -o-transform: translateY(-50%) rotate(180deg);\\n  transform: translateY(-50%) rotate(180deg);\\n}\\n.cd-timeline-navigation a.next {\\n  right: 0;\\n  color: #fff;\\n}\\n.no-touch .cd-timeline-navigation a:hover {\\n  border-color: #FF3D7F;\\n}\\n.cd-timeline-navigation a.inactive {\\n  cursor: not-allowed;\\n}\\n.cd-timeline-navigation a.inactive::after {\\n  background-position: 0 -16px;\\n}\\n.no-touch .cd-timeline-navigation a.inactive:hover {\\n  border-color: #FF3D7F;\\n}\\n\\n.cd-horizontal-timeline .events-content {\\n  position: relative;\\n  width: 100%;\\n  margin: 2em 0;\\n  overflow: hidden;\\n  -webkit-transition: height 0.4s;\\n  -moz-transition: height 0.4s;\\n  transition: height 0.4s;\\n}\\n.cd-horizontal-timeline .events-content li {\\n  position: absolute;\\n  z-index: 1;\\n  width: 100%;\\n  left: 0;\\n  top: 0;\\n  -webkit-transform: translateX(-100%);\\n  -moz-transform: translateX(-100%);\\n  -ms-transform: translateX(-100%);\\n  -o-transform: translateX(-100%);\\n  transform: translateX(-100%);\\n  padding: 0 5%;\\n  opacity: 0;\\n  -webkit-animation-duration: 0.4s;\\n  -moz-animation-duration: 0.4s;\\n  animation-duration: 0.4s;\\n  -webkit-animation-timing-function: ease-in-out;\\n  -moz-animation-timing-function: ease-in-out;\\n  animation-timing-function: ease-in-out;\\n}\\n.cd-horizontal-timeline .events-content li.selected {\\n  /* visible event content */\\n  position: relative;\\n  z-index: 2;\\n  opacity: 1;\\n  -webkit-transform: translateX(0);\\n  -moz-transform: translateX(0);\\n  -ms-transform: translateX(0);\\n  -o-transform: translateX(0);\\n  transform: translateX(0);\\n}\\n.cd-horizontal-timeline .events-content li.enter-right, .cd-horizontal-timeline .events-content li.leave-right {\\n  -webkit-animation-name: cd-enter-right;\\n  -moz-animation-name: cd-enter-right;\\n  animation-name: cd-enter-right;\\n}\\n.cd-horizontal-timeline .events-content li.enter-left, .cd-horizontal-timeline .events-content li.leave-left {\\n  -webkit-animation-name: cd-enter-left;\\n  -moz-animation-name: cd-enter-left;\\n  animation-name: cd-enter-left;\\n}\\n.cd-horizontal-timeline .events-content li.leave-right, .cd-horizontal-timeline .events-content li.leave-left {\\n  -webkit-animation-direction: reverse;\\n  -moz-animation-direction: reverse;\\n  animation-direction: reverse;\\n}\\n.cd-horizontal-timeline .events-content li &gt; * {\\n  max-width: 800px;\\n  margin: 0 auto;\\n}\\n.cd-horizontal-timeline .events-content h2 {\\n  font-weight: bold;\\n  font-size: 3em !important;\\n  font-weight: 700;\\n  line-height: 1.2;\\n}\\n.cd-horizontal-timeline .events-content em {\\n  display: block;\\n  font-style: italic;\\n  margin: 10px auto;\\n}\\n.cd-horizontal-timeline .events-content em::before {\\n  content: &#39;- &#39;;\\n}\\n.cd-horizontal-timeline .events-content p {\\n  font-size: 1.5em !important;\\n  color: #fff;\\n}\\n.cd-horizontal-timeline .events-content em, .cd-horizontal-timeline .events-content p {\\n  line-height: 1.6;\\n}\\n@media only screen and (min-width: 768px) {\\n  .cd-horizontal-timeline .events-content h2 {\\n    font-size: 7rem;\\n  }\\n  .cd-horizontal-timeline .events-content em {\\n    font-size: 1.5em !important;\\n  }\\n  .cd-horizontal-timeline .events-content p {\\n    font-size: 1.8rem;\\n  }\\n}\\n\\n@-webkit-keyframes cd-enter-right {\\n  0% {\\n    opacity: 0;\\n    -webkit-transform: translateX(100%);\\n  }\\n  100% {\\n    opacity: 1;\\n    -webkit-transform: translateX(0%);\\n  }\\n}\\n@-moz-keyframes cd-enter-right {\\n  0% {\\n    opacity: 0;\\n    -moz-transform: translateX(100%);\\n  }\\n  100% {\\n    opacity: 1;\\n    -moz-transform: translateX(0%);\\n  }\\n}\\n@keyframes cd-enter-right {\\n  0% {\\n    opacity: 0;\\n    -webkit-transform: translateX(100%);\\n    -moz-transform: translateX(100%);\\n    -ms-transform: translateX(100%);\\n    -o-transform: translateX(100%);\\n    transform: translateX(100%);\\n  }\\n  100% {\\n    opacity: 1;\\n    -webkit-transform: translateX(0%);\\n    -moz-transform: translateX(0%);\\n    -ms-transform: translateX(0%);\\n    -o-transform: translateX(0%);\\n    transform: translateX(0%);\\n  }\\n}\\n@-webkit-keyframes cd-enter-left {\\n  0% {\\n    opacity: 0;\\n    -webkit-transform: translateX(-100%);\\n  }\\n  100% {\\n    opacity: 1;\\n    -webkit-transform: translateX(0%);\\n  }\\n}\\n@-moz-keyframes cd-enter-left {\\n  0% {\\n    opacity: 0;\\n    -moz-transform: translateX(-100%);\\n  }\\n  100% {\\n    opacity: 1;\\n    -moz-transform: translateX(0%);\\n  }\\n}\\n@keyframes cd-enter-left {\\n  0% {\\n    opacity: 0;\\n    -webkit-transform: translateX(-100%);\\n    -moz-transform: translateX(-100%);\\n    -ms-transform: translateX(-100%);\\n    -o-transform: translateX(-100%);\\n    transform: translateX(-100%);\\n  }\\n  100% {\\n    opacity: 1;\\n    -webkit-transform: translateX(0%);\\n    -moz-transform: translateX(0%);\\n    -ms-transform: translateX(0%);\\n    -o-transform: translateX(0%);\\n    transform: translateX(0%);\\n  }\\n}\&quot;,\&quot;parent\&quot;:0,\&quot;js\&quot;:\&quot;jQuery(document).ready(function($){\\n\\tvar timelines = $(&#39;.cd-horizontal-timeline&#39;),\\n\\t\\teventsMinDistance = 70;\\n\\n\\t(timelines.length &gt; 0) &amp;&amp; initTimeline(timelines);\\n\\n\\tfunction initTimeline(timelines) {\\n\\t\\ttimelines.each(function(){\\n\\t\\t\\tvar timeline = $(this),\\n\\t\\t\\t\\ttimelineComponents = {};\\n\\t\\t\\t//cache timeline components \\n\\t\\t\\ttimelineComponents[&#39;timelineWrapper&#39;] = timeline.find(&#39;.events-wrapper&#39;);\\n\\t\\t\\ttimelineComponents[&#39;eventsWrapper&#39;] = timelineComponents[&#39;timelineWrapper&#39;].children(&#39;.events&#39;);\\n\\t\\t\\ttimelineComponents[&#39;fillingLine&#39;] = timelineComponents[&#39;eventsWrapper&#39;].children(&#39;.filling-line&#39;);\\n\\t\\t\\ttimelineComponents[&#39;timelineEvents&#39;] = timelineComponents[&#39;eventsWrapper&#39;].find(&#39;a&#39;);\\n\\t\\t\\ttimelineComponents[&#39;timelineDates&#39;] = parseDate(timelineComponents[&#39;timelineEvents&#39;]);\\n\\t\\t\\ttimelineComponents[&#39;eventsMinLapse&#39;] = minLapse(timelineComponents[&#39;timelineDates&#39;]);\\n\\t\\t\\ttimelineComponents[&#39;timelineNavigation&#39;] = timeline.find(&#39;.cd-timeline-navigation&#39;);\\n\\t\\t\\ttimelineComponents[&#39;eventsContent&#39;] = timeline.children(&#39;.events-content&#39;);\\n\\n\\t\\t\\t//assign a left postion to the single events along the timeline\\n\\t\\t\\tsetDatePosition(timelineComponents, eventsMinDistance);\\n\\t\\t\\t//assign a width to the timeline\\n\\t\\t\\tvar timelineTotWidth = setTimelineWidth(timelineComponents, eventsMinDistance);\\n\\t\\t\\t//the timeline has been initialize - show it\\n\\t\\t\\ttimeline.addClass(&#39;loaded&#39;);\\n\\n\\t\\t\\t//detect click on the next arrow\\n\\t\\t\\ttimelineComponents[&#39;timelineNavigation&#39;].on(&#39;click&#39;, &#39;.next&#39;, function(event){\\n\\t\\t\\t\\tevent.preventDefault();\\n\\t\\t\\t\\tupdateSlide(timelineComponents, timelineTotWidth, &#39;next&#39;);\\n\\t\\t\\t});\\n\\t\\t\\t//detect click on the prev arrow\\n\\t\\t\\ttimelineComponents[&#39;timelineNavigation&#39;].on(&#39;click&#39;, &#39;.prev&#39;, function(event){\\n\\t\\t\\t\\tevent.preventDefault();\\n\\t\\t\\t\\tupdateSlide(timelineComponents, timelineTotWidth, &#39;prev&#39;);\\n\\t\\t\\t});\\n\\t\\t\\t//detect click on the a single event - show new event content\\n\\t\\t\\ttimelineComponents[&#39;eventsWrapper&#39;].on(&#39;click&#39;, &#39;a&#39;, function(event){\\n\\t\\t\\t\\tevent.preventDefault();\\n\\t\\t\\t\\ttimelineComponents[&#39;timelineEvents&#39;].removeClass(&#39;selected&#39;);\\n\\t\\t\\t\\t$(this).addClass(&#39;selected&#39;);\\n\\t\\t\\t\\tupdateOlderEvents($(this));\\n\\t\\t\\t\\tupdateFilling($(this), timelineComponents[&#39;fillingLine&#39;], timelineTotWidth);\\n\\t\\t\\t\\tupdateVisibleContent($(this), timelineComponents[&#39;eventsContent&#39;]);\\n\\t\\t\\t});\\n\\n\\t\\t\\t//on swipe, show next/prev event content\\n\\t\\t\\ttimelineComponents[&#39;eventsContent&#39;].on(&#39;swipeleft&#39;, function(){\\n\\t\\t\\t\\tvar mq = checkMQ();\\n\\t\\t\\t\\t( mq == &#39;mobile&#39; ) &amp;&amp; showNewContent(timelineComponents, timelineTotWidth, &#39;next&#39;);\\n\\t\\t\\t});\\n\\t\\t\\ttimelineComponents[&#39;eventsContent&#39;].on(&#39;swiperight&#39;, function(){\\n\\t\\t\\t\\tvar mq = checkMQ();\\n\\t\\t\\t\\t( mq == &#39;mobile&#39; ) &amp;&amp; showNewContent(timelineComponents, timelineTotWidth, &#39;prev&#39;);\\n\\t\\t\\t});\\n\\n\\t\\t\\t//keyboard navigation\\n\\t\\t\\t$(document).keyup(function(event){\\n\\t\\t\\t\\tif(event.which==&#39;37&#39; &amp;&amp; elementInViewport(timeline.get(0)) ) {\\n\\t\\t\\t\\t\\tshowNewContent(timelineComponents, timelineTotWidth, &#39;prev&#39;);\\n\\t\\t\\t\\t} else if( event.which==&#39;39&#39; &amp;&amp; elementInViewport(timeline.get(0))) {\\n\\t\\t\\t\\t\\tshowNewContent(timelineComponents, timelineTotWidth, &#39;next&#39;);\\n\\t\\t\\t\\t}\\n\\t\\t\\t});\\n\\t\\t});\\n\\t}\\n\\n\\tfunction updateSlide(timelineComponents, timelineTotWidth, string) {\\n\\t\\t//retrieve translateX value of timelineComponents[&#39;eventsWrapper&#39;]\\n\\t\\tvar translateValue = getTranslateValue(timelineComponents[&#39;eventsWrapper&#39;]),\\n\\t\\t\\twrapperWidth = Number(timelineComponents[&#39;timelineWrapper&#39;].css(&#39;width&#39;).replace(&#39;px&#39;, &#39;&#39;));\\n\\t\\t//translate the timeline to the left(&#39;next&#39;)/right(&#39;prev&#39;) \\n\\t\\t(string == &#39;next&#39;) \\n\\t\\t\\t? translateTimeline(timelineComponents, translateValue - wrapperWidth + eventsMinDistance, wrapperWidth - timelineTotWidth)\\n\\t\\t\\t: translateTimeline(timelineComponents, translateValue + wrapperWidth - eventsMinDistance);\\n\\t}\\n\\n\\tfunction showNewContent(timelineComponents, timelineTotWidth, string) {\\n\\t\\t//go from one event to the next/previous one\\n\\t\\tvar visibleContent =  timelineComponents[&#39;eventsContent&#39;].find(&#39;.selected&#39;),\\n\\t\\t\\tnewContent = ( string == &#39;next&#39; ) ? visibleContent.next() : visibleContent.prev();\\n\\n\\t\\tif ( newContent.length &gt; 0 ) { //if there&#39;s a next/prev event - show it\\n\\t\\t\\tvar selectedDate = timelineComponents[&#39;eventsWrapper&#39;].find(&#39;.selected&#39;),\\n\\t\\t\\t\\tnewEvent = ( string == &#39;next&#39; ) ? selectedDate.parent(&#39;li&#39;).next(&#39;li&#39;).children(&#39;a&#39;) : selectedDate.parent(&#39;li&#39;).prev(&#39;li&#39;).children(&#39;a&#39;);\\n\\t\\t\\t\\n\\t\\t\\tupdateFilling(newEvent, timelineComponents[&#39;fillingLine&#39;], timelineTotWidth);\\n\\t\\t\\tupdateVisibleContent(newEvent, timelineComponents[&#39;eventsContent&#39;]);\\n\\t\\t\\tnewEvent.addClass(&#39;selected&#39;);\\n\\t\\t\\tselectedDate.removeClass(&#39;selected&#39;);\\n\\t\\t\\tupdateOlderEvents(newEvent);\\n\\t\\t\\tupdateTimelinePosition(string, newEvent, timelineComponents, timelineTotWidth);\\n\\t\\t}\\n\\t}\\n\\n\\tfunction updateTimelinePosition(string, event, timelineComponents, timelineTotWidth) {\\n\\t\\t//translate timeline to the left/right according to the position of the selected event\\n\\t\\tvar eventStyle = window.getComputedStyle(event.get(0), null),\\n\\t\\t\\teventLeft = Number(eventStyle.getPropertyValue(\\\&quot;left\\\&quot;).replace(&#39;px&#39;, &#39;&#39;)),\\n\\t\\t\\ttimelineWidth = Number(timelineComponents[&#39;timelineWrapper&#39;].css(&#39;width&#39;).replace(&#39;px&#39;, &#39;&#39;)),\\n\\t\\t\\ttimelineTotWidth = Number(timelineComponents[&#39;eventsWrapper&#39;].css(&#39;width&#39;).replace(&#39;px&#39;, &#39;&#39;));\\n\\t\\tvar timelineTranslate = getTranslateValue(timelineComponents[&#39;eventsWrapper&#39;]);\\n\\n        if( (string == &#39;next&#39; &amp;&amp; eventLeft &gt; timelineWidth - timelineTranslate) || (string == &#39;prev&#39; &amp;&amp; eventLeft &lt; - timelineTranslate) ) {\\n        \\ttranslateTimeline(timelineComponents, - eventLeft + timelineWidth/2, timelineWidth - timelineTotWidth);\\n        }\\n\\t}\\n\\n\\tfunction translateTimeline(timelineComponents, value, totWidth) {\\n\\t\\tvar eventsWrapper = timelineComponents[&#39;eventsWrapper&#39;].get(0);\\n\\t\\tvalue = (value &gt; 0) ? 0 : value; //only negative translate value\\n\\t\\tvalue = ( !(typeof totWidth === &#39;undefined&#39;) &amp;&amp;  value &lt; totWidth ) ? totWidth : value; //do not translate more than timeline width\\n\\t\\tsetTransformValue(eventsWrapper, &#39;translateX&#39;, value+&#39;px&#39;);\\n\\t\\t//update navigation arrows visibility\\n\\t\\t(value == 0 ) ? timelineComponents[&#39;timelineNavigation&#39;].find(&#39;.prev&#39;).addClass(&#39;inactive&#39;) : timelineComponents[&#39;timelineNavigation&#39;].find(&#39;.prev&#39;).removeClass(&#39;inactive&#39;);\\n\\t\\t(value == totWidth ) ? timelineComponents[&#39;timelineNavigation&#39;].find(&#39;.next&#39;).addClass(&#39;inactive&#39;) : timelineComponents[&#39;timelineNavigation&#39;].find(&#39;.next&#39;).removeClass(&#39;inactive&#39;);\\n\\t}\\n\\n\\tfunction updateFilling(selectedEvent, filling, totWidth) {\\n\\t\\t//change .filling-line length according to the selected event\\n\\t\\tvar eventStyle = window.getComputedStyle(selectedEvent.get(0), null),\\n\\t\\t\\teventLeft = eventStyle.getPropertyValue(\\\&quot;left\\\&quot;),\\n\\t\\t\\teventWidth = eventStyle.getPropertyValue(\\\&quot;width\\\&quot;);\\n\\t\\teventLeft = Number(eventLeft.replace(&#39;px&#39;, &#39;&#39;)) + Number(eventWidth.replace(&#39;px&#39;, &#39;&#39;))/2;\\n\\t\\tvar scaleValue = eventLeft/totWidth;\\n\\t\\tsetTransformValue(filling.get(0), &#39;scaleX&#39;, scaleValue);\\n\\t}\\n\\n\\tfunction setDatePosition(timelineComponents, min) {\\n\\t\\tfor (i = 0; i &lt; timelineComponents[&#39;timelineDates&#39;].length; i++) { \\n\\t\\t    var distance = daydiff(timelineComponents[&#39;timelineDates&#39;][0], timelineComponents[&#39;timelineDates&#39;][i]),\\n\\t\\t    \\tdistanceNorm = Math.round(distance/timelineComponents[&#39;eventsMinLapse&#39;]) + 2;\\n\\t\\t    timelineComponents[&#39;timelineEvents&#39;].eq(i).css(&#39;left&#39;, distanceNorm*min+&#39;px&#39;);\\n\\t\\t}\\n\\t}\\n\\n\\tfunction setTimelineWidth(timelineComponents, width) {\\n\\t\\tvar timeSpan = daydiff(timelineComponents[&#39;timelineDates&#39;][0], timelineComponents[&#39;timelineDates&#39;][timelineComponents[&#39;timelineDates&#39;].length-1]),\\n\\t\\t\\ttimeSpanNorm = timeSpan/timelineComponents[&#39;eventsMinLapse&#39;],\\n\\t\\t\\ttimeSpanNorm = Math.round(timeSpanNorm) + 4,\\n\\t\\t\\ttotalWidth = timeSpanNorm*width;\\n\\t\\ttimelineComponents[&#39;eventsWrapper&#39;].css(&#39;width&#39;, totalWidth+&#39;px&#39;);\\n\\t\\tupdateFilling(timelineComponents[&#39;timelineEvents&#39;].eq(0), timelineComponents[&#39;fillingLine&#39;], totalWidth);\\n\\t\\n\\t\\treturn totalWidth;\\n\\t}\\n\\n\\tfunction updateVisibleContent(event, eventsContent) {\\n\\t\\tvar eventDate = event.data(&#39;date&#39;),\\n\\t\\t\\tvisibleContent = eventsContent.find(&#39;.selected&#39;),\\n\\t\\t\\tselectedContent = eventsContent.find(&#39;[data-date=\\\&quot;&#39;+ eventDate +&#39;\\\&quot;]&#39;),\\n\\t\\t\\tselectedContentHeight = selectedContent.height();\\n\\n\\t\\tif (selectedContent.index() &gt; visibleContent.index()) {\\n\\t\\t\\tvar classEnetering = &#39;selected enter-right&#39;,\\n\\t\\t\\t\\tclassLeaving = &#39;leave-left&#39;;\\n\\t\\t} else {\\n\\t\\t\\tvar classEnetering = &#39;selected enter-left&#39;,\\n\\t\\t\\t\\tclassLeaving = &#39;leave-right&#39;;\\n\\t\\t}\\n\\n\\t\\tselectedContent.attr(&#39;class&#39;, classEnetering);\\n\\t\\tvisibleContent.attr(&#39;class&#39;, classLeaving).one(&#39;webkitAnimationEnd oanimationend msAnimationEnd animationend&#39;, function(){\\n\\t\\t\\tvisibleContent.removeClass(&#39;leave-right leave-left&#39;);\\n\\t\\t\\tselectedContent.removeClass(&#39;enter-left enter-right&#39;);\\n\\t\\t});\\n\\t\\teventsContent.css(&#39;height&#39;, selectedContentHeight+&#39;px&#39;);\\n\\t}\\n\\n\\tfunction updateOlderEvents(event) {\\n\\t\\tevent.parent(&#39;li&#39;).prevAll(&#39;li&#39;).children(&#39;a&#39;).addClass(&#39;older-event&#39;).end().end().nextAll(&#39;li&#39;).children(&#39;a&#39;).removeClass(&#39;older-event&#39;);\\n\\t}\\n\\n\\tfunction getTranslateValue(timeline) {\\n\\t\\tvar timelineStyle = window.getComputedStyle(timeline.get(0), null),\\n\\t\\t\\ttimelineTranslate = timelineStyle.getPropertyValue(\\\&quot;-webkit-transform\\\&quot;) ||\\n         \\t\\ttimelineStyle.getPropertyValue(\\\&quot;-moz-transform\\\&quot;) ||\\n         \\t\\ttimelineStyle.getPropertyValue(\\\&quot;-ms-transform\\\&quot;) ||\\n         \\t\\ttimelineStyle.getPropertyValue(\\\&quot;-o-transform\\\&quot;) ||\\n         \\t\\ttimelineStyle.getPropertyValue(\\\&quot;transform\\\&quot;);\\n\\n        if( timelineTranslate.indexOf(&#39;(&#39;) &gt;=0 ) {\\n        \\tvar timelineTranslate = timelineTranslate.split(&#39;(&#39;)[1];\\n    \\t\\ttimelineTranslate = timelineTranslate.split(&#39;)&#39;)[0];\\n    \\t\\ttimelineTranslate = timelineTranslate.split(&#39;,&#39;);\\n    \\t\\tvar translateValue = timelineTranslate[4];\\n        } else {\\n        \\tvar translateValue = 0;\\n        }\\n\\n        return Number(translateValue);\\n\\t}\\n\\n\\tfunction setTransformValue(element, property, value) {\\n\\t\\telement.style[\\\&quot;-webkit-transform\\\&quot;] = property+\\\&quot;(\\\&quot;+value+\\\&quot;)\\\&quot;;\\n\\t\\telement.style[\\\&quot;-moz-transform\\\&quot;] = property+\\\&quot;(\\\&quot;+value+\\\&quot;)\\\&quot;;\\n\\t\\telement.style[\\\&quot;-ms-transform\\\&quot;] = property+\\\&quot;(\\\&quot;+value+\\\&quot;)\\\&quot;;\\n\\t\\telement.style[\\\&quot;-o-transform\\\&quot;] = property+\\\&quot;(\\\&quot;+value+\\\&quot;)\\\&quot;;\\n\\t\\telement.style[\\\&quot;transform\\\&quot;] = property+\\\&quot;(\\\&quot;+value+\\\&quot;)\\\&quot;;\\n\\t}\\n\\n\\t//based on http://stackoverflow.com/questions/542938/how-do-i-get-the-number-of-days-between-two-dates-in-javascript\\n\\tfunction parseDate(events) {\\n\\t\\tvar dateArrays = [];\\n\\t\\tevents.each(function(){\\n\\t\\t\\tvar dateComp = $(this).data(&#39;date&#39;).split(&#39;/&#39;),\\n\\t\\t\\t\\tnewDate = new Date(dateComp[2], dateComp[1]-1, dateComp[0]);\\n\\t\\t\\tdateArrays.push(newDate);\\n\\t\\t});\\n\\t    return dateArrays;\\n\\t}\\n\\n\\tfunction parseDate2(events) {\\n\\t\\tvar dateArrays = [];\\n\\t\\tevents.each(function(){\\n\\t\\t\\tvar singleDate = $(this),\\n\\t\\t\\t\\tdateComp = singleDate.data(&#39;date&#39;).split(&#39;T&#39;);\\n\\t\\t\\tif( dateComp.length &gt; 1 ) { //both DD/MM/YEAR and time are provided\\n\\t\\t\\t\\tvar dayComp = dateComp[0].split(&#39;/&#39;),\\n\\t\\t\\t\\t\\ttimeComp = dateComp[1].split(&#39;:&#39;);\\n\\t\\t\\t} else if( dateComp[0].indexOf(&#39;:&#39;) &gt;=0 ) { //only time is provide\\n\\t\\t\\t\\tvar dayComp = [\\\&quot;2000\\\&quot;, \\\&quot;0\\\&quot;, \\\&quot;0\\\&quot;],\\n\\t\\t\\t\\t\\ttimeComp = dateComp[0].split(&#39;:&#39;);\\n\\t\\t\\t} else { //only DD/MM/YEAR\\n\\t\\t\\t\\tvar dayComp = dateComp[0].split(&#39;/&#39;),\\n\\t\\t\\t\\t\\ttimeComp = [\\\&quot;0\\\&quot;, \\\&quot;0\\\&quot;];\\n\\t\\t\\t}\\n\\t\\t\\tvar\\tnewDate = new Date(dayComp[2], dayComp[1]-1, dayComp[0], timeComp[0], timeComp[1]);\\n\\t\\t\\tdateArrays.push(newDate);\\n\\t\\t});\\n\\t    return dateArrays;\\n\\t}\\n\\n\\tfunction daydiff(first, second) {\\n\\t    return Math.round((second-first));\\n\\t}\\n\\n\\tfunction minLapse(dates) {\\n\\t\\t//determine the minimum distance among events\\n\\t\\tvar dateDistances = [];\\n\\t\\tfor (i = 1; i &lt; dates.length; i++) { \\n\\t\\t    var distance = daydiff(dates[i-1], dates[i]);\\n\\t\\t    dateDistances.push(distance);\\n\\t\\t}\\n\\t\\treturn Math.min.apply(null, dateDistances);\\n\\t}\\n\\n\\t/*\\n\\t\\tHow to tell if a DOM element is visible in the current viewport?\\n\\t\\thttp://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport\\n\\t*/\\n\\tfunction elementInViewport(el) {\\n\\t\\tvar top = el.offsetTop;\\n\\t\\tvar left = el.offsetLeft;\\n\\t\\tvar width = el.offsetWidth;\\n\\t\\tvar height = el.offsetHeight;\\n\\n\\t\\twhile(el.offsetParent) {\\n\\t\\t    el = el.offsetParent;\\n\\t\\t    top += el.offsetTop;\\n\\t\\t    left += el.offsetLeft;\\n\\t\\t}\\n\\n\\t\\treturn (\\n\\t\\t    top &lt; (window.pageYOffset + window.innerHeight) &amp;&amp;\\n\\t\\t    left &lt; (window.pageXOffset + window.innerWidth) &amp;&amp;\\n\\t\\t    (top + height) &gt; window.pageYOffset &amp;&amp;\\n\\t\\t    (left + width) &gt; window.pageXOffset\\n\\t\\t);\\n\\t}\\n\\n\\tfunction checkMQ() {\\n\\t\\t//check if mobile or desktop device\\n\\t\\treturn window.getComputedStyle(document.querySelector(&#39;.cd-horizontal-timeline&#39;), &#39;::before&#39;).getPropertyValue(&#39;content&#39;).replace(/&#39;/g, \\\&quot;\\\&quot;).replace(/\\\&quot;/g, \\\&quot;\\\&quot;);\\n\\t}\\n});\&quot;,\&quot;html_pre_processor\&quot;:\&quot;none\&quot;,\&quot;css_pre_processor\&quot;:\&quot;none\&quot;,\&quot;js_pre_processor\&quot;:\&quot;none\&quot;,\&quot;html_classes\&quot;:\&quot;\&quot;,\&quot;css_starter\&quot;:\&quot;reset\&quot;,\&quot;css_prefix_free\&quot;:null,\&quot;css_external\&quot;:null,\&quot;js_library\&quot;:null,\&quot;js_modernizr\&quot;:null,\&quot;js_external\&quot;:null,\&quot;created_at\&quot;:\&quot;2018-05-11T14:26:49.000Z\&quot;,\&quot;updated_at\&quot;:\&quot;2018-07-03T15:07:29.000Z\&quot;,\&quot;session_hash\&quot;:\&quot;faca6538c8ae7955169a808217ed90b3\&quot;,\&quot;title\&quot;:\&quot;Timeline\&quot;,\&quot;description\&quot;:\&quot;\&quot;,\&quot;slug_hash\&quot;:\&quot;ELLmyX\&quot;,\&quot;head\&quot;:\&quot;\&quot;,\&quot;private\&quot;:false,\&quot;has_animation\&quot;:true,\&quot;css_pre_processor_lib\&quot;:\&quot;\&quot;,\&quot;checksum\&quot;:0,\&quot;screenshot_uuid\&quot;:\&quot;18c9a8f6-91d5-47af-a68e-913ef6f92412\&quot;,\&quot;team_id\&quot;:0,\&quot;css_prefix\&quot;:\&quot;neither\&quot;,\&quot;template\&quot;:false,\&quot;js_module\&quot;:false,\&quot;pen_hash\&quot;:null}&quot;,&quot;__jwt&quot;:&quot;eyJhbGciOiJIUzI1NiJ9.eyJkYXRhIjp7InBhaWQiOmZhbHNlLCJ0ZWFtX2lkIjoiWWRFekduIiwidXNlcl9pZCI6IlZvRGtOWiIsInVzZXJuYW1lIjoiYW5vbiJ9LCJleHAiOjE2MDI1ODExMDd9.iL9qAKwfG5XeELewr-WS5gSb6dZHBMOWzFWdMi45jsA&quot;,&quot;__layoutType&quot;:null,&quot;__packages_domain&quot;:&quot;https://bundles-development.cdpn.io&quot;,&quot;__packages_enabled&quot;:false,&quot;__pageType&quot;:&quot;pen&quot;,&quot;__preprocessors_url&quot;:&quot;https://wfwf9k3tn7.execute-api.us-west-2.amazonaws.com/production&quot;,&quot;__profiled&quot;:{&quot;base_url&quot;:&quot;/carrrter&quot;,&quot;hashid&quot;:&quot;ZPzRwj&quot;,&quot;id&quot;:1170787,&quot;name&quot;:&quot;Amy Carter&quot;,&quot;type&quot;:&quot;user&quot;,&quot;username&quot;:&quot;carrrter&quot;},&quot;__rtData&quot;:&quot;{\&quot;maxMembers\&quot;:0,\&quot;roomID\&quot;:\&quot;ELLmyX/live\&quot;,\&quot;roomType\&quot;:\&quot;live\&quot;,\&quot;updatedAt\&quot;:1530630449,\&quot;user\&quot;:{\&quot;id\&quot;:\&quot;VoDkNZ\&quot;,\&quot;hashid\&quot;:\&quot;VoDkNZ\&quot;,\&quot;name\&quot;:\&quot;Captain Anonymous\&quot;,\&quot;username\&quot;:\&quot;anon\&quot;,\&quot;role\&quot;:\&quot;editor\&quot;}}&quot;,&quot;__embed_modal_script&quot;:&quot;https://static.codepen.io/assets/embed/modal/embed_modal-dc3638e8ad8bf40c6ed07631a433408d52e7d3451d1d12952f9b06906ebd38d6.js&quot;,&quot;__run_mode_script&quot;:&quot;https://static.codepen.io/assets/libs/codemirror/addon/runmode/runmode-bfc439c2e56cc8aa5b0ed0c95c742d64b92d6ec36eb562d881bfefcb020bf614.js&quot;,&quot;__runtime_js&quot;:&quot;https://static.codepen.io/assets/common/runtime-78f7737f2b92b1b279253c92344b93db2bdf0e3193c90dae7d462d102b33c722.js&quot;,&quot;__standalone_run_mode_script&quot;:&quot;https://static.codepen.io/assets/libs/codemirror/addon/runmode/runmode-standalone-86ed18f2f4ca933889b656c3dcd4135af20477c88c764ae92dd139b682a0ab98.js&quot;,&quot;__syntax_highlighting_script&quot;:&quot;https://static.codepen.io/assets/comments/syntax_highlight_comments.js&quot;,&quot;__eijs&quot;:&quot;https://static.codepen.io/assets/embed/ei.js&quot;,&quot;__favicon_mask_icon&quot;:&quot;https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg&quot;,&quot;__favicon_shortcut_icon&quot;:&quot;https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico&quot;,&quot;__path_to_iframe_console_runner&quot;:&quot;https://static.codepen.io/assets/editor/iframe/iframeConsoleRunner-7f4d47902dc785f30dedcac9c996b9f31d4dfcc33567cc48f0431bc918c2bf05.js&quot;,&quot;__path_to_iframe_refresh_css&quot;:&quot;https://static.codepen.io/assets/editor/iframe/iframeRefreshCSS-e03f509ba0a671350b4b363ff105b2eb009850f34a2b4deaadaa63ed5d970b37.js&quot;,&quot;__path_to_iframe_runtime_errors&quot;:&quot;https://static.codepen.io/assets/editor/iframe/iframeRuntimeErrors-29f059e28a3c6d3878960591ef98b1e303c1fe1935197dae7797c017a3ca1e82.js&quot;,&quot;__path_to_processor_worker&quot;:&quot;https://static.codepen.io/assets/packs/router.js&quot;,&quot;__path_to_stop_execution_on_timeout&quot;:&quot;https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js&quot;,&quot;__path_to_webpack_runtime&quot;:&quot;https://static.codepen.io/assets/common/runtime-78f7737f2b92b1b279253c92344b93db2bdf0e3193c90dae7d462d102b33c722.js&quot;,&quot;__pen_normalize_css_url&quot;:&quot;https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css&quot;,&quot;__pen_prefix_free_url&quot;:&quot;https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js&quot;,&quot;__pen_reset_css_url&quot;:&quot;https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css&quot;,&quot;__cdn_css_url&quot;:&quot;https://static.codepen.io/assets/editor/other/cdn/cdncss_data-3920a09dad6d4fc8f26388543dd6e897701bb9eb7adad7644001579fa97c3bcc.json&quot;,&quot;__cdn_js_url&quot;:&quot;https://static.codepen.io/assets/editor/other/cdn/cdnjs_data-d48ecfb6f69488f4fd036843964b79819dab4f33a0ef800d8e3362688252e672.json&quot;,&quot;__theme_url_twilight&quot;:&quot;https://static.codepen.io/assets/editor/themes/twilight-bbb3d58f8024c27567f788f3990f2dce8754c2b67246bf12ad766768fe51955b.css&quot;,&quot;__theme_url_solarized_dark&quot;:&quot;https://static.codepen.io/assets/editor/themes/solarized-dark-74aa4885fce5e2654a252ce5d046a231528fa7d0bab4a6da9335f61f75641a24.css&quot;,&quot;__theme_url_tomorrow_night&quot;:&quot;https://static.codepen.io/assets/editor/themes/tomorrow-night-d40615974321d1e903d870a0feb427a925a3aaa6710a856a012cb5feb317de06.css&quot;,&quot;__theme_url_oceanic_dark&quot;:&quot;https://static.codepen.io/assets/editor/themes/oceanic-dark-6819a04bdb142273008450549c44fae26e7e75bc5e8ca6d8a78d3bdca2e14057.css&quot;,&quot;__theme_url_panda&quot;:&quot;https://static.codepen.io/assets/editor/themes/panda-00401281f2fb82904fcc5bdf9ccdade7866b7674181a06b0f26ee6fc591aed29.css&quot;,&quot;__theme_url_duotone_dark&quot;:&quot;https://static.codepen.io/assets/editor/themes/duotone-dark-6f36080c52f085d1c4b7aa50e7eeb8e9bae96206fa22c6aa4e536db129ed7f47.css&quot;,&quot;__theme_url_highcontrast_dark&quot;:&quot;https://static.codepen.io/assets/editor/themes/highcontrast-dark-6fac7534892153b41a69be61dcfbd27dacbe6f3359e73912fea94614a283be8e.css&quot;,&quot;__theme_url_classic&quot;:&quot;https://static.codepen.io/assets/editor/themes/classic-d7cab86e6d3da60d8cc880622136b2b12354fcb6d74dbf8fa7344b4e2c8c7a07.css&quot;,&quot;__theme_url_solarized_light&quot;:&quot;https://static.codepen.io/assets/editor/themes/solarized-light-5e319a816752c9f0b7caed1d6d7ef1c46dd9b4a6c880aae4330e995a66da8740.css&quot;,&quot;__theme_url_xq_light&quot;:&quot;https://static.codepen.io/assets/editor/themes/xq-light-ff587a13ad3689cf47ce4efaeef9ba5a4693ca8f8b7cdc795207f5cbcefa93fc.css&quot;,&quot;__theme_url_oceanic_light&quot;:&quot;https://static.codepen.io/assets/editor/themes/oceanic-light-7bc150e27e7d7bd775ee1f1a6ee5a77e6fbe19cbeacf078ccb4023ae81c0f834.css&quot;,&quot;__theme_url_mdn_like&quot;:&quot;https://static.codepen.io/assets/editor/themes/mdn-like-b6d8af50e237d6feac2a7c152f479999705d5a33e6a9512f6ce366cc77979855.css&quot;,&quot;__theme_url_duotone_light&quot;:&quot;https://static.codepen.io/assets/editor/themes/duotone-light-3c888339133e6ccf10476b8000003491cc4cf6d09c84a49ba1d60b678544e358.css&quot;,&quot;__theme_url_highcontrast_light&quot;:&quot;https://static.codepen.io/assets/editor/themes/highcontrast-light-48ad69bb14f1618e8908352ea7101f66afecd53f3fd15002116f1e232ce43125.css&quot;,&quot;__theme_url_scoped_twilight&quot;:&quot;https://static.codepen.io/assets/editor/themes/scoped/twilight-440b9df51ecbe6257384600a5ea09c8ac33a9d860e15d950190a11d4f82f7909.css&quot;,&quot;__theme_url_scoped_solarized_dark&quot;:&quot;https://static.codepen.io/assets/editor/themes/scoped/solarized-dark-4b456e5e71195d8d9c8e5f060722d5f9fb908be40147ff5159851a72051f3747.css&quot;,&quot;__theme_url_scoped_tomorrow_night&quot;:&quot;https://static.codepen.io/assets/editor/themes/scoped/tomorrow-night-8b26461b91055f2cd4c7bebebb26b97807e33048c46f80d53d4ade465fe11c71.css&quot;,&quot;__theme_url_scoped_oceanic_dark&quot;:&quot;https://static.codepen.io/assets/editor/themes/scoped/oceanic-dark-a36b8ac5408ac81f9dea080ce5fb9ddd71537448b2c20f46e5145fb96ed1db62.css&quot;,&quot;__theme_url_scoped_panda&quot;:&quot;https://static.codepen.io/assets/editor/themes/scoped/panda-16542061ba4c8158eef01aaa0bc82eda10310b37aa85985e27eb6d49f44b34ea.css&quot;,&quot;__theme_url_scoped_duotone_dark&quot;:&quot;https://static.codepen.io/assets/editor/themes/scoped/duotone-dark-f8ac6d0ba133460720598e2476004dae25eb6dc631e181b558555ed4a1c62b9e.css&quot;,&quot;__theme_url_scoped_highcontrast_dark&quot;:&quot;https://static.codepen.io/assets/editor/themes/scoped/highcontrast-dark-1f760b46f811648ea7a58a89f7d3b174b3c2733fa00ab78dc56b81fcd27ae137.css&quot;,&quot;__theme_url_scoped_classic&quot;:&quot;https://static.codepen.io/assets/editor/themes/scoped/classic-e4128896151af1d515c6553eaeb67043bb53a354c2e49a25ed2b25de526710da.css&quot;,&quot;__theme_url_scoped_solarized_light&quot;:&quot;https://static.codepen.io/assets/editor/themes/scoped/solarized-light-2527ff5d4dbff7c38a474d4dfab0a39a303cddb0fb64daccb85303533c5f99fc.css&quot;,&quot;__theme_url_scoped_xq_light&quot;:&quot;https://static.codepen.io/assets/editor/themes/scoped/xq-light-5d0c8647757fcd697ee1c1f5d39edb372193e87bb402d0d4a9866d87cdc089ab.css&quot;,&quot;__theme_url_scoped_oceanic_light&quot;:&quot;https://static.codepen.io/assets/editor/themes/scoped/oceanic-light-df8f48b79b5c783af47cf585b78a9b06801b89754ddfd18ed48e0af50fb09d80.css&quot;,&quot;__theme_url_scoped_mdn_like&quot;:&quot;https://static.codepen.io/assets/editor/themes/scoped/mdn-like-e3435649da66454bfb7a84146034426aee6a1ed661170537eb120108125109b4.css&quot;,&quot;__theme_url_scoped_duotone_light&quot;:&quot;https://static.codepen.io/assets/editor/themes/scoped/duotone-light-44c77e7ad84a7326ec3c070c6a2e30bc81677da2cb8752683499eb9ae659073b.css&quot;,&quot;__theme_url_scoped_highcontrast_light&quot;:&quot;https://static.codepen.io/assets/editor/themes/scoped/highcontrast-light-001750c2a4a8eaba783e4bd98b0df57d07a9ca269377ce161d1c54e12a5a66ff.css&quot;}">
+<script src="https://static.codepen.io/assets/common/browser_support-1963aa6406ae47d3176af996336c5d219acd8913c5af309e72f18933e95201cc.js"></script>
+<script src="https://static.codepen.io/assets/common/everypage-a63f0cbd5f67116206c89108a0a1da6978ab1606d953812d875b800cf8fe823e.js"></script>
+<script src="https://static.codepen.io/assets/common/analytics_and_notifications-538ab2710674d4676fe331ffda620410176f9ac968498eeba639b3f0d1125ff8.js"></script>
+<script>
+LUX=(function(){var a=("undefined"!==typeof(LUX)&&"undefined"!==typeof(LUX.gaMarks)?LUX.gaMarks:[]);var d=("undefined"!==typeof(LUX)&&"undefined"!==typeof(LUX.gaMeasures)?LUX.gaMeasures:[]);var j="LUX_start";var k=window.performance;var l=("undefined"!==typeof(LUX)&&LUX.ns?LUX.ns:(Date.now?Date.now():+(new Date())));if(k&&k.timing&&k.timing.navigationStart){l=k.timing.navigationStart}function f(){if(k&&k.now){return k.now()}var o=Date.now?Date.now():+(new Date());return o-l}function b(n){if(k){if(k.mark){return k.mark(n)}else{if(k.webkitMark){return k.webkitMark(n)}}}a.push({name:n,entryType:"mark",startTime:f(),duration:0});return}function m(p,t,n){if("undefined"===typeof(t)&&h(j)){t=j}if(k){if(k.measure){if(t){if(n){return k.measure(p,t,n)}else{return k.measure(p,t)}}else{return k.measure(p)}}else{if(k.webkitMeasure){return k.webkitMeasure(p,t,n)}}}var r=0,o=f();if(t){var s=h(t);if(s){r=s.startTime}else{if(k&&k.timing&&k.timing[t]){r=k.timing[t]-k.timing.navigationStart}else{return}}}if(n){var q=h(n);if(q){o=q.startTime}else{if(k&&k.timing&&k.timing[n]){o=k.timing[n]-k.timing.navigationStart}else{return}}}d.push({name:p,entryType:"measure",startTime:r,duration:(o-r)});return}function h(n){return c(n,g())}function c(p,o){for(i=o.length-1;i>=0;i--){var n=o[i];if(p===n.name){return n}}return undefined}function g(){if(k){if(k.getEntriesByType){return k.getEntriesByType("mark")}else{if(k.webkitGetEntriesByType){return k.webkitGetEntriesByType("mark")}}}return a}return{mark:b,measure:m,gaMarks:a,gaMeasures:d}})();LUX.ns=(Date.now?Date.now():+(new Date()));LUX.ac=[];LUX.cmd=function(a){LUX.ac.push(a)};LUX.init=function(){LUX.cmd(["init"])};LUX.send=function(){LUX.cmd(["send"])};LUX.addData=function(a,b){LUX.cmd(["addData",a,b])};LUX_ae=[];window.addEventListener("error",function(a){LUX_ae.push(a)});LUX_al=[];if("function"===typeof(PerformanceObserver)&&"function"===typeof(PerformanceLongTaskTiming)){var LongTaskObserver=new PerformanceObserver(function(c){var b=c.getEntries();for(var a=0;a<b.length;a++){var d=b[a];LUX_al.push(d)}});try{LongTaskObserver.observe({type:["longtask"]})}catch(e){}};
+</script>
+<script src="https://cdn.speedcurve.com/js/lux.js?id=410041" async defer crossorigin="anonymous"></script>
+<script src="https://static.codepen.io/assets/packs/js/vendor-b9fee575cea0abcff365.chunk.js"></script>
+<script src="https://static.codepen.io/assets/packs/js/2-48477d248af443ad7f7f.chunk.js"></script>
+<script src="https://static.codepen.io/assets/packs/js/everypage-a3902fd1cf2ceccadeb6.js"></script>
+<script src="https://static.codepen.io/assets/packs/js/vendor-b9fee575cea0abcff365.chunk.js"></script>
+<script src="https://static.codepen.io/assets/packs/js/firebaseConnectLibs-99049dcd8abaec884e3d.js"></script>
+<script src="https://static.codepen.io/assets/packs/js/processorRouter-278ce5888beacbb1aaac.js"></script>
+<script src="https://static.filestackapi.com/filestack-js/3.x.x/filestack.min.js"></script>
+<script src="https://static.codepen.io/assets/editor/global/commonLibs-9baf61da2f0b1adbfdbda1a98aa009379eddc23641e45edf6d5c41f98fe361d0.js"></script>
+<script src="https://static.codepen.io/assets/editor/global/codemirror-c4c6f5379377e67f3e79161513066c5c491a47a393cd3e5669c9d3f40cee44fe.js"></script>
+<script src="https://static.codepen.io/assets/libs/emmet-codemirror-plugin-4eb895d546572aaa83c328e8766ad12bff808dc4115466de4baab2f025c13b6a.js"></script>
+<script src="https://static.codepen.io/assets/editor/pen/index-154fdff60dc93ebed6ffab4b693ebd78d0671d3362efd40e8ad0a9ddf2c48356.js"></script>
+</body>
+</html>

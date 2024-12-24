@@ -1,0 +1,435 @@
+<html>
+  <head>
+    <meta
+      name="viewport"
+      content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./loading.css" />
+    <link rel="stylesheet" href="./animate.css" />
+    <link rel="stylesheet" href="./modal.css" />
+    <title>MainPage</title>
+  </head>
+  <body>
+    <div id="box">
+      <div class="layer float">
+        <header>
+          <div class="container">
+            <a href="https://stylear.ai/ko">
+              <div id="logo">
+                <img src="./assets/whiteLogo.png" />
+              </div>
+            </a>
+            <div id="close">
+              <img src="./assets/Icons/close.png" />
+            </div>
+          </div>
+        </header>
+        <main>
+          <section id="middle" class="center">
+            <div class="container center">
+              <div id="prevModelButton" class="modelButton iconShadow">
+                <img src="./assets/Icons/leftBtn.png" />
+              </div>
+              <div id="nextModelButton" class="modelButton iconShadow">
+                <img src="./assets/Icons/rightBtn.png" />
+              </div>
+              <div id="toast">사진 터치로 상품 옵션을 바꿔보세요</div>
+            </div>
+          </section>
+          <section id="interactionTop" class="interaction center">
+            <div class="container center">
+              <div id="cart" class="icon center iconShadow">
+                <div class="bounceDown cartBounce">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <g id="Layer_2" data-name="Layer 2">
+                      <g id="arrow-down">
+                        <g id="arrow-down-2" data-name="arrow-down">
+                          <rect class="cls-1" width="24" height="24" />
+                          <path
+                            class="cls-2"
+                            d="M18.77,13.36a1,1,0,0,0-1.41-.13L13,16.86V5a1,1,0,0,0-2,0V16.86L6.64,13.23a1,1,0,1,0-1.28,1.54l6,5,.15.09.13.07a1,1,0,0,0,.72,0l.13-.07.15-.09,6-5A1,1,0,0,0,18.77,13.36Z"
+                          />
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <div class="cartIcon">
+                  <svg
+                    width="29"
+                    height="28"
+                    viewBox="0 0 29 28"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.4 22.4C6.86 22.4 5.614 23.66 5.614 25.2C5.614 26.74 6.86 28 8.4 28C9.94 28 11.2 26.74 11.2 25.2C11.2 23.66 9.94 22.4 8.4 22.4ZM0 0V2.8H2.8L7.84 13.426L5.95 16.856C5.726 17.248 5.6 17.71 5.6 18.2C5.6 19.74 6.86 21 8.4 21H25.2V18.2H8.988C8.792 18.2 8.638 18.046 8.638 17.85L8.68 17.682L9.94 15.4H20.37C21.42 15.4 22.344 14.826 22.82 13.958L27.832 4.872C27.944 4.676 28 4.438 28 4.2C28 3.43 27.37 2.8 26.6 2.8H5.894L4.578 0H0ZM22.4 22.4C20.86 22.4 19.614 23.66 19.614 25.2C19.614 26.74 20.86 28 22.4 28C23.94 28 25.2 26.74 25.2 25.2C25.2 23.66 23.94 22.4 22.4 22.4Z"
+                      fill="white"
+                    />
+                    <rect x="1" y="6" width="28" height="12" fill="var(--c)" />
+                    <path
+                      d="M6.80926 11.4H8.28926C8.09926 9.77 6.86926 8.83 5.22926 8.84C3.36926 8.83 1.94926 10.16 1.94926 12.46C1.94926 14.77 3.34926 16.1 5.22926 16.1C7.03926 16.1 8.12926 14.91 8.28926 13.6H6.80926C6.66926 14.35 6.06926 14.79 5.26926 14.8C4.17926 14.79 3.43926 13.99 3.44926 12.46C3.43926 10.98 4.16926 10.13 5.26926 10.14C6.08926 10.13 6.69926 10.61 6.80926 11.4ZM10.3786 16L10.9086 14.38H13.4686L13.9986 16H15.5786L13.1386 8.92H11.2386L8.79863 16H10.3786ZM11.2786 13.22L12.1586 10.52H12.2186L13.0986 13.22H11.2786ZM16.3764 16H17.8364V13.48H18.9464L20.2964 16H21.9364L20.4264 13.25C21.2364 12.9 21.6764 12.2 21.6764 11.24C21.6764 9.83 20.7564 8.93 19.1364 8.92H16.3764V16ZM17.8364 12.3V10.14H18.8764C19.7464 10.13 20.1664 10.52 20.1564 11.24C20.1664 11.94 19.7464 12.3 18.8764 12.3H17.8364ZM22.4147 10.14H24.5747V16H26.0347V10.14H28.1947V8.92H22.4147V10.14Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div id="modelIndex">
+                <div class="index" data-idx="0"></div>
+                <div class="index" data-idx="1"></div>
+                <div class="index" data-idx="2"></div>
+              </div>
+            </div>
+          </section>
+          <section id="interactionBottom" class="interaction center">
+            <div class="container">
+              <div id="like" class="icon iconShadow">
+                <svg
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 42 42"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <path
+                      d="M29.4,13.9c-2.3-2.5-6.1-2.5-8.4-0.1c-2.3-2.4-6.2-2.3-8.4,0.1c-2.2,2.4-2,6.2,0.3,8.6L21,30l8.1-7.5
+              C31.4,20.1,31.7,16.3,29.4,13.9z"
+                    ></path>
+                  </g>
+                </svg>
+              </div>
+              <div id="interactionCenter">
+                <div id="preset">골드, 0.2캐럿</div>
+                <div id="itemProgress" class="iconShadow">
+                  <progress value="0" max="100"></progress>
+                </div>
+              </div>
+              <div id="photoChange" data-idx="0">
+                <img src="./assets/selfie/1.jpg" />
+              </div>
+            </div>
+          </section>
+          <section id="itemList" data-active="0">
+            <div class="itemContainer">
+              <a href="https://stylear.ai/ko" target="_blank">
+                <div class="item" data-idx="1">
+                  <div class="photo">
+                    <img src="./assets/item/1.png" />
+                  </div>
+                  <div class="card">
+                    <div class="add text">NEW</div>
+                    <div class="name text">하트페탈즈3</div>
+                    <div class="price text">660,000원</div>
+                    <div class="span text">보러가기</div>
+                  </div>
+                </div>
+              </a>
+              <a href="https://stylear.ai/ko" target="_blank">
+                <div class="item" data-idx="2">
+                  <div class="photo">
+                    <img src="./assets/item/2.png" />
+                  </div>
+                  <div class="card">
+                    <div class="add text">NEW</div>
+                    <div class="name text">하트페탈즈3</div>
+                    <div class="price text">660,000원</div>
+                    <div class="span text">보러가기</div>
+                  </div>
+                </div>
+              </a>
+              <a href="https://stylear.ai/ko" target="_blank">
+                <div class="item" data-idx="3">
+                  <div class="photo">
+                    <img src="./assets/item/3.png" />
+                  </div>
+                  <div class="card">
+                    <div class="add text">NEW</div>
+                    <div class="name text">하트페탈즈3</div>
+                    <div class="price text">660,000원</div>
+                    <div class="span text">보러가기</div>
+                  </div>
+                </div>
+              </a>
+              <a href="https://stylear.ai/ko" target="_blank">
+                <div class="item" data-idx="4">
+                  <div class="photo">
+                    <img src="./assets/item/4.jpg" />
+                  </div>
+                  <div class="card">
+                    <div class="add text">NEW</div>
+                    <div class="name text">하트페탈즈3</div>
+                    <div class="price text">660,000원</div>
+                    <div class="span text">보러가기</div>
+                  </div>
+                </div>
+              </a>
+              <a href="https://stylear.ai/ko" target="_blank">
+                <div class="item" data-idx="5">
+                  <div class="photo">
+                    <img src="./assets/item/5.png" />
+                  </div>
+                  <div class="card">
+                    <div class="add text">NEW</div>
+                    <div class="name text">하트페탈즈3</div>
+                    <div class="price text">660,000원</div>
+                    <div class="span text">보러가기</div>
+                  </div>
+                </div>
+              </a>
+              <a href="https://stylear.ai/ko" target="_blank">
+                <div class="item" data-idx="6">
+                  <div class="photo">
+                    <img src="./assets/item/1.png" />
+                  </div>
+                  <div class="card">
+                    <div class="add text">NEW</div>
+                    <div class="name text">하트페탈즈3</div>
+                    <div class="price text">660,000원</div>
+                    <div class="span text">보러가기</div>
+                  </div>
+                </div>
+              </a>
+              <a href="https://stylear.ai/ko" target="_blank">
+                <div class="item" data-idx="7">
+                  <div class="photo">
+                    <img src="./assets/item/2.png" />
+                  </div>
+                  <div class="card">
+                    <div class="add text">NEW</div>
+                    <div class="name text">하트페탈즈3</div>
+                    <div class="price text">660,000원</div>
+                    <div class="span text">보러가기</div>
+                  </div>
+                </div>
+              </a>
+              <a href="https://stylear.ai/ko" target="_blank"
+                ><div class="item" data-idx="8">
+                  <div class="photo">
+                    <img src="./assets/item/3.png" />
+                  </div>
+                  <div class="card">
+                    <div class="add text">NEW</div>
+                    <div class="name text">하트페탈즈3</div>
+                    <div class="price text">660,000원</div>
+                    <div class="span text">보러가기</div>
+                  </div>
+                </div>
+              </a>
+              <a href="https://stylear.ai/ko" target="_blank">
+                <div class="item" data-idx="9">
+                  <div class="photo">
+                    <img src="./assets/item/4.jpg" />
+                  </div>
+                  <div class="card">
+                    <div class="add text">NEW</div>
+                    <div class="name text">하트페탈즈3</div>
+                    <div class="price text">660,000원</div>
+                    <div class="span text">보러가기</div>
+                  </div>
+                </div>
+              </a>
+              <a href="https://stylear.ai/ko" target="_blank">
+                <div class="item" data-idx="10">
+                  <div class="photo">
+                    <img src="./assets/item/5.png" />
+                  </div>
+                  <div class="card">
+                    <div class="add text">NEW</div>
+                    <div class="name text">하트페탈즈3</div>
+                    <div class="price text">660,000원</div>
+                    <div class="span text">보러가기</div>
+                  </div>
+                </div>
+              </a>
+              <a href="https://stylear.ai/ko" target="_blank"
+                ><div class="item" data-idx="11">
+                  <div class="photo">
+                    <img src="./assets/item/1.png" />
+                  </div>
+                  <div class="card">
+                    <div class="add text">NEW</div>
+                    <div class="name text">하트페탈즈3</div>
+                    <div class="price text">660,000원</div>
+                    <div class="span text">보러가기</div>
+                  </div>
+                </div>
+              </a>
+              <a href="https://stylear.ai/ko" target="_blank">
+                <div class="item" data-idx="12">
+                  <div class="photo">
+                    <img src="./assets/item/2.png" />
+                  </div>
+                  <div class="card">
+                    <div class="add text">NEW</div>
+                    <div class="name text">하트페탈즈3</div>
+                    <div class="price text">660,000원</div>
+                    <div class="span text">보러가기</div>
+                  </div>
+                </div>
+              </a>
+              <a href="https://stylear.ai/ko" target="_blank">
+                <div class="item" data-idx="13">
+                  <div class="photo">
+                    <img src="./assets/item/3.png" />
+                  </div>
+                  <div class="card">
+                    <div class="add text">NEW</div>
+                    <div class="name text">하트페탈즈3</div>
+                    <div class="price text">660,000원</div>
+                    <div class="span text">보러가기</div>
+                  </div>
+                </div>
+              </a>
+              <a href="https://stylear.ai/ko" target="_blank">
+                <div class="item" data-idx="14">
+                  <div class="photo">
+                    <img src="./assets/item/4.jpg" />
+                  </div>
+                  <div class="card">
+                    <div class="add text">NEW</div>
+                    <div class="name text">하트페탈즈3</div>
+                    <div class="price text">660,000원</div>
+                    <div class="span text">보러가기</div>
+                  </div>
+                </div>
+              </a>
+              <a href="https://stylear.ai/ko" target="_blank">
+                <div class="item" data-idx="15">
+                  <div class="photo">
+                    <img src="./assets/item/5.png" />
+                  </div>
+                  <div class="card">
+                    <div class="add text">NEW</div>
+                    <div class="name text">하트페탈즈3</div>
+                    <div class="price text">660,000원</div>
+                    <div class="span text">보러가기</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </section>
+          <section id="buttons" class="center">
+            <div class="container">
+
+              <a href="./viewAll/index.html" >
+                <div id="viewAll" class="iconM iconShadow bottomIcon">
+                  <img src="./assets/Icons/viewAll.png" />
+                </div>
+                </a>
+              
+              <div id="camera" class="iconL iconShadow bottomIcon">
+                <img src="./assets/Icons/CameraBtn.png" />
+              </div>
+              <div id="moreInfo" class="iconM iconShadow bottomIcon">
+                <img src="./assets/Icons/Exclude.png" />
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+      <div class="layer models">
+        <section class="swiper">
+          <div class="model">
+            <img src="./assets/models/1.png" />
+          </div>
+          <div class="model">
+            <img src="./assets/models/2.png" />
+          </div>
+          <div class="model">
+            <img src="./assets/models/3.png" />
+          </div>
+        </section>
+      </div>
+      <div class="layer loading">
+        <div class="ball"></div>
+        <div class="floatLoading"></div>
+      </div>
+      <div class="layer modal selected darkBackground">
+        <template id="actionSheet">
+          <div class="actionsheet container">
+            <div class="msg center floatBox">
+              <p class="innerText">
+                얼굴이 잘 보이는 사진으로 다시 시도해주세요
+              </p>
+            </div>
+            <div class="negAction center floatBox">
+              <p class="innerText">취소</p>
+            </div>
+            <div class="posAction center floatBox">
+              <p class="innerText">다시 착용하기</p>
+            </div>
+          </div>
+        </template>
+        <template id="modalBottomSheet">
+          <div class="actionsheet container">
+            <div class="floatBox modalContent">
+              <div class="modalContainer">
+                <div class="info">
+                  <h3 class="name">하트페탈즈3</h3>
+                  <h2 class="price">660,000원</h2>
+                </div>
+                <div class="option">
+                  <div class="dp-optionName">색상</div>
+                  <select
+                    option_product_no="6211"
+                    option_select_element="ec-option-select-finder"
+                    option_sort_no="1"
+                    option_type="T"
+                    item_listing_type="S"
+                    option_title="색상"
+                    product_type="product_option"
+                    product_option_area="product_option_6211_0"
+                    name="option1"
+                    id="product_option_id1"
+                    class="ProductOption0 dp-optionBox"
+                    option_style="select"
+                    required="true"
+                  >
+                    <option value="*" selected="" link_image="">
+                      - [필수] 옵션을 선택해 주세요 -
+                    </option>
+                    <option value="**" disabled="" link_image="">
+                      -------------------
+                    </option>
+                    <option value="실버" link_image="">실버</option>
+                    <option value="로즈골드" link_image="">로즈골드</option>
+                    <option value="골드" link_image="">골드</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="posAction center floatBox">
+              <p class="innerText">장바구니 담기</p>
+            </div>
+          </div>
+        </template>
+        <template id="presetBottomSheet"> </template>
+        <div class="actionsheet container">
+          <div class="floatBox modalContent presetContent">
+            <div class="modalContainer">
+              <div class="info">
+                <h3 class="name">하트페탈즈3</h3>
+                <div class="curPresetContainer center">
+                  <h2 class="curPreset">골드, 0.2캐럿</h2>
+                </div>
+              </div>
+              <div class="option"></div>
+            </div>
+          </div>
+          <div class="posAction center floatBox">
+            <p class="innerText">착용하기</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+    <script src="./modal.js"></script>
+  </body>
+</html>

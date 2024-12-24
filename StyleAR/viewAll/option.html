@@ -1,0 +1,189 @@
+<template id="filterBottomSheet">
+    <div class="actionsheet container">
+      <div class="floatBox modalContent bottomSheet center filterModal">
+        <div class="modalContainer center">
+          <div class="modalContent">
+            <div class="tagSet">
+              <div class="title">선택된 옵션</div>
+              <ul class="tagList">
+                <li class="tag selected">금속</li>
+                <li class="tag selected">유색</li>
+                <li class="tag selected">기타</li>
+                <li class="tag selected">0.2캐럿</li>
+                <li class="tag selected">2캐럿</li>
+                <li class="tag selected">18K 핑크골드</li>
+              </ul>
+            </div>
+            <div class="tagSet">
+              <div class="title">소재</div>
+              <ul class="tagList">
+                <li class="tag">다이아몬드</li>
+                <li class="tag selected">금속</li>
+                <li class="tag">유색</li>
+                <li class="tag">진주</li>
+                <li class="tag">기타</li>
+              </ul>
+            </div>
+            <div class="tagSet">
+              <div class="title">카테고리</div>
+              <ul class="tagList">
+                <li class="tag">다이아몬드</li>
+                <li class="tag">금속</li>
+                <li class="tag selected">유색</li>
+                <li class="tag">진주</li>
+                <li class="tag selected">기타</li>
+              </ul>
+            </div>
+            <div class="tagSet">
+              <div class="title">다이아몬드</div>
+              <ul class="tagList">
+                <li class="tag">멜리</li>
+                <li class="tag">0.1캐럿</li>
+                <li class="tag selected">0.2캐럿</li>
+                <li class="tag">0.3캐럿</li>
+                <li class="tag">0.5캐럿</li>
+                <li class="tag">1캐럿</li>
+                <li class="tag selected">2캐럿</li>
+                <li class="tag">3캐럿</li>
+              </ul>
+            </div>
+            <div class="tagSet">
+              <div class="title">색상</div>
+              <ul class="imgTagList">
+                <li class="imgTag">
+                  <div class="img">
+                    <img src="./assets/tags/1.png" alt="" />
+                  </div>
+                  <div class="text">18K 화이트 골드</div>
+                </li>
+                <li class="imgTag selected">
+                  <div class="img">
+                    <img src="./assets/tags/2.png" alt="" />
+                  </div>
+                  <div class="text">18K 옐로우 골드</div>
+                </li>
+                <li class="imgTag selected">
+                  <div class="img">
+                    <img src="./assets/tags/3.png" alt="" />
+                  </div>
+                  <div class="text">18K 핑크 골드</div>
+                </li>
+                <li class="imgTag">
+                  <div class="img">
+                    <img src="./assets/tags/1.png" alt="" />
+                  </div>
+                  <div class="text">플래티넘</div>
+                </li>
+                <li class="imgTag">
+                  <div class="img">
+                    <img src="./assets/tags/2.png" alt="" />
+                  </div>
+                  <div class="text">실버</div>
+                </li>
+                <li class="imgTag">
+                  <div class="img">
+                    <img src="./assets/tags/3.png" alt="" />
+                  </div>
+                  <div class="text">10K 골드</div>
+                </li>
+              </ul>
+            </div>
+            <div class="priceArea tagSet">
+              <div class="title">금액대별</div>
+              <div class="curPrice">
+                <span class="min">0</span> 원 ~
+                <span class="max">400,000</span> 원
+              </div>
+              <div class="priceTag">
+                <ul class="priceTagList tagList">
+                  <li class="tag">0원 ~ 50만원</li>
+                  <li class="tag">50원 ~ 100만원</li>
+                  <li class="tag">100원 ~ 200만원</li>
+                  <li class="tag selected">200원 ~ 300만원</li>
+                  <li class="tag">300원 ~ 500만원</li>
+                  <li class="tag">500만원 ~</li>
+                </ul>
+              </div>
+              <div class="priceProgressSlider">
+                <div slider id="slider-distance">
+                  <div>
+                    <div inverse-left style="width: 70%"></div>
+                    <div inverse-right style="width: 70%"></div>
+                    <div range style="left: 30%; right: 40%"></div>
+                    <span thumb style="left: 30%"></span>
+                    <span thumb style="left: 60%"></span>
+                  </div>
+                  <input
+                    type="range"
+                    tabindex="0"
+                    value="30"
+                    max="100"
+                    min="0"
+                    step="1"
+                    oninput="
+                  this.value=Math.min(this.value,this.parentNode.childNodes[5].value-1);
+                  var value=(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.value)-(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.min);
+                  var children = this.parentNode.childNodes[1].childNodes;
+                  children[1].style.width=value+'%';
+                  children[5].style.left=value+'%';
+                  children[7].style.left=value+'%';
+                  children[11].style.left=value+'%';
+                  "
+                  />
+
+                  <input
+                    type="range"
+                    tabindex="0"
+                    value="60"
+                    max="100"
+                    min="0"
+                    step="1"
+                    oninput="
+                  this.value=Math.max(this.value,this.parentNode.childNodes[3].value-(-1));
+                  var value=(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.value)-(100/(parseInt(this.max)-parseInt(this.min)))*parseInt(this.min);
+                  var children = this.parentNode.childNodes[1].childNodes;
+                  children[3].style.width=(100-value)+'%';
+                  children[5].style.right=(100-value)+'%';
+                  children[9].style.left=value+'%';
+                  children[13].style.left=value+'%';
+                 "
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bottomBtnSet">
+            <div class="initBtn center">
+              <div class="icon">
+                <img src="./assets/Icons/reload.png" alt="" />
+              </div>
+              <div class="text">필터 초기화</div>
+            </div>
+            <div class="searchBtn center">
+              <div class="text">759개의 상품보기</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </template>
+
+
+  //  <div class="layer modal darkBackground selected">
+    <template id="sortingBottomSheet">
+      <div class="actionsheet container">
+        <div class="floatBox modalContent bottomSheet sortingBox center">
+          <div class="modalContainer center">
+            <ul class="sortingList">
+              <li class="option selected">추천순</li>
+              <li class="option">신상품순</li>
+              <li class="option">상품명순</li>
+              <li class="option">낮은가격순</li>
+              <li class="option">높은가격순</li>
+              <li class="option">인기상품순</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </template>
+  </div>

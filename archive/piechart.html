@@ -1,0 +1,323 @@
+<html>
+<head>
+  <script src="piebase1.min.js"></script>
+  <script src="https://cdn.anychart.com/releases/v8/js/anychart-ui.min.js"></script>
+  <script src="https://cdn.anychart.com/releases/v8/js/anychart-exports.min.js"></script>
+  <link href="pie1.css" type="text/css" rel="stylesheet">
+  <link href="pie2.css" type="text/css" rel="stylesheet">
+  <style type="text/css">
+
+       #containertwo {
+ width:580;
+ height:300;
+ left: 250;
+ float: left;
+ text-align:center;
+ font-size:20px;
+  font-family: "Times New Roman", Times, serif;
+ margin-left:640;
+ margin-top:50;
+ padding:50px;
+ padding-left:10px;
+  position:absolute;
+ background-image: url("box.png");
+   background-repeat: no-repeat;
+  background-size: auto;
+    }
+
+     #containertwo-2 {
+ width:580;
+ height:300;
+ left: 250;
+text-align:center;
+ float: left;
+  font-size:20px;
+  font-family: "Times New Roman", Times, serif;
+ margin-left:640;
+ margin-top:600;
+  padding:50px;
+  padding-left:10px;
+  position:absolute;
+ background-image: url("box.png");
+   background-repeat: no-repeat;
+  background-size: auto;
+     }
+         #containertwo-3 {
+ width:580;
+ height:300;
+ left: 250;
+ float: left;
+ text-align:center;
+  padding:50px;
+  padding-left:10px;
+ margin-left:640;
+  font-size:20px;
+  font-family: "Times New Roman", Times, serif;
+  position:absolute;
+   margin-top:1100;
+  background-image: url("box.png");
+   background-repeat: no-repeat;
+  background-size: auto;
+    }
+
+ #containertwo-4 {
+  width:580;
+ height:300;
+ left: 250;
+ float: left;
+ text-align:center;
+  padding:50px;
+  padding-left:10px;
+ margin-left:640;
+  font-size:20px;
+  font-family: "Times New Roman", Times, serif;
+  position:absolute;
+   margin-top:1600;
+ background-image: url("box.png");
+   background-repeat: no-repeat;
+  background-size: auto;
+    }
+     #containertwo-5 {
+  width:580;
+ height:250;
+ left: 250;
+ float: left;
+ text-align:center;
+  padding:50px;
+  padding-left:10px;
+ margin-left:640;
+  font-size:20px;
+  font-family: "Times New Roman", Times, serif;
+  position:absolute;
+   margin-top:2080;
+ background-image: url("box.png");
+   background-repeat: no-repeat;
+  background-size: auto;
+    }
+    #container {
+      width: 600;
+      height: 500;
+      margin: 200;
+      padding: 0;
+    }
+#title {
+ width:500;
+ height:20;
+ left: 250;
+ top:100;
+text-align:center;
+ float: left;
+  font-size:30px;
+  font-family: "Times New Roman", Times, serif;
+  color: #452929;
+ margin-left:300;
+ margin-bottom:400;
+  padding:-50px;
+  position:absolute;
+
+}
+  
+ 
+  
+</style>
+</head>
+
+<body>
+ <div id="title">Minecraft Survey Usability Result</div>
+     <div id="containertwo">Players mentioned that the UI design made what was going on pretty clear. This overall high rating result implies the instructions in each escene page were helpful in introducing mechanics.</div>
+     <div id="containertwo-2">58.8% of participants of Minecraft said the controller sometimes (once or twice) messed up against their purpose. 29.4% said never, 6% of participants said the controller had messed up more than twice.</div>
+     <div id="containertwo-3">Graphics and Art style was rated fairly high throughout the participants. 11.8% of participants Strongly agreed that Minecraft has visually attractive elements and polished graphics. 52% of participants agreed, 17.6% neutral, and 15% disagreed</div>
+  <div id="containertwo-4"> The Overall Game quality with Environment art was rated evenly. This implies that the UI functions very well as a gameplay narrative and world introduction </div>
+   <div id="containertwo-5">The one issue was that about half of participants expressed the issue of lacking specific goals or directions for the Minecraft beacuse they felt like playing Legos on the comuter. The other half were satisfied with the fact that Minecraft is mostly about the players coming up with their own creativity. This result suggests that some players wish to have more clues to experience and stimulation to continue the game.</div>
+ 
+  <div id="container"></div>
+
+  
+  <script>
+
+    anychart.onDocumentReady(function () {
+      // create pie chart with passed data
+      var data = anychart.data.set([
+             ['Strongly agree', 23.5, 24.2],
+        ['Agree', 41,2, 334],
+        ['Neither agree nor disagree', 29.4, 1045],
+        ['Disagree', 5.9, 3038],
+        ['Strongly disagree', 0.1, 3038]
+      ]);
+
+      var wealth = data.mapAs({ x: 0, value: 1 });
+
+      var chart = anychart.pie(wealth);
+      chart
+        .labels()
+        .hAlign('center')
+        .position('outside')
+        .format('{%Value} trn.n({%PercentOfCategory}%)');
+
+      // set chart title text settings
+      chart.title('User information and Navigational components');
+
+      // set legend title text settings
+      chart
+        .legend()
+        // set legend position and items layout
+        .position('center-bottom')
+        .itemsLayout('horizontal')
+        .align('center');
+chart.fill("aquastyle");
+      // set container id for the chart
+      chart.container('container');
+      // initiate chart drawing
+      chart.draw();
+     
+     
+       var data = anychart.data.set([
+        ['Perfect', 29.4, 24.2],
+        ['Great', 58.8, 334],
+        ['Good', 6.6, 1045],
+        ['Rough', 10, 3038],
+        ['Very Fragile',5.9, 5.9]
+      ]);
+
+      var wealth = data.mapAs({ x: 0, value: 1 });
+
+      var chart = anychart.pie(wealth);
+      chart
+        .labels()
+        .hAlign('center')
+        .position('outside')
+        .format('{%Value} trn.n({%PercentOfCategory}%)');
+
+      // set chart title text settings
+      chart.title('Controller Smoothness, Accuracy');
+chart.fill("aquastyle");
+      // set legend title text settings
+      chart
+        .legend()
+        // set legend position and items layout
+        .position('center-bottom')
+        .itemsLayout('horizontal')
+        .align('center');
+
+
+      // set container id for the chart
+      chart.container('container');
+      // initiate chart drawing
+      chart.draw();
+
+      //graphics and art style
+ var data = anychart.data.set([
+           ['Strongly agree', 17.6, 24.2],
+        ['Agree', 52.9, 334],
+            ['Neither agree nor disagree', 17.6, 1045],
+        ['Disagree', 11.8, 3038],
+        ['Strongly disagree', 4, 3038]
+      ]);
+
+      var wealth = data.mapAs({ x: 0, value: 1 });
+
+      var chart = anychart.pie(wealth);
+      chart
+        .labels()
+        .hAlign('center')
+        .position('outside')
+        .format('{%Value} trn.n({%PercentOfCategory}%)');
+
+      // set chart title text settings
+      chart.title('Graphics and Art style');
+chart.fill("aquastyle");
+      // set legend title text settings
+      chart
+        .legend()
+        // set legend position and items layout
+        .position('center-bottom')
+        .itemsLayout('horizontal')
+        .align('center');
+
+
+      // set container id for the chart
+      chart.container('container');
+      // initiate chart drawing
+      chart.draw();
+
+
+      //
+ //Environment: World Introduction
+ var data = anychart.data.set([
+           ['Strongly agree', 37.6, 24.2],
+        ['Agree', 42.9, 334],
+            ['Neither agree nor disagree', 6.6, 1045],
+        ['Disagree', 10, 3038],
+        ['Strongly disagree', 7.2, 3038]
+      ]);
+
+      var wealth = data.mapAs({ x: 0, value: 1 });
+
+      var chart = anychart.pie(wealth);
+      chart
+        .labels()
+        .hAlign('center')
+        .position('outside')
+        .format('{%Value} trn.n({%PercentOfCategory}%)');
+
+      // set chart title text settings
+      chart.title('Environment: World Introuction');
+chart.fill("aquastyle");
+      // set legend title text settings
+      chart
+        .legend()
+        // set legend position and items layout
+        .position('center-bottom')
+        .itemsLayout('horizontal')
+        .align('center');
+
+
+      // set container id for the chart
+      chart.container('container');
+      // initiate chart drawing
+      chart.draw();
+
+
+      //
+
+
+
+         var data = anychart.data.set([
+           ['Strongly agree', 29.4, 24.2],
+        ['Agree', 3.53, 334],
+            ['Neither agree nor disagree', 23.5, 1045],
+        ['Disagree', 11.8, 3038],
+        ['Strongly disagree', 0.3, 3038]
+      ]);
+
+      var wealth = data.mapAs({ x: 0, value: 1 });
+
+      var chart = anychart.pie(wealth);
+      chart
+        .labels()
+        .hAlign('center')
+        .position('outside')
+        .format('{%Value} trn.n({%PercentOfCategory}%)');
+
+      // set chart title text settings
+      chart.title('Goal and quest');
+chart.fill("aquastyle");
+      // set legend title text settings
+      chart
+        .legend()
+        // set legend position and items layout
+        .position('center-bottom')
+        .itemsLayout('horizontal')
+        .align('center');
+
+
+      // set container id for the chart
+      chart.container('container');
+      // initiate chart drawing
+      chart.draw();
+    });
+
+  
+</script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+html, body {
+    margin:0;
+    padding:0;
+    font-family: "Lucida Grande", Verdana;
+    font-size: 0.9em;
+    text-align: center;
+    background-color:#03121f;
+    
+}
+
+input, select {
+    font-size:1.2em;
+}
+
+table {
+    margin-top:-10px;
+    margin-left:7px;
+}
+
+h4 {
+    font-size:1.1em;
+    text-decoration:none;
+    font-weight:normal;
+    color:#23A4FF;
+}
+
+a {
+    color:#23A4FF;
+}
+
+#container {
+    background-color:#03121f;
+    width: 1000px;
+    height: 1000px;
+    margin:0 auto;
+    position:relative;
+}
+
+#left-container{
+    left:1200px;
+    height:800px;
+    position:absolute;
+    align-items: left;
+    top:0;
+}
+#wayright-container {
+    width:900px;
+    background-color: blue;
+       margin-right:513px;
+   }
+
+
+#left-container, #right-container {
+    width:200px;
+    color:#ececec;
+    text-align: left;
+    overflow: auto;
+    background-color:#fff;
+    background-repeat:no-repeat;
+
+}
+
+#left-container {
+    background-color:#03121f;
+    left:-230px;
+    background-image:url('col2.png');
+    background-position:center right;
+
+    
+}
+
+#right-container {
+    background-color:#03121f;
+    right:230;
+    background-image:url('col1.png');
+    background-position:center left;
+
+}
+
+#right-container h4{
+    text-indent:8px;
+}
+
+#center-container {
+    background-color:#03121f;
+    bottom:300px;
+    width:300px;
+    left:150px;
+
+    color:rgb(236, 24, 24);
+}
+
+
+#wayright-container {
+    bottom:300px;
+    width:300px;
+    left:150px;
+    background-color:black;
+    color:rgb(236, 24, 24);
+}
+
+.text {
+    margin: 7px;
+}
+
+#inner-details {
+    font-size:1.2em;
+    list-style:none;
+    margin:7px;
+}
+
+#log {
+    position:absolute;
+    top:10px;
+    font-size:1.0em;
+    font-weight:bold;
+    color:#23A4FF;
+}
+
+
+#infovis {
+    position:relative;
+    width:600px;
+    height:600px;
+    margin:auto;
+    overflow:hidden;
+}
+
+/*TOOLTIPS*/
+.tip {
+    color: #111;
+    width: 139px;
+    background-color: white;
+    border:1px solid #ccc;
+    -moz-box-shadow:#555 2px 2px 8px;
+    -webkit-box-shadow:#555 2px 2px 8px;
+    -o-box-shadow:#555 2px 2px 8px;
+    box-shadow:#555 2px 2px 8px;
+    opacity:0.9;
+    filter:alpha(opacity=90);
+    font-size:10px;
+    font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
+    padding:7px;
+}
