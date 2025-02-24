@@ -175,7 +175,28 @@
     </div>
 </div>
 
+
+
 <section id="projects">
+<div id="mir5" class="project  category-work ">
+    
+    <span class="box-unvisible left"></span>
+    <div class="box-visible ">
+        <h3><b>MIR5 </b></h3>
+        <p>
+            Innovating generative AI/RL-Powered Gaming Experiences
+            Developed NPC behaviors and dynamic character interaction systems using RL(Reinforcement Learning) 
+        </p>
+        <p><a>
+             PM; Research; Project Planning  
+        </a></p>
+        <div>
+            
+            <small class="badge">work</small>
+            
+        </div>
+    </div>
+</div>
 <div id="history" class="project  category-work ">
     <span class="box-unvisible top"></span>
     <span class="box-unvisible right"></span>
@@ -352,25 +373,6 @@
     </div>
 </div>
 
-<div id="toyota" class="project  category-casestudy ">
-    
-    <span class="box-unvisible left"></span>
-    <div class="box-visible ">
-        <h3><b>Toyota Woven City </b></h3>
-        <p>
-            Twelve sketches of Toyota Woven City Prototype
-
-        </p>
-        <p><a>
-             Unreal Engine;   visualization  
-        </a></p>
-        <div>
-            
-            <small class="badge">case study</small>
-            
-        </div>
-    </div>
-</div>
 
 <div id="ravi" class="project  category-personal ">
     <span class="box-unvisible top"></span>
@@ -525,6 +527,32 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     openModal();
     }
+
+    document.getElementById("mir5").onclick = function(e) {
+        document.getElementById("img-styleardoc").classList.add("show");
+        document.getElementById("modal-title").innerHTML = "MIR5<br><small>Advancing AI-Driven Game Design: From Strategy to Implementation</small>";
+        document.getElementById("modal-content").innerHTML ="In my recent role at Wemade, I led the collaboration with NVIDIA on the Mir5 project, shaping the strategic direction and development roadmap for AI-based game content. By integrating Mistral-NeMo-Minitron 8B into our pipeline, I established real-time inference solutions for decision-making based on live state data. Through regular technical meetings and close cross-functional collaboration with development, combat design, and global investment teams, we explored new frontiers in AI-driven storytelling and character development. From researching the latest reinforcement learning techniques to designing intelligent NPC behavior and dynamic interaction systems, I was dedicated to creating immersive, scalable, and engaging gaming experiences."
+        document.getElementById("modal-extra").innerHTML = `
+    <div class="extra-links">
+    <a href="https://www.youtube.com/watch?v=-8XeiZ4djKw" target="_blank">
+        <i class="fas fa-link" aria-hidden="true"></i> AI Asterion Demo Video
+    </a>
+    <a href="./Wemade/mir5_asterion.png" target="_blank">
+    <a href="./Wemade/mir5_asterion.png" target="_blank">
+    </a>
+    <a href="./Wemade/trainingAI.pdf" target="_blank">
+        <i class="far fa-window-maximize" aria-hidden="true"></i> RL Agent 도입 개발 로드맵
+    </a>
+    <a href="https://www.nvidia.com/en-us/geforce/news/nvidia-ace-autonomous-ai-companions-pubg-naraka-bladepoint/" target="_blank">
+        <i class="far fa-window-maximize" aria-hidden="true"></i> Article
+    </a>
+
+    </div>
+
+`;
+
+    openModal();
+    }
     
     document.getElementById("history").onclick = function(e) {
         document.getElementById("img-styleardoc").classList.add("show");
@@ -547,6 +575,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     openModal();
     }
+
+
+
     document.getElementById("kohi").onclick = function(e) {
          
         
