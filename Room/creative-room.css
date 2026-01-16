@@ -1,0 +1,609 @@
+/* Isometric 3D Room Animation */
+#creative-room-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 40px 20px;
+    min-height: 280px;
+    perspective: 800px;
+    margin-bottom: 20px;
+}
+
+#creative-room {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: rotateIsometricRoom 12s infinite ease-in-out;
+    cursor: grab;
+}
+
+#creative-room:hover {
+    animation-play-state: paused;
+}
+
+#creative-room:active {
+    cursor: grabbing;
+}
+
+@keyframes rotateIsometricRoom {
+    0%, 100% {
+        transform: rotateX(60deg) rotateZ(-45deg);
+    }
+    50% {
+        transform: rotateX(60deg) rotateZ(135deg);
+    }
+}
+
+/* Room walls - isometric style */
+.room-wall {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+
+/* Floor - Data Scientist workspace */
+.room-floor {
+    transform: rotateX(90deg) translateZ(-100px);
+    background:
+        linear-gradient(45deg, transparent 48%, rgba(97, 133, 108, 0.12) 49%, rgba(97, 133, 108, 0.12) 51%, transparent 52%),
+        linear-gradient(-45deg, transparent 48%, rgba(97, 133, 108, 0.12) 49%, rgba(97, 133, 108, 0.12) 51%, transparent 52%),
+        linear-gradient(to bottom, #fafafa, #f0f4f2);
+    background-size: 40px 40px, 40px 40px, 100% 100%;
+    border: 1px solid rgba(97, 133, 108, 0.2);
+    box-shadow: inset 0 -20px 40px rgba(41, 64, 50, 0.05);
+}
+
+/* Left wall - Engineer's side */
+.room-left-wall {
+    transform: rotateY(-90deg) translateZ(-100px);
+    background: linear-gradient(to bottom, #fff 0%, #f8faf9 100%);
+    border-right: 1px solid rgba(97, 133, 108, 0.15);
+    box-shadow: inset -15px 0 25px rgba(41, 64, 50, 0.06);
+}
+
+/* Right wall - Musician's side */
+.room-right-wall {
+    transform: rotateY(90deg) translateZ(-100px);
+    background: linear-gradient(to bottom, #fff 0%, #f8faf9 100%);
+    border-left: 1px solid rgba(97, 133, 108, 0.15);
+    box-shadow: inset 15px 0 25px rgba(41, 64, 50, 0.06);
+}
+
+/* Room items and furniture */
+.room-item {
+    position: absolute;
+    transition: all 0.3s ease;
+}
+
+/* Desk for Data Scientist - on floor */
+.desk {
+    width: 80px;
+    height: 50px;
+    background: linear-gradient(to bottom, #61856c 0%, #294032 100%);
+    border: 1px solid rgba(41, 64, 50, 0.5);
+    border-radius: 2px;
+    box-shadow: 0 4px 8px rgba(41, 64, 50, 0.2);
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.desk::after {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 10%;
+    width: 80%;
+    height: 8px;
+    background: linear-gradient(to bottom, #7a9d84 0%, #61856c 100%);
+    border-radius: 2px 2px 0 0;
+}
+
+/* Laptop on desk */
+.laptop {
+    width: 40px;
+    height: 25px;
+    background: linear-gradient(135deg, #294032 0%, #1a1a1a 100%);
+    border: 1px solid #1a1a1a;
+    border-radius: 2px;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%) rotateX(70deg);
+    box-shadow: 0 2px 4px rgba(41, 64, 50, 0.3);
+}
+
+.laptop::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    height: 15px;
+    background: linear-gradient(135deg, #b6e0c8 0%, #61856c 100%);
+    border-radius: 1px;
+}
+
+/* Books stack - Engineer's corner */
+.books {
+    width: 30px;
+    height: 20px;
+    left: 20px;
+    bottom: 20px;
+}
+
+.book {
+    position: absolute;
+    width: 100%;
+    height: 6px;
+    border-radius: 1px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.book:nth-child(1) {
+    background: linear-gradient(to right, #e74c3c 0%, #c0392b 100%);
+    bottom: 0;
+}
+
+.book:nth-child(2) {
+    background: linear-gradient(to right, #3498db 0%, #2980b9 100%);
+    bottom: 7px;
+}
+
+.book:nth-child(3) {
+    background: linear-gradient(to right, #2ecc71 0%, #27ae60 100%);
+    bottom: 14px;
+}
+
+/* Guitar - Musician's corner */
+.guitar {
+    width: 15px;
+    height: 45px;
+    background: linear-gradient(to bottom, #d4a574 0%, #b8956a 100%);
+    border-radius: 8px 8px 3px 3px;
+    border: 1px solid #8b6f47;
+    right: 25px;
+    bottom: 20px;
+}
+
+.guitar::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 8px;
+    height: 8px;
+    background: #1a1a1a;
+    border-radius: 50%;
+}
+
+.guitar::after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow:
+        2px 0 0 rgba(255, 255, 255, 0.3),
+        -2px 0 0 rgba(255, 255, 255, 0.3);
+}
+
+/* Monitor/Chart on left wall */
+.monitor {
+    width: 50px;
+    height: 40px;
+    background: linear-gradient(135deg, #294032 0%, #1a1a1a 100%);
+    border: 2px solid #61856c;
+    border-radius: 3px;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 4px 8px rgba(41, 64, 50, 0.3);
+}
+
+.monitor::before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    right: 3px;
+    bottom: 8px;
+    background: linear-gradient(135deg, #b6e0c8 20%, #61856c 80%);
+    border-radius: 1px;
+}
+
+/* Chart lines on monitor */
+.monitor::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 60%;
+    background:
+        linear-gradient(to right, transparent 45%, rgba(255, 255, 255, 0.3) 47%, rgba(255, 255, 255, 0.3) 53%, transparent 55%),
+        linear-gradient(to bottom, transparent 45%, rgba(255, 255, 255, 0.3) 47%, rgba(255, 255, 255, 0.3) 53%, transparent 55%);
+    background-size: 10px 10px;
+    pointer-events: none;
+}
+
+/* Vinyl records on right wall */
+.vinyl-collection {
+    width: 60px;
+    height: 50px;
+    top: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.vinyl {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: radial-gradient(circle, #1a1a1a 0%, #000 100%);
+    border-radius: 50%;
+    border: 2px solid #2c2c2c;
+}
+
+.vinyl::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 6px;
+    height: 6px;
+    background: #8B4513;
+    border-radius: 50%;
+}
+
+.vinyl:nth-child(1) {
+    left: 0;
+    top: 0;
+}
+
+.vinyl:nth-child(2) {
+    left: 22px;
+    top: 0;
+}
+
+.vinyl:nth-child(3) {
+    left: 44px;
+    top: 0;
+}
+
+/* Plant for ambiance */
+.plant {
+    width: 20px;
+    height: 30px;
+    right: 15px;
+    top: 50px;
+}
+
+.plant-pot {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 12px;
+    height: 10px;
+    background: linear-gradient(to bottom, #8B4513 0%, #654321 100%);
+    border-radius: 0 0 3px 3px;
+}
+
+.plant-leaf {
+    position: absolute;
+    width: 8px;
+    height: 12px;
+    background: linear-gradient(135deg, #27ae60 0%, #229954 100%);
+    border-radius: 50% 0;
+}
+
+.plant-leaf:nth-child(1) {
+    top: 5px;
+    left: 2px;
+    transform: rotate(-20deg);
+}
+
+.plant-leaf:nth-child(2) {
+    top: 2px;
+    left: 6px;
+    transform: rotate(20deg);
+}
+
+.plant-leaf:nth-child(3) {
+    top: 8px;
+    left: 8px;
+    transform: rotate(45deg);
+}
+
+/* Responsive design */
+@media (max-width: 992px) {
+    #creative-room-container {
+        min-height: 250px;
+        padding: 30px 15px;
+        margin-top: 20px;
+    }
+
+    #creative-room {
+        width: 180px;
+        height: 180px;
+    }
+
+    .room-wall {
+        width: 180px;
+        height: 180px;
+    }
+
+    .desk {
+        width: 70px;
+        height: 45px;
+    }
+
+    .laptop {
+        width: 35px;
+        height: 22px;
+    }
+
+    .monitor {
+        width: 45px;
+        height: 35px;
+    }
+
+    .books {
+        width: 25px;
+        height: 18px;
+    }
+
+    .guitar {
+        width: 13px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    #creative-room-container {
+        min-height: 220px;
+        padding: 25px 10px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    #creative-room {
+        width: 150px;
+        height: 150px;
+    }
+
+    .room-wall {
+        width: 150px;
+        height: 150px;
+    }
+
+    .desk {
+        width: 60px;
+        height: 38px;
+        bottom: 15px;
+    }
+
+    .laptop {
+        width: 30px;
+        height: 20px;
+    }
+
+    .monitor {
+        width: 40px;
+        height: 32px;
+        top: 35px;
+    }
+
+    .books {
+        width: 22px;
+        height: 15px;
+        left: 15px;
+        bottom: 15px;
+    }
+
+    .book {
+        height: 5px;
+    }
+
+    .book:nth-child(2) {
+        bottom: 5px;
+    }
+
+    .book:nth-child(3) {
+        bottom: 10px;
+    }
+
+    .guitar {
+        width: 12px;
+        height: 35px;
+        right: 20px;
+        bottom: 15px;
+    }
+
+    .vinyl-collection {
+        width: 50px;
+        height: 40px;
+        top: 38px;
+    }
+
+    .vinyl {
+        width: 15px;
+        height: 15px;
+    }
+
+    .vinyl::before {
+        width: 5px;
+        height: 5px;
+    }
+
+    .vinyl:nth-child(2) {
+        left: 18px;
+    }
+
+    .vinyl:nth-child(3) {
+        left: 36px;
+    }
+
+    .plant {
+        width: 18px;
+        height: 25px;
+        right: 12px;
+        top: 42px;
+    }
+
+    .plant-pot {
+        width: 10px;
+        height: 8px;
+    }
+
+    .plant-leaf {
+        width: 7px;
+        height: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    #creative-room-container {
+        min-height: 200px;
+        padding: 20px 5px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    #creative-room {
+        width: 130px;
+        height: 130px;
+    }
+
+    .room-wall {
+        width: 130px;
+        height: 130px;
+    }
+
+    .desk {
+        width: 50px;
+        height: 32px;
+        bottom: 12px;
+    }
+
+    .laptop {
+        width: 25px;
+        height: 18px;
+        top: -25px;
+    }
+
+    .monitor {
+        width: 35px;
+        height: 28px;
+        top: 30px;
+    }
+
+    .books {
+        width: 20px;
+        height: 12px;
+        left: 12px;
+        bottom: 12px;
+    }
+
+    .guitar {
+        width: 10px;
+        height: 30px;
+        right: 18px;
+        bottom: 12px;
+    }
+
+    .vinyl-collection {
+        width: 42px;
+        height: 35px;
+        top: 32px;
+    }
+
+    .vinyl {
+        width: 13px;
+        height: 13px;
+    }
+
+    .vinyl:nth-child(2) {
+        left: 15px;
+    }
+
+    .vinyl:nth-child(3) {
+        left: 30px;
+    }
+
+    .plant {
+        width: 15px;
+        height: 22px;
+        right: 10px;
+        top: 38px;
+    }
+}
+
+/* Lighting and shadows */
+@keyframes subtleGlow {
+    0%, 100% {
+        filter: brightness(1);
+    }
+    50% {
+        filter: brightness(1.05);
+    }
+}
+
+#creative-room {
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.15));
+    animation: rotateIsometricRoom 12s infinite ease-in-out, subtleGlow 4s infinite ease-in-out;
+}
+
+/* Integration with index.html layout */
+#intro {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+#intro .col-12.col-md-8 {
+    padding-right: 30px;
+}
+
+#intro .col-12.col-md-4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    #intro {
+        margin-bottom: 20px;
+    }
+
+    #intro .col-12.col-md-8 {
+        padding-right: 15px;
+        margin-bottom: 0;
+    }
+
+    #intro .col-12.col-md-4 {
+        margin-top: 0;
+        padding-top: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    #intro .col-12.col-md-8 {
+        padding-right: 0;
+    }
+
+    #intro .col-12.col-md-4 {
+        padding-top: 5px;
+    }
+}

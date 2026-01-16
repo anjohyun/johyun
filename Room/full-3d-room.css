@@ -1,0 +1,736 @@
+/* ========================================
+   FULL 3D ISOMETRIC ROOM
+   Three Rotating Scenes:
+   1. Developer/Data Scientist
+   2. Founder/Strategist
+   3. Musician/Producer
+   ======================================== */
+
+:root {
+    /* Room colors */
+    --floor-dev: #e8f4f8;
+    --floor-founder: #f5ede3;
+    --floor-musician: #4a4a4a;
+
+    --wall-dev: #f5f9fb;
+    --wall-founder: #faf6f0;
+    --wall-musician: #e8e8e8;
+}
+
+/* Container */
+#creative-room-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 80px 20px;
+    min-height: 500px;
+    perspective: 1500px;
+    perspective-origin: 50% 50%;
+}
+
+#creative-room {
+    width: 350px;
+    height: 350px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateX(60deg) rotateZ(-45deg);
+    animation: rotateThreeScenes 48s infinite ease-in-out;
+}
+
+/* Three complete rotation cycles - each showing different room */
+@keyframes rotateThreeScenes {
+    /* Scene 1: Developer - 0-33% */
+    0% { transform: rotateX(60deg) rotateZ(-45deg); }
+    10% { transform: rotateX(60deg) rotateZ(135deg); }
+    16% { transform: rotateX(60deg) rotateZ(135deg); }
+
+    /* Transition to Scene 2 */
+    18% { transform: rotateX(60deg) rotateZ(135deg); }
+
+    /* Scene 2: Founder - 33-66% */
+    33% { transform: rotateX(60deg) rotateZ(315deg); }
+    43% { transform: rotateX(60deg) rotateZ(495deg); }
+    49% { transform: rotateX(60deg) rotateZ(495deg); }
+
+    /* Transition to Scene 3 */
+    51% { transform: rotateX(60deg) rotateZ(495deg); }
+
+    /* Scene 3: Musician - 66-100% */
+    66% { transform: rotateX(60deg) rotateZ(675deg); }
+    76% { transform: rotateX(60deg) rotateZ(855deg); }
+    82% { transform: rotateX(60deg) rotateZ(855deg); }
+
+    /* Return to start */
+    100% { transform: rotateX(60deg) rotateZ(1035deg); }
+}
+
+/* Scene Container */
+.scene {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+/* Show scenes based on animation timing */
+.scene-developer {
+    animation: showScene1 48s infinite;
+}
+
+.scene-founder {
+    animation: showScene2 48s infinite;
+}
+
+.scene-musician {
+    animation: showScene3 48s infinite;
+}
+
+@keyframes showScene1 {
+    0%, 31%, 100% { opacity: 1; }
+    33%, 98% { opacity: 0; }
+}
+
+@keyframes showScene2 {
+    0%, 31% { opacity: 0; }
+    33%, 64% { opacity: 1; }
+    66%, 100% { opacity: 0; }
+}
+
+@keyframes showScene3 {
+    0%, 64% { opacity: 0; }
+    66%, 100% { opacity: 1; }
+}
+
+/* Room Walls - Base Structure */
+.room-wall {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border: 2px solid rgba(97, 133, 108, 0.15);
+}
+
+/* Floor */
+.room-floor {
+    transform: rotateX(90deg) translateZ(-175px);
+    box-shadow:
+        inset 0 0 80px rgba(0, 0, 0, 0.05),
+        0 20px 40px rgba(41, 64, 50, 0.1);
+}
+
+/* Back Wall */
+.room-back-wall {
+    transform: translateZ(-175px);
+    box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.03);
+}
+
+/* Left Wall */
+.room-left-wall {
+    transform: rotateY(-90deg) translateZ(-175px);
+    box-shadow: inset -30px 0 60px rgba(0, 0, 0, 0.04);
+}
+
+/* Right Wall */
+.room-right-wall {
+    transform: rotateY(90deg) translateZ(-175px);
+    box-shadow: inset 30px 0 60px rgba(0, 0, 0, 0.04);
+}
+
+/* ====================================
+   SCENE 1: DEVELOPER / DATA SCIENTIST
+   ==================================== */
+
+.scene-developer .room-floor {
+    background:
+        repeating-linear-gradient(0deg, transparent, transparent 40px, rgba(97, 133, 108, 0.06) 40px, rgba(97, 133, 108, 0.06) 80px),
+        repeating-linear-gradient(90deg, transparent, transparent 40px, rgba(97, 133, 108, 0.06) 40px, rgba(97, 133, 108, 0.06) 80px),
+        linear-gradient(135deg, #e8f4f8 0%, #d4e9f0 100%);
+}
+
+.scene-developer .room-back-wall,
+.scene-developer .room-left-wall,
+.scene-developer .room-right-wall {
+    background: linear-gradient(to bottom, #f5f9fb 0%, #eaf2f6 100%);
+}
+
+/* Multiple Monitors Setup */
+.dev-monitors {
+    width: 280px;
+    height: 120px;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+}
+
+.dev-monitor {
+    position: absolute;
+    background: linear-gradient(135deg, #294032 0%, #1a1a1a 100%);
+    border: 3px solid #61856c;
+    border-radius: 6px;
+    box-shadow: 0 8px 16px rgba(41, 64, 50, 0.3);
+}
+
+.dev-monitor::before {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    right: 4px;
+    bottom: 8px;
+    background: linear-gradient(135deg, #b6e0c8 0%, #61856c 100%);
+    border-radius: 3px;
+}
+
+.dev-monitor::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    height: 70%;
+    background:
+        repeating-linear-gradient(0deg, transparent, transparent 3px, rgba(255, 255, 255, 0.1) 3px, rgba(255, 255, 255, 0.1) 6px),
+        repeating-linear-gradient(90deg, transparent, transparent 3px, rgba(255, 255, 255, 0.1) 3px, rgba(255, 255, 255, 0.1) 6px);
+}
+
+.dev-monitor-1 {
+    width: 80px;
+    height: 55px;
+    left: 0;
+    bottom: 0;
+}
+
+.dev-monitor-2 {
+    width: 90px;
+    height: 65px;
+    left: 95px;
+    bottom: 0;
+}
+
+.dev-monitor-3 {
+    width: 80px;
+    height: 55px;
+    right: 0;
+    bottom: 0;
+}
+
+/* Developer Desk */
+.dev-desk {
+    width: 280px;
+    height: 60px;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+}
+
+.dev-desk-surface {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #ffffff 0%, #f0f4f2 100%);
+    border-radius: 4px;
+    box-shadow: 0 6px 12px rgba(41, 64, 50, 0.2);
+    border: 2px solid #e0e0e0;
+}
+
+/* Keyboard and Mouse */
+.dev-keyboard {
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    bottom: 45px;
+    left: 45%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, #4a4a4a 0%, #2a2a2a 100%);
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.dev-mouse {
+    position: absolute;
+    width: 12px;
+    height: 18px;
+    bottom: 45px;
+    right: 30%;
+    background: linear-gradient(135deg, #61856c 0%, #4a6855 100%);
+    border-radius: 6px 6px 4px 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Code on Left Wall */
+.dev-code-poster {
+    width: 120px;
+    height: 80px;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    background: #1a1a1a;
+    border: 3px solid #61856c;
+    border-radius: 4px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    padding: 8px;
+}
+
+.dev-code-poster::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+    background:
+        repeating-linear-gradient(0deg, transparent, transparent 5px, rgba(182, 224, 200, 0.15) 5px, rgba(182, 224, 200, 0.15) 10px);
+    font-family: monospace;
+}
+
+/* Chair */
+.dev-chair {
+    width: 45px;
+    height: 55px;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+}
+
+.dev-chair-seat {
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(135deg, #4a4a4a 0%, #2a2a2a 100%);
+    border-radius: 50% 50% 40% 40%;
+    position: absolute;
+    bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.dev-chair-back {
+    width: 40px;
+    height: 30px;
+    background: linear-gradient(135deg, #4a4a4a 0%, #2a2a2a 100%);
+    border-radius: 8px 8px 0 0;
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* ====================================
+   SCENE 2: FOUNDER / STRATEGIST
+   ==================================== */
+
+.scene-founder .room-floor {
+    background:
+        repeating-linear-gradient(0deg, transparent, transparent 30px, rgba(139, 111, 71, 0.08) 30px, rgba(139, 111, 71, 0.08) 60px),
+        repeating-linear-gradient(90deg, transparent, transparent 30px, rgba(139, 111, 71, 0.08) 30px, rgba(139, 111, 71, 0.08) 60px),
+        linear-gradient(135deg, #f5ede3 0%, #e8dfd0 100%);
+}
+
+.scene-founder .room-back-wall,
+.scene-founder .room-left-wall,
+.scene-founder .room-right-wall {
+    background: linear-gradient(to bottom, #faf6f0 0%, #f0ebe0 100%);
+}
+
+/* Executive Desk */
+.founder-desk {
+    width: 200px;
+    height: 80px;
+    bottom: 50px;
+    right: 40px;
+    position: absolute;
+}
+
+.founder-desk-surface {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #d4a574 0%, #b8956a 100%);
+    border-radius: 6px;
+    box-shadow: 0 8px 16px rgba(139, 111, 71, 0.3);
+    border: 3px solid #8b6f47;
+}
+
+/* Large Monitor */
+.founder-monitor {
+    width: 100px;
+    height: 70px;
+    bottom: 135px;
+    right: 90px;
+    position: absolute;
+    background: linear-gradient(135deg, #294032 0%, #1a1a1a 100%);
+    border: 4px solid #61856c;
+    border-radius: 6px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.founder-monitor::before {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    right: 4px;
+    bottom: 12px;
+    background: linear-gradient(135deg, #b6e0c8 0%, #61856c 100%);
+    border-radius: 3px;
+}
+
+/* Bookshelf on Back Wall */
+.founder-shelf {
+    width: 150px;
+    height: 120px;
+    top: 60px;
+    left: 40px;
+    position: absolute;
+}
+
+.founder-shelf-board {
+    position: absolute;
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(135deg, #d4a574 0%, #b8956a 100%);
+    border-radius: 2px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.founder-shelf-board:nth-child(1) { top: 0; }
+.founder-shelf-board:nth-child(2) { top: 40px; }
+.founder-shelf-board:nth-child(3) { top: 80px; }
+
+.founder-book {
+    position: absolute;
+    width: 12px;
+    height: 30px;
+    background: linear-gradient(135deg, #61856c 0%, #4a6855 100%);
+    border-radius: 2px;
+    border: 1px solid #294032;
+}
+
+/* Plants */
+.founder-plant {
+    width: 35px;
+    height: 50px;
+    bottom: 50px;
+    left: 50px;
+    position: absolute;
+}
+
+.founder-plant-pot {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 22px;
+    background: linear-gradient(135deg, #7a9d84 0%, #61856c 100%);
+    border-radius: 4px 4px 6px 6px;
+    box-shadow: 0 4px 8px rgba(41, 64, 50, 0.2);
+}
+
+.founder-plant-leaf {
+    position: absolute;
+    width: 14px;
+    height: 20px;
+    background: linear-gradient(135deg, #b6e0c8 0%, #61856c 100%);
+    border-radius: 50% 0;
+}
+
+.founder-plant-leaf:nth-child(1) { top: 0; left: 10px; transform: rotate(-40deg); }
+.founder-plant-leaf:nth-child(2) { top: 5px; left: 5px; transform: rotate(-70deg); }
+.founder-plant-leaf:nth-child(3) { top: 8px; right: 5px; transform: rotate(40deg); }
+
+/* Window with Curtains */
+.founder-window {
+    width: 140px;
+    height: 120px;
+    top: 50px;
+    right: 30px;
+    position: absolute;
+    background: linear-gradient(135deg, #a8d8f0 0%, #7ec8e3 100%);
+    border: 4px solid #d4a574;
+    border-radius: 6px;
+    box-shadow: inset 0 0 30px rgba(255, 255, 255, 0.5);
+}
+
+.founder-curtain {
+    position: absolute;
+    width: 25px;
+    height: 100%;
+    background: linear-gradient(to bottom, #8b6f47 0%, #6b5537 100%);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.founder-curtain:nth-child(1) { left: -20px; border-radius: 4px 0 0 4px; }
+.founder-curtain:nth-child(2) { right: -20px; border-radius: 0 4px 4px 0; }
+
+/* ====================================
+   SCENE 3: MUSICIAN / PRODUCER
+   ==================================== */
+
+.scene-musician .room-floor {
+    background:
+        repeating-linear-gradient(0deg, transparent, transparent 35px, rgba(255, 255, 255, 0.05) 35px, rgba(255, 255, 255, 0.05) 70px),
+        repeating-linear-gradient(90deg, transparent, transparent 35px, rgba(255, 255, 255, 0.05) 35px, rgba(255, 255, 255, 0.05) 70px),
+        linear-gradient(135deg, #4a4a4a 0%, #3a3a3a 100%);
+}
+
+.scene-musician .room-back-wall,
+.scene-musician .room-left-wall,
+.scene-musician .room-right-wall {
+    background: linear-gradient(to bottom, #e8e8e8 0%, #d8d8d8 100%);
+}
+
+/* Music Production Desk */
+.music-desk {
+    width: 260px;
+    height: 90px;
+    bottom: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+}
+
+.music-desk-surface {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #d4a574 0%, #b8956a 100%);
+    border-radius: 6px;
+    box-shadow: 0 8px 16px rgba(139, 111, 71, 0.4);
+    border: 3px solid #8b6f47;
+}
+
+/* DAW/Computer Screen */
+.music-screen {
+    width: 110px;
+    height: 75px;
+    bottom: 140px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+    border: 4px solid #61856c;
+    border-radius: 6px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.music-screen::before {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    right: 4px;
+    bottom: 12px;
+    background:
+        repeating-linear-gradient(0deg, transparent, transparent 8px, rgba(182, 224, 200, 0.2) 8px, rgba(182, 224, 200, 0.2) 16px),
+        linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+    border-radius: 3px;
+}
+
+/* MIDI Keyboard */
+.midi-keyboard {
+    width: 120px;
+    height: 30px;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    border: 2px solid #4a4a4a;
+}
+
+.midi-keyboard::before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 8px;
+    right: 8px;
+    height: 18px;
+    background:
+        repeating-linear-gradient(90deg, #ffffff 0px, #ffffff 6px, #1a1a1a 6px, #1a1a1a 7px);
+    border-radius: 2px;
+}
+
+/* Studio Speakers */
+.studio-speaker {
+    width: 40px;
+    height: 60px;
+    position: absolute;
+    background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+    border-radius: 6px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    border: 2px solid #61856c;
+}
+
+.studio-speaker::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 22px;
+    height: 22px;
+    background: radial-gradient(circle, #4a4a4a 0%, #2a2a2a 100%);
+    border-radius: 50%;
+    border: 2px solid #61856c;
+}
+
+.studio-speaker-left {
+    bottom: 140px;
+    left: 25px;
+}
+
+.studio-speaker-right {
+    bottom: 140px;
+    right: 25px;
+}
+
+/* Acoustic Panels on Walls */
+.acoustic-panel {
+    width: 60px;
+    height: 60px;
+    background:
+        repeating-linear-gradient(45deg, #61856c 0px, #61856c 8px, #4a6855 8px, #4a6855 16px);
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: absolute;
+}
+
+.acoustic-panel-1 {
+    top: 40px;
+    left: 30px;
+}
+
+.acoustic-panel-2 {
+    top: 40px;
+    right: 30px;
+}
+
+.acoustic-panel-3 {
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Guitar Stand */
+.guitar-stand {
+    width: 28px;
+    height: 80px;
+    bottom: 45px;
+    right: 30px;
+    position: absolute;
+}
+
+.guitar-stand-body {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    background: linear-gradient(135deg, #d4a574 0%, #b8956a 100%);
+    border-radius: 50% 50% 45% 45%;
+    border: 3px solid #8b6f47;
+    box-shadow: 0 4px 8px rgba(139, 111, 71, 0.3);
+}
+
+.guitar-stand-neck {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 8px;
+    height: 45px;
+    background: linear-gradient(to bottom, #8b6f47 0%, #6b5537 100%);
+    border-radius: 4px 4px 0 0;
+}
+
+/* Shared Elements */
+.room-item {
+    position: absolute;
+    transition: all 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    #creative-room-container {
+        padding: 70px 15px;
+        min-height: 450px;
+    }
+
+    #creative-room {
+        width: 300px;
+        height: 300px;
+    }
+
+    .room-wall {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    #creative-room-container {
+        padding: 60px 10px;
+        min-height: 400px;
+    }
+
+    #creative-room {
+        width: 260px;
+        height: 260px;
+    }
+
+    .room-wall {
+        width: 260px;
+        height: 260px;
+    }
+
+    /* Scale down all elements proportionally */
+    .dev-monitors { width: 220px; height: 100px; }
+    .dev-desk { width: 220px; height: 50px; }
+    .founder-desk { width: 160px; height: 65px; }
+    .music-desk { width: 210px; height: 75px; }
+}
+
+@media (max-width: 576px) {
+    #creative-room-container {
+        padding: 50px 5px;
+        min-height: 350px;
+    }
+
+    #creative-room {
+        width: 220px;
+        height: 220px;
+    }
+
+    .room-wall {
+        width: 220px;
+        height: 220px;
+    }
+
+    .dev-monitors { width: 180px; height: 80px; bottom: 40px; }
+    .dev-desk { width: 180px; height: 40px; bottom: 35px; }
+    .founder-desk { width: 130px; height: 55px; bottom: 40px; }
+    .music-desk { width: 170px; height: 60px; bottom: 38px; }
+}
+
+/* Lighting Effects */
+@keyframes roomGlow {
+    0%, 100% {
+        filter: brightness(1) drop-shadow(0 20px 40px rgba(97, 133, 108, 0.15));
+    }
+    50% {
+        filter: brightness(1.05) drop-shadow(0 20px 50px rgba(182, 224, 200, 0.25));
+    }
+}
+
+#creative-room {
+    animation: rotateThreeScenes 48s infinite ease-in-out, roomGlow 8s infinite ease-in-out;
+}
+
+/* Remove hover pause - always animating */
+#creative-room:hover {
+    cursor: default;
+}
