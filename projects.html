@@ -962,13 +962,17 @@ document.addEventListener("DOMContentLoaded", function(event) {
     function checkHashAndOpenModal() {
         const hash = window.location.hash.substring(1);
         if (hash && document.getElementById(hash)) {
-            setTimeout(function() {
-                document.getElementById(hash).click();
-            }, 100);
+            // Trigger click on the project element to open modal
+            document.getElementById(hash).click();
         }
     }
 
-    checkHashAndOpenModal();
+    // Run after everything is loaded
+    if (document.readyState === 'complete') {
+        checkHashAndOpenModal();
+    } else {
+        window.addEventListener('load', checkHashAndOpenModal);
+    }
 
 });
 </script>
